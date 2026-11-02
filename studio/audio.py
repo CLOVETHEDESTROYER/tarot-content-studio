@@ -103,9 +103,9 @@ def openai_speech(text, voice, folder):
         result = subprocess.run([sys.executable, '-m', 'studio.speech_worker', str(folder), voice],
                                 cwd=ROOT, capture_output=True, timeout=180, **HIDDEN)
     except subprocess.TimeoutExpired:
-        raise ValueError('OpenAI narration did not finish within three minutes. Retry or choose Windows voice.')
+        raise ValueError('OpenAI narration did not finish within three minutes. Retry or choose the local system voice.')
     if result.returncode:
-        raise ValueError('OpenAI narration could not finish. Retry, check the connection and API credits, or choose Windows voice.')
+        raise ValueError('OpenAI narration could not finish. Retry, check the connection and API credits, or choose the local system voice.')
     saved = json.loads((folder / 'raw-marks.json').read_text(encoding='utf-8'))
     return folder / 'raw.wav', saved['events'], saved['alignment']
 
@@ -128,7 +128,7 @@ def openai_speech_request(text, voice, folder):
                                                         response_format='verbose_json', timestamp_granularities=['word'])
     words = transcript.words or []
     if not words:
-        raise ValueError('Speech alignment returned no timestamps. Retry narration or choose Windows voice.')
+        raise ValueError('Speech alignment returned no timestamps. Retry narration or choose the local system voice.')
     events = align_transcribed_words(text,[dict(word=w.word,start=w.start) for w in words],wave_info(output))
     return output, events, 'Word timing from speech transcription · token alignment'
 
@@ -154,7 +154,7 @@ def align_transcribed_words(text, words, duration):
     for block in matches:
         for offset in range(block.size):times[block.a+offset]=spoken[block.b+offset]['start']
     if sum(t is not None for t in times)/len(times)<.65:
-        raise ValueError('Speech transcription did not match the saved script closely enough. Retry narration or choose Windows voice.')
+        raise ValueError('Speech transcription did not match the saved script closely enough. Retry narration or choose the local system voice.')
     anchors=[(-1,0)]+[(i,t) for i,t in enumerate(times) if t is not None]+[(len(times),duration)]
     for (left,start),(right,end) in zip(anchors,anchors[1:]):
         if end<start:raise ValueError('Speech timestamps are out of order. Retry narration.')
@@ -216,7 +216,7 @@ def timeline(draft, events, duration):
     for i, section in enumerate(sections):
         section['end'] = sections[i + 1]['start'] if i + 1 < len(sections) else duration
     if any(s['start']>=s['end'] for s in sections):
-        raise ValueError('Speech alignment collapsed a reading section. Rebuild narration or choose Windows voice.')
+        raise ValueError('Speech alignment collapsed a reading section. Rebuild narration or choose the local system voice.')
     captions = []
     for section, offset in zip(sections, offsets):
         matches = list(re.finditer(r'\S+', section['text']))

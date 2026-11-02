@@ -113,7 +113,7 @@ class DailyPlanner:
             self.put(entry)
         except Exception as exc:
             from openai import OpenAIError
-            message='OpenAI could not prepare this edition. Check the connection or use built-in writing / Windows voice.' if isinstance(exc,OpenAIError) else str(exc)
+            message='OpenAI could not prepare this edition. Check the connection or use built-in writing / the local system voice.' if isinstance(exc,OpenAIError) else str(exc)
             entry.update(status='failed',error=message[:500]);self.put(entry)
 
     def tick(self,current=None):

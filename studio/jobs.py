@@ -116,7 +116,7 @@ class Jobs:
             logging.exception('Studio job failed: %s', job['id'])
             # Avoid returning API responses, request headers, or secrets to the browser.
             from openai import OpenAIError
-            message = ('OpenAI could not complete this request. Check the connection and API credits, or choose built-in writing / Windows voice.'
+            message = ('OpenAI could not complete this request. Check the connection and API credits, or choose built-in writing / the local system voice.'
                        if isinstance(exc, OpenAIError) else str(exc))
             job.update(status='failed', error=message[:800], message='Render could not finish', finished=now())
             self.store.put_job(job)

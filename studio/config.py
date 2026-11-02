@@ -11,6 +11,6 @@ ASSETS = ROOT / 'assets'
 
 def api_client():
     if not os.getenv('OPENAI_API_KEY'):
-        raise ValueError('OpenAI is not configured. Choose built-in writing or Windows voice.')
+        raise ValueError('OpenAI is not configured. Choose built-in writing or the local system voice.')
     from openai import OpenAI
     return OpenAI(timeout=90, max_retries=1)
