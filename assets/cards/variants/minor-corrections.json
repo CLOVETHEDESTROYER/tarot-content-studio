@@ -1,0 +1,80 @@
+{
+  "method": "Built-in image_gen targeted edits after visual count review",
+  "corrections": [
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "06",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/06.png",
+      "prompt": "Edit the supplied card. Keep the same figure, scales, recipients, black-and-gold print style, border, number 6 and title SIX OF PENTACLES. Correct ONLY the large symbolic coins above the people: there are five now; show exactly SIX, arranged as THREE coins on the left and THREE on the right. Each large coin bears a five-point star. Small plain gift coins are not the six emblems. Six large star coins must be clearly separate. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "09",
+      "path": "static/cards/variants/esoteric-minimal/cups/09.png",
+      "prompt": "Edit the supplied card. Keep the seated figure, landscape, border, black-and-gold style, number 9 and title NINE OF CUPS. There are currently eight chalices. Correct ONLY that count by adding ONE matching golden chalice to the left group. Show FOUR chalices to the left of the person and FIVE to the right, NINE total, separate and fully visible. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "10",
+      "path": "static/cards/variants/esoteric-minimal/cups/10.png",
+      "prompt": "Edit the supplied card. Keep the family, landscape, border, black-and-gold style, number 10 and title TEN OF CUPS. The golden arch currently contains nine chalices. Change the arch to exactly TEN distinct chalices: FIVE on the left half and FIVE on the right half, with a small central gap rather than a central single cup. Keep the rest unchanged. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "08",
+      "path": "static/cards/variants/esoteric-minimal/wands/08.png",
+      "prompt": "Edit the supplied card. Keep the landscape, double-gold border, black-and-gold style, number 8 and title EIGHT OF WANDS. There are currently six diagonal wooden rods. Replace ONLY this six-rod group with exactly EIGHT individually distinguishable parallel leafy wooden rods. Eight separate long shafts with no overlapping shafts; count all eight before finalizing. Keep matching sparse screenprint styling and clear spaces between the rods. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "08",
+      "path": "static/cards/variants/esoteric-minimal/swords/08.png",
+      "prompt": "Edit the supplied card. Keep the freely standing fully clothed figure, open path, eclipse, black-and-gold style, border, number 8 and title EIGHT OF SWORDS. There are currently seven freestanding swords. Add ONE matching upright sword to the left of the person so there are FOUR swords to the left and FOUR to the right: exactly EIGHT. No restraints, injury or violence. Do not alter the person or the open path. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "07",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/07.png",
+      "prompt": "Edit the supplied card. Keep the gardener, shovel, landscape, cartoon style, frame, rank 7 and title SEVEN OF PENTACLES completely unchanged. There are eight star coins on the vine. Remove ONLY the bottommost coin, the one at the bottom center of the vine near the gardener's knee, and replace it with matching green leaves. Retain the other SEVEN star coins exactly as they are. Final count must be seven. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "08",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/08.png",
+      "prompt": "Edit the supplied card. Keep the artisan, hammer, table, landscape, frame, number 8 and title EIGHT OF PENTACLES unchanged. There are nine physical coins on the table. Remove ONLY the bottom-right coin on the table, leaving normal matching wooden tabletop. Keep the one coin being worked on and SEVEN finished coins: EIGHT physical coins total. The wall drawing is a drawing, not an additional physical coin. No other changes. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "08",
+      "path": "static/cards/variants/storybook-cartoon/wands/08.png",
+      "prompt": "Edit the supplied card. Keep the entire cartoon landscape, pale-yellow border, number 8 and title EIGHT OF WANDS unchanged. There are currently six diagonal leafy wooden rods. Replace ONLY that group with exactly EIGHT individually separate parallel wooden rods with small leaves, distributed with clear spacing across the upper two-thirds. Each needs a clearly visible shaft. Eight rods total, not six, seven or nine. Match the same linework and colors. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "09",
+      "path": "static/cards/variants/storybook-cartoon/swords/09.png",
+      "prompt": "Edit the supplied card. Keep the fully clothed contemplative person, cozy bedroom, cat, moon, cartoon style, frame, number 9 and title NINE OF SWORDS unchanged. The wall has eight horizontally displayed ceremonial swords. Change ONLY the wall display to exactly NINE separate horizontal swords with visible handles and blades, evenly spaced. No sword touches the person; these are wall decorations. No injury or distress beyond a thoughtful expression. Preserve exact 1024 x 1536 portrait aspect, all text accuracy, full front-facing card frame, and original artwork quality. Do not redesign the card."
+    },
+    {
+      "path": "static/cards/variants/esoteric-minimal/cups/09.png",
+      "prompt": "Edit ONLY one object in this image: remove the single chalice closest to the RIGHT border, the rightmost cup at approximately x=940,y=765 on this 1024x1536 card. Fill its former location with matching plain stone railing and sky. Do NOT add, move, redraw or remove ANY other cup. Leave the FOUR existing left cups and the FIVE other right cups untouched. Preserve figure, landscape, text, gold border and dimensions exactly. This corrects NINE OF CUPS to nine total cups."
+    },
+    {
+      "path": "static/cards/variants/esoteric-minimal/swords/08.png",
+      "prompt": "Edit ONLY one object in this image: remove the sword closest to the RIGHT edge, whose pommel is at approximately x=934,y=678 on this 1024x1536 card. Restore the background terrain behind this one sword. Do NOT add, move, redraw or remove any other sword. Keep the four existing left swords and four remaining right swords untouched. Preserve the figure, landscape, text, border and exact dimensions. This corrects EIGHT OF SWORDS to eight freestanding swords."
+    },
+    {
+      "path": "static/cards/variants/storybook-cartoon/wands/08.png",
+      "prompt": "Make a single additive edit to this image. It currently has SEVEN diagonal leafy wooden rods. Add exactly ONE additional matching diagonal rod BELOW the existing lowest rod, approximately starting at x=240,y=750 and ending at x=720,y=1060 on the 1024x1536 canvas. Leave ALL SEVEN existing rods entirely untouched. The new eighth rod should be parallel, with a clear gap, same linework and small leaves. Keep the landscape, frame, title EIGHT OF WANDS, top 8, and exact dimensions unchanged. No other changes."
+    }
+  ]
+}

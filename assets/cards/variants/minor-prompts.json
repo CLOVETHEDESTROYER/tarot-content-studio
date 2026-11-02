@@ -1,0 +1,1014 @@
+{
+  "name": "StarPower Tarot Minor Arcana expansion",
+  "method": "Built-in image_gen, one generation per individual card; existing Major Arcana Fool is a style reference only.",
+  "cards": [
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "01",
+      "id": "cups-01",
+      "name": "Ace of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/01.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ace of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: One large golden chalice held by a hand emerging from a cloud, five delicate streams flow into a lotus pool, small white dove above. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"1\". Bottom title exactly \"ACE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "02",
+      "id": "cups-02",
+      "name": "Two of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/02.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Two of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: Two fully clothed adults exchange TWO golden cups beneath a winged lion emblem and a simple intertwined staff motif; mutual connection. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"2\". Bottom title exactly \"TWO OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "03",
+      "id": "cups-03",
+      "name": "Three of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/03.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Three of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: THREE fully clothed adult friends lift THREE cups together in a circle amid flowers and harvested fruit; friendship and celebration. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"3\". Bottom title exactly \"THREE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "04",
+      "id": "cups-04",
+      "name": "Four of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/04.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Four of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A contemplative fully clothed adult seated beneath a tree, THREE cups on the ground and a FOURTH offered from a small cloud; reflection and overlooked possibilities. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"4\". Bottom title exactly \"FOUR OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "05",
+      "id": "cups-05",
+      "name": "Five of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/05.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Five of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed cloaked adult looks toward THREE spilled cups in the foreground, with TWO upright cups clearly behind them; quiet river and a distant bridge, recovery and perspective. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"5\". Bottom title exactly \"FIVE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "06",
+      "id": "cups-06",
+      "name": "Six of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/06.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Six of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: One fully clothed adult offers a flower-filled cup to another adult in a safe walled garden; SIX cups in total, all filled with small white flowers; memory and kindness. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"6\". Bottom title exactly \"SIX OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "07",
+      "id": "cups-07",
+      "name": "Seven of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/07.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Seven of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: One fully clothed adult studies SEVEN floating cups in a dream cloud, each containing a different small symbol: a jewel, laurel wreath, castle, serpent, veiled shape, dragon and a tiny mask; imagination and choice. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"7\". Bottom title exactly \"SEVEN OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "08",
+      "id": "cups-08",
+      "name": "Eight of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/08.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Eight of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed traveler walks away from EIGHT carefully stacked cups toward a moonlit mountain pass; departure and a search for meaning. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"8\". Bottom title exactly \"EIGHT OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "09",
+      "id": "cups-09",
+      "name": "Nine of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/09.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Nine of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A content fully clothed adult sits with arms relaxed before NINE golden cups arranged in a single curved row; fulfillment without excess. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"9\". Bottom title exactly \"NINE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "10",
+      "id": "cups-10",
+      "name": "Ten of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/10.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ten of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: TEN golden cups form an arch overhead, a fully clothed adult couple and two small fully clothed family figures celebrate beside a house and river; harmony and belonging. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"10\". Bottom title exactly \"TEN OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "11",
+      "id": "cups-11",
+      "name": "Page of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/11.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Page of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A curious fully clothed young adult page at the shore holds ONE cup containing a small friendly fish, listening with a surprised smile; discovery and emotional openness. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"P\". Bottom title exactly \"PAGE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "12",
+      "id": "cups-12",
+      "name": "Knight of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/12.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Knight of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A calm fully clothed knight on a gentle white horse extends ONE cup while crossing a quiet stream; invitation and emotional courage, no weapons. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"KN\". Bottom title exactly \"KNIGHT OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "13",
+      "id": "cups-13",
+      "name": "Queen of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/13.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Queen of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A reflective fully clothed adult queen sits by the shore on a shell-shaped throne, holding ONE ornate lidded cup; sea and smooth stones, compassion and intuition. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"Q\". Bottom title exactly \"QUEEN OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "cups",
+      "number": "14",
+      "id": "cups-14",
+      "name": "King of Cups",
+      "path": "static/cards/variants/esoteric-minimal/cups/14.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: King of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A composed fully clothed adult king sits on a stone throne above calm rippling water holding ONE cup and a small scepter; steady emotional leadership. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"K\". Bottom title exactly \"KING OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "01",
+      "id": "wands-01",
+      "name": "Ace of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/01.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ace of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: One hand emerges from a small cloud holding ONE upright leafy wooden wand above a distant green valley; new creative energy. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"1\". Bottom title exactly \"ACE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "02",
+      "id": "wands-02",
+      "name": "Two of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/02.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Two of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed adult on a terrace holds a small globe and ONE wand, with a SECOND wand fixed at their side, looking over a wide landscape; planning and possibility. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"2\". Bottom title exactly \"TWO OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "03",
+      "id": "wands-03",
+      "name": "Three of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/03.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Three of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed adult on a ridge looks toward THREE distant small ships, with THREE upright leafy wands planted around the figure; expansion and patient vision. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"3\". Bottom title exactly \"THREE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "04",
+      "id": "wands-04",
+      "name": "Four of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/04.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Four of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: FOUR upright leafy wands support a garland of flowers, two fully clothed adults welcome visitors to a distant courtyard; a joyful threshold and stable celebration. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"4\". Bottom title exactly \"FOUR OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "05",
+      "id": "wands-05",
+      "name": "Five of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/05.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Five of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: FIVE fully clothed adult companions hold FIVE wooden practice staffs in a playful crossing pattern, energetic but friendly and non-contact; competing ideas, no injury or threatening action. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"5\". Bottom title exactly \"FIVE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "06",
+      "id": "wands-06",
+      "name": "Six of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/06.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Six of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed rider on a friendly horse carries ONE wand topped with a laurel wreath, FIVE additional wands held upright by companions; SIX wands total, shared recognition. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"6\". Bottom title exactly \"SIX OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "07",
+      "id": "wands-07",
+      "name": "Seven of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/07.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Seven of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed adult stands firmly on a small hill holding ONE wand, SIX more wands rise upright from the foreground; SEVEN total, maintaining boundaries without combat or harm. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"7\". Bottom title exactly \"SEVEN OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "08",
+      "id": "wands-08",
+      "name": "Eight of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/08.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Eight of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: EIGHT leafy wooden wands travel diagonally together through an open sky over a river valley; quick momentum, no people or targets. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"8\". Bottom title exactly \"EIGHT OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "09",
+      "id": "wands-09",
+      "name": "Nine of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/09.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Nine of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed traveler rests one hand on ONE wand before a row of EIGHT other upright wands; NINE total, resilient and thoughtful, no wounds or bandages. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"9\". Bottom title exactly \"NINE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "10",
+      "id": "wands-10",
+      "name": "Ten of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/10.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ten of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed adult carries TEN clearly distinguishable long wooden wands toward a small welcoming village; responsibilities and effort, no distress or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"10\". Bottom title exactly \"TEN OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "11",
+      "id": "wands-11",
+      "name": "Page of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/11.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Page of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed young adult page studies ONE tall budding wand in a warm open landscape; curious optimism and a small feathered cap. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"P\". Bottom title exactly \"PAGE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "12",
+      "id": "wands-12",
+      "name": "Knight of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/12.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Knight of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed knight rides a lively friendly horse while raising ONE leafy wand, small salamander motifs on the cloak; enthusiasm and motion, not combat. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"KN\". Bottom title exactly \"KNIGHT OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "13",
+      "id": "wands-13",
+      "name": "Queen of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/13.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Queen of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A confident fully clothed adult queen sits on a lion-carved throne holding ONE wand and a sunflower, a small black cat at her feet; warmth and independent creative power. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"Q\". Bottom title exactly \"QUEEN OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "wands",
+      "number": "14",
+      "id": "wands-14",
+      "name": "King of Wands",
+      "path": "static/cards/variants/esoteric-minimal/wands/14.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: King of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A grounded fully clothed adult king sits on a throne with lion and salamander motifs holding ONE leafy wand; small friendly salamander by the foot, mature vision. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"K\". Bottom title exactly \"KING OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "01",
+      "id": "pentacles-01",
+      "name": "Ace of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/01.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ace of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: One hand from a small cloud presents ONE large golden coin bearing a five-point star, above a lush garden path and flowering archway; tangible opportunity. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"1\". Bottom title exactly \"ACE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "02",
+      "id": "pentacles-02",
+      "name": "Two of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/02.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Two of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A playful fully clothed adult balances TWO star-marked coins within a flowing infinity loop, TWO small ships ride gentle waves behind; adapting and balancing responsibilities. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"2\". Bottom title exactly \"TWO OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "03",
+      "id": "pentacles-03",
+      "name": "Three of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/03.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Three of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: THREE star-marked coins are set in a small stone arch, a fully clothed artisan discusses a drawing with TWO fully clothed collaborators; skill and teamwork. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"3\". Bottom title exactly \"THREE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "04",
+      "id": "pentacles-04",
+      "name": "Four of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/04.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Four of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed seated adult holds ONE star-marked coin against their chest, ONE above the head and TWO beneath the feet; FOUR coins total, boundaries and holding resources. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"4\". Bottom title exactly \"FOUR OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "05",
+      "id": "pentacles-05",
+      "name": "Five of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/05.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Five of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: TWO fully clothed travelers in warm coats walk together through softly falling snow toward a welcoming lit doorway; FIVE star-marked coins in a glowing window; mutual support, no visible illness or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"5\". Bottom title exactly \"FIVE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "06",
+      "id": "pentacles-06",
+      "name": "Six of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/06.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Six of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed generous adult holds balanced scales and offers small gifts to TWO fully clothed seated recipients; SIX star-marked coins arranged above, fairness and reciprocity. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"6\". Bottom title exactly \"SIX OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "07",
+      "id": "pentacles-07",
+      "name": "Seven of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/07.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Seven of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed gardener pauses beside a vine carrying SEVEN star-marked coins, resting on a garden tool; patient assessment of growing effort. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"7\". Bottom title exactly \"SEVEN OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "08",
+      "id": "pentacles-08",
+      "name": "Eight of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/08.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Eight of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed artisan carefully works on ONE star-marked coin, SEVEN finished star-marked coins nearby; EIGHT total, attention and dedicated craft. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"8\". Bottom title exactly \"EIGHT OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "09",
+      "id": "pentacles-09",
+      "name": "Nine of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/09.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Nine of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A poised fully clothed adult stands in a vineyard with a small falcon resting on a gloved hand; NINE star-marked coins nestled in the vines, self-reliance and cultivated abundance. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"9\". Bottom title exactly \"NINE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "10",
+      "id": "pentacles-10",
+      "name": "Ten of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/10.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ten of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed multigenerational family gathers beneath a garden arch beside TWO friendly dogs; TEN star-marked coins distributed around the scene, continuity and shared foundations. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"10\". Bottom title exactly \"TEN OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "11",
+      "id": "pentacles-11",
+      "name": "Page of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/11.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Page of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed young adult page holds ONE star-marked golden coin at eye level in a meadow; focused curiosity and a distant garden. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"P\". Bottom title exactly \"PAGE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "12",
+      "id": "pentacles-12",
+      "name": "Knight of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/12.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Knight of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed knight on a calm dark horse holds ONE star-marked coin above a tilled field; grounded patience and steady follow-through. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"KN\". Bottom title exactly \"KNIGHT OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "13",
+      "id": "pentacles-13",
+      "name": "Queen of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/13.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Queen of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A nurturing fully clothed adult queen sits among flowering plants and cradles ONE star-marked coin, small rabbit in the grass; practical care and abundance. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"Q\". Bottom title exactly \"QUEEN OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "pentacles",
+      "number": "14",
+      "id": "pentacles-14",
+      "name": "King of Pentacles",
+      "path": "static/cards/variants/esoteric-minimal/pentacles/14.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: King of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A composed fully clothed adult king sits on a vine-wrapped throne holding ONE star-marked coin, subtle bull motifs and a distant garden gate; stewardship and material maturity. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"K\". Bottom title exactly \"KING OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "01",
+      "id": "swords-01",
+      "name": "Ace of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/01.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ace of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: One hand emerging from a cloud holds ONE upright ceremonial sword topped by a small crown with olive and palm branches; isolated symbolic object, clarity, no person or target. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"1\". Bottom title exactly \"ACE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "02",
+      "id": "swords-02",
+      "name": "Two of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/02.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Two of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed meditating adult sits calmly by the sea with TWO ceremonial swords crossed at a safe distance above their lap, eyes gently closed; crescent moon, quiet decision, no restraints. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"2\". Bottom title exactly \"TWO OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "03",
+      "id": "swords-03",
+      "name": "Three of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/03.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Three of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A large stylized red heart floats before a rain cloud, THREE slim ceremonial swords cross BEHIND the heart as a decorative emblem, without piercing or injury; sorrow as a purely abstract symbol, no human body. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"3\". Bottom title exactly \"THREE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "04",
+      "id": "swords-04",
+      "name": "Four of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/04.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Four of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed adult rests peacefully on a stone bench, THREE ceremonial swords mounted on the wall above and ONE sword displayed below the bench; FOUR total, stained-glass window and stillness, no death or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"4\". Bottom title exactly \"FOUR OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "05",
+      "id": "swords-05",
+      "name": "Five of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/05.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Five of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed adult gathers THREE ceremonial swords at rest while TWO swords lie on the ground; TWO distant fully clothed adults walk away under clearing clouds; FIVE swords total, aftermath of a disagreement, no combat or injuries. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"5\". Bottom title exactly \"FIVE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "06",
+      "id": "swords-06",
+      "name": "Six of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/06.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Six of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A small boat carries TWO fully clothed seated travelers and a calm fully clothed ferryperson toward a quiet shore; SIX ceremonial swords secured upright at the bow, transition and support, no threat. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"6\". Bottom title exactly \"SIX OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "07",
+      "id": "swords-07",
+      "name": "Seven of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/07.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Seven of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A clever fully clothed adult carries FIVE ceremonial swords away from an empty camp, TWO remain planted upright behind; SEVEN total, strategy and consequences, no combat or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"7\". Bottom title exactly \"SEVEN OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "08",
+      "id": "swords-08",
+      "name": "Eight of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/08.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Eight of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed adult stands freely in an open semicircle of EIGHT upright ceremonial swords, with an obvious clear path out; looking inward, no blindfold, ropes, restraints or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"8\". Bottom title exactly \"EIGHT OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "09",
+      "id": "swords-09",
+      "name": "Nine of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/09.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Nine of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed adult sits thoughtfully on the edge of a bed, NINE ceremonial swords mounted neatly on a wall; a small warm lamp and quilt suggest comfort; nighttime worries, no injury or self-harm. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"9\". Bottom title exactly \"NINE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "10",
+      "id": "swords-10",
+      "name": "Ten of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/10.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ten of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: TEN ceremonial swords stand upright around an EMPTY folded dark cloak on a quiet shore as a golden dawn breaks; an abstract ending and renewal, no body, harm, blood or distress. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"10\". Bottom title exactly \"TEN OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "11",
+      "id": "swords-11",
+      "name": "Page of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/11.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Page of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed young adult page stands on a breezy hill with ONE upright ceremonial sword, windswept clouds and a small tree; alert curiosity, not combat. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"P\". Bottom title exactly \"PAGE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "12",
+      "id": "swords-12",
+      "name": "Knight of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/12.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Knight of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A fully clothed knight rides a friendly horse through swirling clouds with ONE upright ceremonial sword raised away from everyone; purposeful motion, no opponent, impact or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"KN\". Bottom title exactly \"KNIGHT OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "13",
+      "id": "swords-13",
+      "name": "Queen of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/13.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Queen of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A clear-eyed fully clothed adult queen sits on a cloud-carved throne with ONE upright ceremonial sword, free hand open in welcome; a small bird overhead, discernment and honesty. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"Q\". Bottom title exactly \"QUEEN OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "esoteric-minimal",
+      "suit": "swords",
+      "number": "14",
+      "id": "swords-14",
+      "name": "King of Swords",
+      "path": "static/cards/variants/esoteric-minimal/swords/14.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: King of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Esoteric Minimal reference: near-black paper, antique metallic gold and chalk ivory with a tiny vermilion accent; sparse occult screenprint, restrained geometric silhouettes, spacious composition and fine tactile grain. Thin double gold rectangular border inset 4 percent, small rank centered at top, uppercase spaced serif card title centered along bottom. No photographs, mockups, ornate clutter or gradients. Scene: A composed fully clothed adult king sits on a butterfly-carved throne with ONE upright ceremonial sword, balanced posture and open sky; fair judgment, no threat or violence. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"K\". Bottom title exactly \"KING OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "01",
+      "id": "cups-01",
+      "name": "Ace of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/01.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ace of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: One large golden chalice held by a hand emerging from a cloud, five delicate streams flow into a lotus pool, small white dove above. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"1\". Bottom title exactly \"ACE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "02",
+      "id": "cups-02",
+      "name": "Two of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/02.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Two of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: Two fully clothed adults exchange TWO golden cups beneath a winged lion emblem and a simple intertwined staff motif; mutual connection. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"2\". Bottom title exactly \"TWO OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "03",
+      "id": "cups-03",
+      "name": "Three of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/03.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Three of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: THREE fully clothed adult friends lift THREE cups together in a circle amid flowers and harvested fruit; friendship and celebration. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"3\". Bottom title exactly \"THREE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "04",
+      "id": "cups-04",
+      "name": "Four of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/04.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Four of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A contemplative fully clothed adult seated beneath a tree, THREE cups on the ground and a FOURTH offered from a small cloud; reflection and overlooked possibilities. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"4\". Bottom title exactly \"FOUR OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "05",
+      "id": "cups-05",
+      "name": "Five of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/05.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Five of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed cloaked adult looks toward THREE spilled cups in the foreground, with TWO upright cups clearly behind them; quiet river and a distant bridge, recovery and perspective. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"5\". Bottom title exactly \"FIVE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "06",
+      "id": "cups-06",
+      "name": "Six of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/06.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Six of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: One fully clothed adult offers a flower-filled cup to another adult in a safe walled garden; SIX cups in total, all filled with small white flowers; memory and kindness. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"6\". Bottom title exactly \"SIX OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "07",
+      "id": "cups-07",
+      "name": "Seven of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/07.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Seven of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: One fully clothed adult studies SEVEN floating cups in a dream cloud, each containing a different small symbol: a jewel, laurel wreath, castle, serpent, veiled shape, dragon and a tiny mask; imagination and choice. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"7\". Bottom title exactly \"SEVEN OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "08",
+      "id": "cups-08",
+      "name": "Eight of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/08.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Eight of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed traveler walks away from EIGHT carefully stacked cups toward a moonlit mountain pass; departure and a search for meaning. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"8\". Bottom title exactly \"EIGHT OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "09",
+      "id": "cups-09",
+      "name": "Nine of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/09.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Nine of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A content fully clothed adult sits with arms relaxed before NINE golden cups arranged in a single curved row; fulfillment without excess. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"9\". Bottom title exactly \"NINE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "10",
+      "id": "cups-10",
+      "name": "Ten of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/10.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ten of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: TEN golden cups form an arch overhead, a fully clothed adult couple and two small fully clothed family figures celebrate beside a house and river; harmony and belonging. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"10\". Bottom title exactly \"TEN OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "11",
+      "id": "cups-11",
+      "name": "Page of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/11.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Page of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A curious fully clothed young adult page at the shore holds ONE cup containing a small friendly fish, listening with a surprised smile; discovery and emotional openness. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"P\". Bottom title exactly \"PAGE OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "12",
+      "id": "cups-12",
+      "name": "Knight of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/12.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Knight of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A calm fully clothed knight on a gentle white horse extends ONE cup while crossing a quiet stream; invitation and emotional courage, no weapons. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"KN\". Bottom title exactly \"KNIGHT OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "13",
+      "id": "cups-13",
+      "name": "Queen of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/13.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Queen of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A reflective fully clothed adult queen sits by the shore on a shell-shaped throne, holding ONE ornate lidded cup; sea and smooth stones, compassion and intuition. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"Q\". Bottom title exactly \"QUEEN OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "cups",
+      "number": "14",
+      "id": "cups-14",
+      "name": "King of Cups",
+      "path": "static/cards/variants/storybook-cartoon/cups/14.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: King of Cups. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A composed fully clothed adult king sits on a stone throne above calm rippling water holding ONE cup and a small scepter; steady emotional leadership. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"K\". Bottom title exactly \"KING OF CUPS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "01",
+      "id": "wands-01",
+      "name": "Ace of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/01.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ace of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: One hand emerges from a small cloud holding ONE upright leafy wooden wand above a distant green valley; new creative energy. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"1\". Bottom title exactly \"ACE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "02",
+      "id": "wands-02",
+      "name": "Two of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/02.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Two of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed adult on a terrace holds a small globe and ONE wand, with a SECOND wand fixed at their side, looking over a wide landscape; planning and possibility. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"2\". Bottom title exactly \"TWO OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "03",
+      "id": "wands-03",
+      "name": "Three of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/03.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Three of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed adult on a ridge looks toward THREE distant small ships, with THREE upright leafy wands planted around the figure; expansion and patient vision. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"3\". Bottom title exactly \"THREE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "04",
+      "id": "wands-04",
+      "name": "Four of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/04.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Four of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: FOUR upright leafy wands support a garland of flowers, two fully clothed adults welcome visitors to a distant courtyard; a joyful threshold and stable celebration. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"4\". Bottom title exactly \"FOUR OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "05",
+      "id": "wands-05",
+      "name": "Five of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/05.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Five of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: FIVE fully clothed adult companions hold FIVE wooden practice staffs in a playful crossing pattern, energetic but friendly and non-contact; competing ideas, no injury or threatening action. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"5\". Bottom title exactly \"FIVE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "06",
+      "id": "wands-06",
+      "name": "Six of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/06.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Six of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed rider on a friendly horse carries ONE wand topped with a laurel wreath, FIVE additional wands held upright by companions; SIX wands total, shared recognition. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"6\". Bottom title exactly \"SIX OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "07",
+      "id": "wands-07",
+      "name": "Seven of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/07.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Seven of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed adult stands firmly on a small hill holding ONE wand, SIX more wands rise upright from the foreground; SEVEN total, maintaining boundaries without combat or harm. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"7\". Bottom title exactly \"SEVEN OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "08",
+      "id": "wands-08",
+      "name": "Eight of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/08.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Eight of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: EIGHT leafy wooden wands travel diagonally together through an open sky over a river valley; quick momentum, no people or targets. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"8\". Bottom title exactly \"EIGHT OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "09",
+      "id": "wands-09",
+      "name": "Nine of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/09.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Nine of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed traveler rests one hand on ONE wand before a row of EIGHT other upright wands; NINE total, resilient and thoughtful, no wounds or bandages. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"9\". Bottom title exactly \"NINE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "10",
+      "id": "wands-10",
+      "name": "Ten of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/10.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ten of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed adult carries TEN clearly distinguishable long wooden wands toward a small welcoming village; responsibilities and effort, no distress or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"10\". Bottom title exactly \"TEN OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "11",
+      "id": "wands-11",
+      "name": "Page of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/11.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Page of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed young adult page studies ONE tall budding wand in a warm open landscape; curious optimism and a small feathered cap. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"P\". Bottom title exactly \"PAGE OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "12",
+      "id": "wands-12",
+      "name": "Knight of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/12.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Knight of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed knight rides a lively friendly horse while raising ONE leafy wand, small salamander motifs on the cloak; enthusiasm and motion, not combat. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"KN\". Bottom title exactly \"KNIGHT OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "13",
+      "id": "wands-13",
+      "name": "Queen of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/13.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Queen of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A confident fully clothed adult queen sits on a lion-carved throne holding ONE wand and a sunflower, a small black cat at her feet; warmth and independent creative power. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"Q\". Bottom title exactly \"QUEEN OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "wands",
+      "number": "14",
+      "id": "wands-14",
+      "name": "King of Wands",
+      "path": "static/cards/variants/storybook-cartoon/wands/14.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: King of Wands. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A grounded fully clothed adult king sits on a throne with lion and salamander motifs holding ONE leafy wand; small friendly salamander by the foot, mature vision. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"K\". Bottom title exactly \"KING OF WANDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "01",
+      "id": "pentacles-01",
+      "name": "Ace of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/01.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ace of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: One hand from a small cloud presents ONE large golden coin bearing a five-point star, above a lush garden path and flowering archway; tangible opportunity. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"1\". Bottom title exactly \"ACE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "02",
+      "id": "pentacles-02",
+      "name": "Two of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/02.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Two of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A playful fully clothed adult balances TWO star-marked coins within a flowing infinity loop, TWO small ships ride gentle waves behind; adapting and balancing responsibilities. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"2\". Bottom title exactly \"TWO OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "03",
+      "id": "pentacles-03",
+      "name": "Three of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/03.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Three of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: THREE star-marked coins are set in a small stone arch, a fully clothed artisan discusses a drawing with TWO fully clothed collaborators; skill and teamwork. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"3\". Bottom title exactly \"THREE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "04",
+      "id": "pentacles-04",
+      "name": "Four of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/04.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Four of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed seated adult holds ONE star-marked coin against their chest, ONE above the head and TWO beneath the feet; FOUR coins total, boundaries and holding resources. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"4\". Bottom title exactly \"FOUR OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "05",
+      "id": "pentacles-05",
+      "name": "Five of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/05.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Five of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: TWO fully clothed travelers in warm coats walk together through softly falling snow toward a welcoming lit doorway; FIVE star-marked coins in a glowing window; mutual support, no visible illness or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"5\". Bottom title exactly \"FIVE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "06",
+      "id": "pentacles-06",
+      "name": "Six of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/06.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Six of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed generous adult holds balanced scales and offers small gifts to TWO fully clothed seated recipients; SIX star-marked coins arranged above, fairness and reciprocity. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"6\". Bottom title exactly \"SIX OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "07",
+      "id": "pentacles-07",
+      "name": "Seven of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/07.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Seven of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed gardener pauses beside a vine carrying SEVEN star-marked coins, resting on a garden tool; patient assessment of growing effort. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"7\". Bottom title exactly \"SEVEN OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "08",
+      "id": "pentacles-08",
+      "name": "Eight of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/08.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Eight of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed artisan carefully works on ONE star-marked coin, SEVEN finished star-marked coins nearby; EIGHT total, attention and dedicated craft. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"8\". Bottom title exactly \"EIGHT OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "09",
+      "id": "pentacles-09",
+      "name": "Nine of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/09.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Nine of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A poised fully clothed adult stands in a vineyard with a small falcon resting on a gloved hand; NINE star-marked coins nestled in the vines, self-reliance and cultivated abundance. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"9\". Bottom title exactly \"NINE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "10",
+      "id": "pentacles-10",
+      "name": "Ten of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/10.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ten of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed multigenerational family gathers beneath a garden arch beside TWO friendly dogs; TEN star-marked coins distributed around the scene, continuity and shared foundations. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"10\". Bottom title exactly \"TEN OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "11",
+      "id": "pentacles-11",
+      "name": "Page of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/11.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Page of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed young adult page holds ONE star-marked golden coin at eye level in a meadow; focused curiosity and a distant garden. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"P\". Bottom title exactly \"PAGE OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "12",
+      "id": "pentacles-12",
+      "name": "Knight of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/12.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Knight of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed knight on a calm dark horse holds ONE star-marked coin above a tilled field; grounded patience and steady follow-through. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"KN\". Bottom title exactly \"KNIGHT OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "13",
+      "id": "pentacles-13",
+      "name": "Queen of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/13.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Queen of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A nurturing fully clothed adult queen sits among flowering plants and cradles ONE star-marked coin, small rabbit in the grass; practical care and abundance. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"Q\". Bottom title exactly \"QUEEN OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "pentacles",
+      "number": "14",
+      "id": "pentacles-14",
+      "name": "King of Pentacles",
+      "path": "static/cards/variants/storybook-cartoon/pentacles/14.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: King of Pentacles. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A composed fully clothed adult king sits on a vine-wrapped throne holding ONE star-marked coin, subtle bull motifs and a distant garden gate; stewardship and material maturity. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"K\". Bottom title exactly \"KING OF PENTACLES\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "01",
+      "id": "swords-01",
+      "name": "Ace of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/01.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ace of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: One hand emerging from a cloud holds ONE upright ceremonial sword topped by a small crown with olive and palm branches; isolated symbolic object, clarity, no person or target. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"1\". Bottom title exactly \"ACE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "02",
+      "id": "swords-02",
+      "name": "Two of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/02.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Two of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed meditating adult sits calmly by the sea with TWO ceremonial swords crossed at a safe distance above their lap, eyes gently closed; crescent moon, quiet decision, no restraints. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"2\". Bottom title exactly \"TWO OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "03",
+      "id": "swords-03",
+      "name": "Three of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/03.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Three of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A large stylized red heart floats before a rain cloud, THREE slim ceremonial swords cross BEHIND the heart as a decorative emblem, without piercing or injury; sorrow as a purely abstract symbol, no human body. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"3\". Bottom title exactly \"THREE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "04",
+      "id": "swords-04",
+      "name": "Four of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/04.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Four of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed adult rests peacefully on a stone bench, THREE ceremonial swords mounted on the wall above and ONE sword displayed below the bench; FOUR total, stained-glass window and stillness, no death or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"4\". Bottom title exactly \"FOUR OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "05",
+      "id": "swords-05",
+      "name": "Five of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/05.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Five of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed adult gathers THREE ceremonial swords at rest while TWO swords lie on the ground; TWO distant fully clothed adults walk away under clearing clouds; FIVE swords total, aftermath of a disagreement, no combat or injuries. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"5\". Bottom title exactly \"FIVE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "06",
+      "id": "swords-06",
+      "name": "Six of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/06.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Six of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A small boat carries TWO fully clothed seated travelers and a calm fully clothed ferryperson toward a quiet shore; SIX ceremonial swords secured upright at the bow, transition and support, no threat. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"6\". Bottom title exactly \"SIX OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "07",
+      "id": "swords-07",
+      "name": "Seven of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/07.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Seven of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A clever fully clothed adult carries FIVE ceremonial swords away from an empty camp, TWO remain planted upright behind; SEVEN total, strategy and consequences, no combat or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"7\". Bottom title exactly \"SEVEN OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "08",
+      "id": "swords-08",
+      "name": "Eight of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/08.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Eight of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed adult stands freely in an open semicircle of EIGHT upright ceremonial swords, with an obvious clear path out; looking inward, no blindfold, ropes, restraints or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"8\". Bottom title exactly \"EIGHT OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "09",
+      "id": "swords-09",
+      "name": "Nine of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/09.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Nine of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed adult sits thoughtfully on the edge of a bed, NINE ceremonial swords mounted neatly on a wall; a small warm lamp and quilt suggest comfort; nighttime worries, no injury or self-harm. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"9\". Bottom title exactly \"NINE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "10",
+      "id": "swords-10",
+      "name": "Ten of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/10.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Ten of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: TEN ceremonial swords stand upright around an EMPTY folded dark cloak on a quiet shore as a golden dawn breaks; an abstract ending and renewal, no body, harm, blood or distress. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"10\". Bottom title exactly \"TEN OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "11",
+      "id": "swords-11",
+      "name": "Page of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/11.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Page of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed young adult page stands on a breezy hill with ONE upright ceremonial sword, windswept clouds and a small tree; alert curiosity, not combat. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"P\". Bottom title exactly \"PAGE OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "12",
+      "id": "swords-12",
+      "name": "Knight of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/12.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Knight of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A fully clothed knight rides a friendly horse through swirling clouds with ONE upright ceremonial sword raised away from everyone; purposeful motion, no opponent, impact or injury. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"KN\". Bottom title exactly \"KNIGHT OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "13",
+      "id": "swords-13",
+      "name": "Queen of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/13.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: Queen of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A clear-eyed fully clothed adult queen sits on a cloud-carved throne with ONE upright ceremonial sword, free hand open in welcome; a small bird overhead, discernment and honesty. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"Q\". Bottom title exactly \"QUEEN OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    },
+    {
+      "deck": "storybook-cartoon",
+      "suit": "swords",
+      "number": "14",
+      "id": "swords-14",
+      "name": "King of Swords",
+      "path": "static/cards/variants/storybook-cartoon/swords/14.png",
+      "prompt": "Use case: illustration-story. Create ONE finished individual tarot card: King of Swords. The reference image is a STYLE AND FRAME reference only: replace its scene completely with the requested Minor Arcana scene. Match the supplied Storybook Cartoon reference: original whimsical surreal 2D animation, clean bold near-black outlines, simple rounded expressive characters with dot eyes, flat mint/turquoise/peach/lemon colors and charming fantasy landscapes. Pale-yellow margin, thin dark rounded border, small rounded top rank badge, pale-yellow bottom title strip with bold hand-lettered black card title. Original characters only, no existing cartoon characters, no realistic rendering or photography. Scene: A composed fully clothed adult king sits on a butterfly-carved throne with ONE upright ceremonial sword, balanced posture and open sky; fair judgment, no threat or violence. Traditional Rider-Waite-inspired SYMBOLISM, all people fully clothed, family-friendly and non-graphic. Suit objects must be clearly countable and match the named number; do not add decorative extra cups, swords, coins or wands. Court cards each feature only ONE suit object. Portrait 2:3, target 1024 x 1536, flat straight-on card face filling canvas, consistent framing and safe text margins matching reference. Top rank text exactly \"K\". Bottom title exactly \"KING OF SWORDS\". No other lettering, watermarks, collage or contact sheet. One card only."
+    }
+  ]
+}
