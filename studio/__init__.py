@@ -1,0 +1,1 @@
+"""Standalone StarPower Content Studio."""
