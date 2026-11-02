@@ -1,0 +1,1082 @@
+[
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "aries",
+    "name": "Aries",
+    "subject": "a majestic ram with curled horns on a mountain",
+    "file": "esoteric-minimal/western/aries.png",
+    "source": "source-atlases/esoteric-minimal-western-0.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "taurus",
+    "name": "Taurus",
+    "subject": "a peaceful bull in a flowering meadow",
+    "file": "esoteric-minimal/western/taurus.png",
+    "source": "source-atlases/esoteric-minimal-western-0.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "gemini",
+    "name": "Gemini",
+    "subject": "two mirrored robed twins sharing a star",
+    "file": "esoteric-minimal/western/gemini.png",
+    "source": "source-atlases/esoteric-minimal-western-0.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "cancer",
+    "name": "Cancer",
+    "subject": "a crab beside a tidal pool beneath a full moon",
+    "file": "esoteric-minimal/western/cancer.png",
+    "source": "source-atlases/esoteric-minimal-western-0.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "leo",
+    "name": "Leo",
+    "subject": "a noble lion with a radiant sun behind its mane",
+    "file": "esoteric-minimal/western/leo.png",
+    "source": "source-atlases/esoteric-minimal-western-1.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "virgo",
+    "name": "Virgo",
+    "subject": "a thoughtful harvest maiden with wheat and a lantern",
+    "file": "esoteric-minimal/western/virgo.png",
+    "source": "source-atlases/esoteric-minimal-western-1.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "libra",
+    "name": "Libra",
+    "subject": "beautiful perfectly balanced hanging scales in a celestial garden",
+    "file": "esoteric-minimal/western/libra.png",
+    "source": "source-atlases/esoteric-minimal-western-1.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "scorpio",
+    "name": "Scorpio",
+    "subject": "an elegant scorpion in a moonlit desert with small flowers",
+    "file": "esoteric-minimal/western/scorpio.png",
+    "source": "source-atlases/esoteric-minimal-western-1.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "sagittarius",
+    "name": "Sagittarius",
+    "subject": "a graceful centaur archer aiming a bow toward stars",
+    "file": "esoteric-minimal/western/sagittarius.png",
+    "source": "source-atlases/esoteric-minimal-western-2.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "capricorn",
+    "name": "Capricorn",
+    "subject": "a mythic sea-goat with curled horns and a fish tail",
+    "file": "esoteric-minimal/western/capricorn.png",
+    "source": "source-atlases/esoteric-minimal-western-2.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "aquarius",
+    "name": "Aquarius",
+    "subject": "a celestial water bearer pouring a river from a ceramic vessel",
+    "file": "esoteric-minimal/western/aquarius.png",
+    "source": "source-atlases/esoteric-minimal-western-2.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "key": "pisces",
+    "name": "Pisces",
+    "subject": "two fish swimming in a circular moonlit pool",
+    "file": "esoteric-minimal/western/pisces.png",
+    "source": "source-atlases/esoteric-minimal-western-2.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "rat",
+    "name": "Rat",
+    "subject": "an intelligent little rat with grains and a lantern",
+    "file": "esoteric-minimal/chinese/rat.png",
+    "source": "source-atlases/esoteric-minimal-chinese-0.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "ox",
+    "name": "Ox",
+    "subject": "a patient strong ox beside rice terraces",
+    "file": "esoteric-minimal/chinese/ox.png",
+    "source": "source-atlases/esoteric-minimal-chinese-0.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "tiger",
+    "name": "Tiger",
+    "subject": "a magnificent striped tiger in bamboo",
+    "file": "esoteric-minimal/chinese/tiger.png",
+    "source": "source-atlases/esoteric-minimal-chinese-0.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "rabbit",
+    "name": "Rabbit",
+    "subject": "a gentle rabbit in a moon garden",
+    "file": "esoteric-minimal/chinese/rabbit.png",
+    "source": "source-atlases/esoteric-minimal-chinese-0.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "dragon",
+    "name": "Dragon",
+    "subject": "a sinuous Chinese long dragon among clouds with NO western wings",
+    "file": "esoteric-minimal/chinese/dragon.png",
+    "source": "source-atlases/esoteric-minimal-chinese-1.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "snake",
+    "name": "Snake",
+    "subject": "an elegant coiled snake among flowering branches",
+    "file": "esoteric-minimal/chinese/snake.png",
+    "source": "source-atlases/esoteric-minimal-chinese-1.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "horse",
+    "name": "Horse",
+    "subject": "a free spirited horse running across a meadow",
+    "file": "esoteric-minimal/chinese/horse.png",
+    "source": "source-atlases/esoteric-minimal-chinese-1.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "goat",
+    "name": "Goat",
+    "subject": "a peaceful goat among mountain blossoms",
+    "file": "esoteric-minimal/chinese/goat.png",
+    "source": "source-atlases/esoteric-minimal-chinese-1.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "monkey",
+    "name": "Monkey",
+    "subject": "a playful monkey in a peach tree",
+    "file": "esoteric-minimal/chinese/monkey.png",
+    "source": "source-atlases/esoteric-minimal-chinese-2.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "rooster",
+    "name": "Rooster",
+    "subject": "a proud rooster greeting the dawn",
+    "file": "esoteric-minimal/chinese/rooster.png",
+    "source": "source-atlases/esoteric-minimal-chinese-2.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "dog",
+    "name": "Dog",
+    "subject": "a loyal friendly dog under a protective arch",
+    "file": "esoteric-minimal/chinese/dog.png",
+    "source": "source-atlases/esoteric-minimal-chinese-2.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "key": "pig",
+    "name": "Pig",
+    "subject": "a contented pig in a lush garden",
+    "file": "esoteric-minimal/chinese/pig.png",
+    "source": "source-atlases/esoteric-minimal-chinese-2.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "1",
+    "name": "One",
+    "subject": "a single luminous torch at the beginning of a path",
+    "file": "esoteric-minimal/numerology/1.png",
+    "source": "source-atlases/esoteric-minimal-numerology-0.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "2",
+    "name": "Two",
+    "subject": "two swans mirrored on calm water",
+    "file": "esoteric-minimal/numerology/2.png",
+    "source": "source-atlases/esoteric-minimal-numerology-0.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "3",
+    "name": "Three",
+    "subject": "three blooming flowers beneath stars",
+    "file": "esoteric-minimal/numerology/3.png",
+    "source": "source-atlases/esoteric-minimal-numerology-0.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "4",
+    "name": "Four",
+    "subject": "a strong stone gateway with four pillars",
+    "file": "esoteric-minimal/numerology/4.png",
+    "source": "source-atlases/esoteric-minimal-numerology-0.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "5",
+    "name": "Five",
+    "subject": "an adventurous winding path through five rolling hills",
+    "file": "esoteric-minimal/numerology/5.png",
+    "source": "source-atlases/esoteric-minimal-numerology-1.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "6",
+    "name": "Six",
+    "subject": "a welcoming garden cottage surrounded by roses",
+    "file": "esoteric-minimal/numerology/6.png",
+    "source": "source-atlases/esoteric-minimal-numerology-1.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "7",
+    "name": "Seven",
+    "subject": "a quiet observatory on a hill under a constellation",
+    "file": "esoteric-minimal/numerology/7.png",
+    "source": "source-atlases/esoteric-minimal-numerology-1.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "8",
+    "name": "Eight",
+    "subject": "two braided ribbons forming an elegant infinity loop",
+    "file": "esoteric-minimal/numerology/8.png",
+    "source": "source-atlases/esoteric-minimal-numerology-1.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "9",
+    "name": "Nine",
+    "subject": "a glowing lantern lighting a departing path",
+    "file": "esoteric-minimal/numerology/9.png",
+    "source": "source-atlases/esoteric-minimal-numerology-2.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "11",
+    "name": "Eleven",
+    "subject": "twin radiant lighthouses over a moonlit ocean",
+    "file": "esoteric-minimal/numerology/11.png",
+    "source": "source-atlases/esoteric-minimal-numerology-2.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "22",
+    "name": "Twenty-two",
+    "subject": "an elegant bridge being built across a river",
+    "file": "esoteric-minimal/numerology/22.png",
+    "source": "source-atlases/esoteric-minimal-numerology-2.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "key": "33",
+    "name": "Thirty-three",
+    "subject": "a sheltering tree with warm lights and generous branches",
+    "file": "esoteric-minimal/numerology/33.png",
+    "source": "source-atlases/esoteric-minimal-numerology-2.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "aries",
+    "name": "Aries",
+    "subject": "a majestic ram with curled horns on a mountain",
+    "file": "storybook-cartoon/western/aries.png",
+    "source": "source-atlases/storybook-cartoon-western-0.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "taurus",
+    "name": "Taurus",
+    "subject": "a peaceful bull in a flowering meadow",
+    "file": "storybook-cartoon/western/taurus.png",
+    "source": "source-atlases/storybook-cartoon-western-0.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "gemini",
+    "name": "Gemini",
+    "subject": "two mirrored robed twins sharing a star",
+    "file": "storybook-cartoon/western/gemini.png",
+    "source": "source-atlases/storybook-cartoon-western-0.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "cancer",
+    "name": "Cancer",
+    "subject": "a crab beside a tidal pool beneath a full moon",
+    "file": "storybook-cartoon/western/cancer.png",
+    "source": "source-atlases/storybook-cartoon-western-0.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "leo",
+    "name": "Leo",
+    "subject": "a noble lion with a radiant sun behind its mane",
+    "file": "storybook-cartoon/western/leo.png",
+    "source": "source-atlases/storybook-cartoon-western-1.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "virgo",
+    "name": "Virgo",
+    "subject": "a thoughtful harvest maiden with wheat and a lantern",
+    "file": "storybook-cartoon/western/virgo.png",
+    "source": "source-atlases/storybook-cartoon-western-1.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "libra",
+    "name": "Libra",
+    "subject": "beautiful perfectly balanced hanging scales in a celestial garden",
+    "file": "storybook-cartoon/western/libra.png",
+    "source": "source-atlases/storybook-cartoon-western-1.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "scorpio",
+    "name": "Scorpio",
+    "subject": "an elegant scorpion in a moonlit desert with small flowers",
+    "file": "storybook-cartoon/western/scorpio.png",
+    "source": "source-atlases/storybook-cartoon-western-1.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "sagittarius",
+    "name": "Sagittarius",
+    "subject": "a graceful centaur archer aiming a bow toward stars",
+    "file": "storybook-cartoon/western/sagittarius.png",
+    "source": "source-atlases/storybook-cartoon-western-2.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "capricorn",
+    "name": "Capricorn",
+    "subject": "a mythic sea-goat with curled horns and a fish tail",
+    "file": "storybook-cartoon/western/capricorn.png",
+    "source": "source-atlases/storybook-cartoon-western-2.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "aquarius",
+    "name": "Aquarius",
+    "subject": "a celestial water bearer pouring a river from a ceramic vessel",
+    "file": "storybook-cartoon/western/aquarius.png",
+    "source": "source-atlases/storybook-cartoon-western-2.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "key": "pisces",
+    "name": "Pisces",
+    "subject": "two fish swimming in a circular moonlit pool",
+    "file": "storybook-cartoon/western/pisces.png",
+    "source": "source-atlases/storybook-cartoon-western-2.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "rat",
+    "name": "Rat",
+    "subject": "an intelligent little rat with grains and a lantern",
+    "file": "storybook-cartoon/chinese/rat.png",
+    "source": "source-atlases/storybook-cartoon-chinese-0.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "ox",
+    "name": "Ox",
+    "subject": "a patient strong ox beside rice terraces",
+    "file": "storybook-cartoon/chinese/ox.png",
+    "source": "source-atlases/storybook-cartoon-chinese-0.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "tiger",
+    "name": "Tiger",
+    "subject": "a magnificent striped tiger in bamboo",
+    "file": "storybook-cartoon/chinese/tiger.png",
+    "source": "source-atlases/storybook-cartoon-chinese-0.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1535
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "rabbit",
+    "name": "Rabbit",
+    "subject": "a gentle rabbit in a moon garden",
+    "file": "storybook-cartoon/chinese/rabbit.png",
+    "source": "source-atlases/storybook-cartoon-chinese-0.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1535
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "dragon",
+    "name": "Dragon",
+    "subject": "a sinuous Chinese long dragon among clouds with NO western wings",
+    "file": "storybook-cartoon/chinese/dragon.png",
+    "source": "source-atlases/storybook-cartoon-chinese-1.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "snake",
+    "name": "Snake",
+    "subject": "an elegant coiled snake among flowering branches",
+    "file": "storybook-cartoon/chinese/snake.png",
+    "source": "source-atlases/storybook-cartoon-chinese-1.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "horse",
+    "name": "Horse",
+    "subject": "a free spirited horse running across a meadow",
+    "file": "storybook-cartoon/chinese/horse.png",
+    "source": "source-atlases/storybook-cartoon-chinese-1.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "goat",
+    "name": "Goat",
+    "subject": "a peaceful goat among mountain blossoms",
+    "file": "storybook-cartoon/chinese/goat.png",
+    "source": "source-atlases/storybook-cartoon-chinese-1.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "monkey",
+    "name": "Monkey",
+    "subject": "a playful monkey in a peach tree",
+    "file": "storybook-cartoon/chinese/monkey.png",
+    "source": "source-atlases/storybook-cartoon-chinese-2.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "rooster",
+    "name": "Rooster",
+    "subject": "a proud rooster greeting the dawn",
+    "file": "storybook-cartoon/chinese/rooster.png",
+    "source": "source-atlases/storybook-cartoon-chinese-2.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "dog",
+    "name": "Dog",
+    "subject": "a loyal friendly dog under a protective arch",
+    "file": "storybook-cartoon/chinese/dog.png",
+    "source": "source-atlases/storybook-cartoon-chinese-2.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "key": "pig",
+    "name": "Pig",
+    "subject": "a contented pig in a lush garden",
+    "file": "storybook-cartoon/chinese/pig.png",
+    "source": "source-atlases/storybook-cartoon-chinese-2.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "1",
+    "name": "One",
+    "subject": "a single luminous torch at the beginning of a path",
+    "file": "storybook-cartoon/numerology/1.png",
+    "source": "source-atlases/storybook-cartoon-numerology-0.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "2",
+    "name": "Two",
+    "subject": "two swans mirrored on calm water",
+    "file": "storybook-cartoon/numerology/2.png",
+    "source": "source-atlases/storybook-cartoon-numerology-0.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "3",
+    "name": "Three",
+    "subject": "three blooming flowers beneath stars",
+    "file": "storybook-cartoon/numerology/3.png",
+    "source": "source-atlases/storybook-cartoon-numerology-0.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "4",
+    "name": "Four",
+    "subject": "a strong stone gateway with four pillars",
+    "file": "storybook-cartoon/numerology/4.png",
+    "source": "source-atlases/storybook-cartoon-numerology-0.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "5",
+    "name": "Five",
+    "subject": "an adventurous winding path through five rolling hills",
+    "file": "storybook-cartoon/numerology/5.png",
+    "source": "source-atlases/storybook-cartoon-numerology-1.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "6",
+    "name": "Six",
+    "subject": "a welcoming garden cottage surrounded by roses",
+    "file": "storybook-cartoon/numerology/6.png",
+    "source": "source-atlases/storybook-cartoon-numerology-1.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "7",
+    "name": "Seven",
+    "subject": "a quiet observatory on a hill under a constellation",
+    "file": "storybook-cartoon/numerology/7.png",
+    "source": "source-atlases/storybook-cartoon-numerology-1.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "8",
+    "name": "Eight",
+    "subject": "two braided ribbons forming an elegant infinity loop",
+    "file": "storybook-cartoon/numerology/8.png",
+    "source": "source-atlases/storybook-cartoon-numerology-1.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "9",
+    "name": "Nine",
+    "subject": "a glowing lantern lighting a departing path",
+    "file": "storybook-cartoon/numerology/9.png",
+    "source": "source-atlases/storybook-cartoon-numerology-2.png",
+    "source_rectangle": [
+      0,
+      0,
+      512,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "11",
+    "name": "Eleven",
+    "subject": "twin radiant lighthouses over a moonlit ocean",
+    "file": "storybook-cartoon/numerology/11.png",
+    "source": "source-atlases/storybook-cartoon-numerology-2.png",
+    "source_rectangle": [
+      512,
+      0,
+      1024,
+      768
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "22",
+    "name": "Twenty-two",
+    "subject": "an elegant bridge being built across a river",
+    "file": "storybook-cartoon/numerology/22.png",
+    "source": "source-atlases/storybook-cartoon-numerology-2.png",
+    "source_rectangle": [
+      0,
+      768,
+      512,
+      1536
+    ]
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "key": "33",
+    "name": "Thirty-three",
+    "subject": "a sheltering tree with warm lights and generous branches",
+    "file": "storybook-cartoon/numerology/33.png",
+    "source": "source-atlases/storybook-cartoon-numerology-2.png",
+    "source_rectangle": [
+      512,
+      768,
+      1024,
+      1536
+    ]
+  }
+]
