@@ -1,0 +1,524 @@
+[
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "group": 0,
+    "cards": [
+      [
+        "aries",
+        "Aries",
+        "a majestic ram with curled horns on a mountain"
+      ],
+      [
+        "taurus",
+        "Taurus",
+        "a peaceful bull in a flowering meadow"
+      ],
+      [
+        "gemini",
+        "Gemini",
+        "two mirrored robed twins sharing a star"
+      ],
+      [
+        "cancer",
+        "Cancer",
+        "a crab beside a tidal pool beneath a full moon"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-western-0.png",
+    "prompt": "Reference-matched 2x2 black/gold Western astrology atlas: Aries, Taurus, Gemini, Cancer. No text. Individually typeset labels."
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "group": 1,
+    "cards": [
+      [
+        "leo",
+        "Leo",
+        "a noble lion with a radiant sun behind its mane"
+      ],
+      [
+        "virgo",
+        "Virgo",
+        "a thoughtful harvest maiden with wheat and a lantern"
+      ],
+      [
+        "libra",
+        "Libra",
+        "beautiful perfectly balanced hanging scales in a celestial garden"
+      ],
+      [
+        "scorpio",
+        "Scorpio",
+        "an elegant scorpion in a moonlit desert with small flowers"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-western-1.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW western oracle cards, faithfully matching the reference's matte black and aged gold engraved linocut illustration, warm cream highlights, tiny restrained vermilion accents, fine gold double-line border, rich antique print texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a noble lion with a radiant sun behind its mane; TOP RIGHT: a thoughtful harvest maiden with wheat and a lantern; BOTTOM LEFT: beautiful perfectly balanced hanging scales in a celestial garden; BOTTOM RIGHT: an elegant scorpion in a moonlit desert with small flowers. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "western",
+    "group": 2,
+    "cards": [
+      [
+        "sagittarius",
+        "Sagittarius",
+        "a graceful centaur archer aiming a bow toward stars"
+      ],
+      [
+        "capricorn",
+        "Capricorn",
+        "a mythic sea-goat with curled horns and a fish tail"
+      ],
+      [
+        "aquarius",
+        "Aquarius",
+        "a celestial water bearer pouring a river from a ceramic vessel"
+      ],
+      [
+        "pisces",
+        "Pisces",
+        "two fish swimming in a circular moonlit pool"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-western-2.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW western oracle cards, faithfully matching the reference's matte black and aged gold engraved linocut illustration, warm cream highlights, tiny restrained vermilion accents, fine gold double-line border, rich antique print texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a graceful centaur archer aiming a bow toward stars; TOP RIGHT: a mythic sea-goat with curled horns and a fish tail; BOTTOM LEFT: a celestial water bearer pouring a river from a ceramic vessel; BOTTOM RIGHT: two fish swimming in a circular moonlit pool. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "group": 0,
+    "cards": [
+      [
+        "rat",
+        "Rat",
+        "an intelligent little rat with grains and a lantern"
+      ],
+      [
+        "ox",
+        "Ox",
+        "a patient strong ox beside rice terraces"
+      ],
+      [
+        "tiger",
+        "Tiger",
+        "a magnificent striped tiger in bamboo"
+      ],
+      [
+        "rabbit",
+        "Rabbit",
+        "a gentle rabbit in a moon garden"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-chinese-0.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW chinese oracle cards, faithfully matching the reference's matte black and aged gold engraved linocut illustration, warm cream highlights, tiny restrained vermilion accents, fine gold double-line border, rich antique print texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: an intelligent little rat with grains and a lantern; TOP RIGHT: a patient strong ox beside rice terraces; BOTTOM LEFT: a magnificent striped tiger in bamboo; BOTTOM RIGHT: a gentle rabbit in a moon garden. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "group": 1,
+    "cards": [
+      [
+        "dragon",
+        "Dragon",
+        "a sinuous Chinese long dragon among clouds with NO western wings"
+      ],
+      [
+        "snake",
+        "Snake",
+        "an elegant coiled snake among flowering branches"
+      ],
+      [
+        "horse",
+        "Horse",
+        "a free spirited horse running across a meadow"
+      ],
+      [
+        "goat",
+        "Goat",
+        "a peaceful goat among mountain blossoms"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-chinese-1.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW chinese oracle cards, faithfully matching the reference's matte black and aged gold engraved linocut illustration, warm cream highlights, tiny restrained vermilion accents, fine gold double-line border, rich antique print texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a sinuous Chinese long dragon among clouds with NO western wings; TOP RIGHT: an elegant coiled snake among flowering branches; BOTTOM LEFT: a free spirited horse running across a meadow; BOTTOM RIGHT: a peaceful goat among mountain blossoms. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "chinese",
+    "group": 2,
+    "cards": [
+      [
+        "monkey",
+        "Monkey",
+        "a playful monkey in a peach tree"
+      ],
+      [
+        "rooster",
+        "Rooster",
+        "a proud rooster greeting the dawn"
+      ],
+      [
+        "dog",
+        "Dog",
+        "a loyal friendly dog under a protective arch"
+      ],
+      [
+        "pig",
+        "Pig",
+        "a contented pig in a lush garden"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-chinese-2.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW chinese oracle cards, faithfully matching the reference's matte black and aged gold engraved linocut illustration, warm cream highlights, tiny restrained vermilion accents, fine gold double-line border, rich antique print texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a playful monkey in a peach tree; TOP RIGHT: a proud rooster greeting the dawn; BOTTOM LEFT: a loyal friendly dog under a protective arch; BOTTOM RIGHT: a contented pig in a lush garden. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "group": 0,
+    "cards": [
+      [
+        "1",
+        "One",
+        "a single luminous torch at the beginning of a path"
+      ],
+      [
+        "2",
+        "Two",
+        "two swans mirrored on calm water"
+      ],
+      [
+        "3",
+        "Three",
+        "three blooming flowers beneath stars"
+      ],
+      [
+        "4",
+        "Four",
+        "a strong stone gateway with four pillars"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-numerology-0.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW numerology oracle cards, faithfully matching the reference's matte black and aged gold engraved linocut illustration, warm cream highlights, tiny restrained vermilion accents, fine gold double-line border, rich antique print texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a single luminous torch at the beginning of a path; TOP RIGHT: two swans mirrored on calm water; BOTTOM LEFT: three blooming flowers beneath stars; BOTTOM RIGHT: a strong stone gateway with four pillars. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "group": 1,
+    "cards": [
+      [
+        "5",
+        "Five",
+        "an adventurous winding path through five rolling hills"
+      ],
+      [
+        "6",
+        "Six",
+        "a welcoming garden cottage surrounded by roses"
+      ],
+      [
+        "7",
+        "Seven",
+        "a quiet observatory on a hill under a constellation"
+      ],
+      [
+        "8",
+        "Eight",
+        "two braided ribbons forming an elegant infinity loop"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-numerology-1.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW numerology oracle cards, faithfully matching the reference's matte black and aged gold engraved linocut illustration, warm cream highlights, tiny restrained vermilion accents, fine gold double-line border, rich antique print texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: an adventurous winding path through five rolling hills; TOP RIGHT: a welcoming garden cottage surrounded by roses; BOTTOM LEFT: a quiet observatory on a hill under a constellation; BOTTOM RIGHT: two braided ribbons forming an elegant infinity loop. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "esoteric-minimal",
+    "family": "numerology",
+    "group": 2,
+    "cards": [
+      [
+        "9",
+        "Nine",
+        "a glowing lantern lighting a departing path"
+      ],
+      [
+        "11",
+        "Eleven",
+        "twin radiant lighthouses over a moonlit ocean"
+      ],
+      [
+        "22",
+        "Twenty-two",
+        "an elegant bridge being built across a river"
+      ],
+      [
+        "33",
+        "Thirty-three",
+        "a sheltering tree with warm lights and generous branches"
+      ]
+    ],
+    "source": "source-atlases/esoteric-minimal-numerology-2.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW numerology oracle cards, faithfully matching the reference's matte black and aged gold engraved linocut illustration, warm cream highlights, tiny restrained vermilion accents, fine gold double-line border, rich antique print texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a glowing lantern lighting a departing path; TOP RIGHT: twin radiant lighthouses over a moonlit ocean; BOTTOM LEFT: an elegant bridge being built across a river; BOTTOM RIGHT: a sheltering tree with warm lights and generous branches. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "group": 0,
+    "cards": [
+      [
+        "aries",
+        "Aries",
+        "a majestic ram with curled horns on a mountain"
+      ],
+      [
+        "taurus",
+        "Taurus",
+        "a peaceful bull in a flowering meadow"
+      ],
+      [
+        "gemini",
+        "Gemini",
+        "two mirrored robed twins sharing a star"
+      ],
+      [
+        "cancer",
+        "Cancer",
+        "a crab beside a tidal pool beneath a full moon"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-western-0.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW western oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a majestic ram with curled horns on a mountain; TOP RIGHT: a peaceful bull in a flowering meadow; BOTTOM LEFT: two mirrored robed twins sharing a star; BOTTOM RIGHT: a crab beside a tidal pool beneath a full moon. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "group": 1,
+    "cards": [
+      [
+        "leo",
+        "Leo",
+        "a noble lion with a radiant sun behind its mane"
+      ],
+      [
+        "virgo",
+        "Virgo",
+        "a thoughtful harvest maiden with wheat and a lantern"
+      ],
+      [
+        "libra",
+        "Libra",
+        "beautiful perfectly balanced hanging scales in a celestial garden"
+      ],
+      [
+        "scorpio",
+        "Scorpio",
+        "an elegant scorpion in a moonlit desert with small flowers"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-western-1.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW western oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a noble lion with a radiant sun behind its mane; TOP RIGHT: a thoughtful harvest maiden with wheat and a lantern; BOTTOM LEFT: beautiful perfectly balanced hanging scales in a celestial garden; BOTTOM RIGHT: an elegant scorpion in a moonlit desert with small flowers. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "western",
+    "group": 2,
+    "cards": [
+      [
+        "sagittarius",
+        "Sagittarius",
+        "a graceful centaur archer aiming a bow toward stars"
+      ],
+      [
+        "capricorn",
+        "Capricorn",
+        "a mythic sea-goat with curled horns and a fish tail"
+      ],
+      [
+        "aquarius",
+        "Aquarius",
+        "a celestial water bearer pouring a river from a ceramic vessel"
+      ],
+      [
+        "pisces",
+        "Pisces",
+        "two fish swimming in a circular moonlit pool"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-western-2.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW western oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a graceful centaur archer aiming a bow toward stars; TOP RIGHT: a mythic sea-goat with curled horns and a fish tail; BOTTOM LEFT: a celestial water bearer pouring a river from a ceramic vessel; BOTTOM RIGHT: two fish swimming in a circular moonlit pool. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "group": 0,
+    "cards": [
+      [
+        "rat",
+        "Rat",
+        "an intelligent little rat with grains and a lantern"
+      ],
+      [
+        "ox",
+        "Ox",
+        "a patient strong ox beside rice terraces"
+      ],
+      [
+        "tiger",
+        "Tiger",
+        "a magnificent striped tiger in bamboo"
+      ],
+      [
+        "rabbit",
+        "Rabbit",
+        "a gentle rabbit in a moon garden"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-chinese-0.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW chinese oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: an intelligent little rat with grains and a lantern; TOP RIGHT: a patient strong ox beside rice terraces; BOTTOM LEFT: a magnificent striped tiger in bamboo; BOTTOM RIGHT: a gentle rabbit in a moon garden. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "group": 1,
+    "cards": [
+      [
+        "dragon",
+        "Dragon",
+        "a sinuous Chinese long dragon among clouds with NO western wings"
+      ],
+      [
+        "snake",
+        "Snake",
+        "an elegant coiled snake among flowering branches"
+      ],
+      [
+        "horse",
+        "Horse",
+        "a free spirited horse running across a meadow"
+      ],
+      [
+        "goat",
+        "Goat",
+        "a peaceful goat among mountain blossoms"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-chinese-1.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW chinese oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a sinuous Chinese long dragon among clouds with NO western wings; TOP RIGHT: an elegant coiled snake among flowering branches; BOTTOM LEFT: a free spirited horse running across a meadow; BOTTOM RIGHT: a peaceful goat among mountain blossoms. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "chinese",
+    "group": 2,
+    "cards": [
+      [
+        "monkey",
+        "Monkey",
+        "a playful monkey in a peach tree"
+      ],
+      [
+        "rooster",
+        "Rooster",
+        "a proud rooster greeting the dawn"
+      ],
+      [
+        "dog",
+        "Dog",
+        "a loyal friendly dog under a protective arch"
+      ],
+      [
+        "pig",
+        "Pig",
+        "a contented pig in a lush garden"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-chinese-2.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW chinese oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a playful monkey in a peach tree; TOP RIGHT: a proud rooster greeting the dawn; BOTTOM LEFT: a loyal friendly dog under a protective arch; BOTTOM RIGHT: a contented pig in a lush garden. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "group": 0,
+    "cards": [
+      [
+        "1",
+        "One",
+        "a single luminous torch at the beginning of a path"
+      ],
+      [
+        "2",
+        "Two",
+        "two swans mirrored on calm water"
+      ],
+      [
+        "3",
+        "Three",
+        "three blooming flowers beneath stars"
+      ],
+      [
+        "4",
+        "Four",
+        "a strong stone gateway with four pillars"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-numerology-0.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW numerology oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a single luminous torch at the beginning of a path; TOP RIGHT: two swans mirrored on calm water; BOTTOM LEFT: three blooming flowers beneath stars; BOTTOM RIGHT: a strong stone gateway with four pillars. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "group": 1,
+    "cards": [
+      [
+        "5",
+        "Five",
+        "an adventurous winding path through five rolling hills"
+      ],
+      [
+        "6",
+        "Six",
+        "a welcoming garden cottage surrounded by roses"
+      ],
+      [
+        "7",
+        "Seven",
+        "a quiet observatory on a hill under a constellation"
+      ],
+      [
+        "8",
+        "Eight",
+        "two braided ribbons forming an elegant infinity loop"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-numerology-1.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW numerology oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: an adventurous winding path through five rolling hills; TOP RIGHT: a welcoming garden cottage surrounded by roses; BOTTOM LEFT: a quiet observatory on a hill under a constellation; BOTTOM RIGHT: two braided ribbons forming an elegant infinity loop. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  },
+  {
+    "style": "storybook-cartoon",
+    "family": "numerology",
+    "group": 2,
+    "cards": [
+      [
+        "9",
+        "Nine",
+        "a glowing lantern lighting a departing path"
+      ],
+      [
+        "11",
+        "Eleven",
+        "twin radiant lighthouses over a moonlit ocean"
+      ],
+      [
+        "22",
+        "Twenty-two",
+        "an elegant bridge being built across a river"
+      ],
+      [
+        "33",
+        "Thirty-three",
+        "a sheltering tree with warm lights and generous branches"
+      ]
+    ],
+    "source": "source-atlases/storybook-cartoon-numerology-2.png",
+    "prompt": "Create a production illustration atlas for FOUR NEW numerology oracle cards, faithfully matching the reference's whimsical storybook cartoon illustration, clean black outlines, rich turquoise skies, sage gardens, peach and lavender hills, golden yellow borders, charming original characters, hand-painted texture. This is a new asset, not a replacement of the reference. Output PORTRAIT 1024x1536, EXACTLY TWO columns and TWO rows, equal edge-to-edge panels, no gutters. Each quadrant is an independent complete 512x768 portrait card with its own border inset 12px. STRICT panel assignment: TOP LEFT: a glowing lantern lighting a departing path; TOP RIGHT: twin radiant lighthouses over a moonlit ocean; BOTTOM LEFT: an elegant bridge being built across a river; BOTTOM RIGHT: a sheltering tree with warm lights and generous branches. Each scene occupies the middle 75 percent. Reserve a quiet 55px tall bottom zone inside each panel border for code-native names; NO text, NO letters, NO numbers, no zodiac glyphs, no watermark anywhere. Distinct fully finished illustrations in every panel, high readability at small video size. Do not draw an overall atlas border. Exact 2x2 packing at x=512 and y=768, four separate complete designs."
+  }
+]
