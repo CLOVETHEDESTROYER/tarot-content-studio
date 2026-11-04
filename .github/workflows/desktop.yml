@@ -38,6 +38,8 @@ jobs:
           npm ci --no-audit --no-fund
           npm run build
       - run: python -m unittest discover -s tests -v
+      - name: Check actual installer success and automatic rollback with isolated apps
+        run: python scripts/check-installer.py
       - if: runner.os == 'macOS'
         run: python scripts/build-mac-desktop.py
       - if: runner.os == 'Windows'

@@ -12,6 +12,9 @@ from .render import render_frame,encode_video
 
 
 def verify():
+    import keyring
+    backend=type(keyring.get_keyring()).__module__
+    assert backend in ('keyring.backends.Windows','keyring.backends.macOS'),backend
     assert all(d['ready'] for d in deck_options(ROOT))
     assert all(c['ready'] for style in ('esoteric-minimal','storybook-cartoon') for c in gallery(style))
     assert (ROOT/'frontend/dist/index.html').is_file()
@@ -28,4 +31,4 @@ def verify():
         encode_video(draft,manifest,raw,folder/'test.mp4',lambda *args:None)
         decoded=subprocess.run([ffmpeg(),'-hide_banner','-i',str(folder/'test.mp4'),'-f','null','-'],capture_output=True,text=True,timeout=30)
         assert decoded.returncode==0 and '1080x1920' in decoded.stderr and '30 fps' in decoded.stderr
-    return dict(passed=True,bundledDecks=3,dailyCards=72,frontend=True,nativeVoice=default_voice(),portraitMp4Decode=True)
+    return dict(passed=True,bundledDecks=3,dailyCards=72,frontend=True,nativeVoice=default_voice(),portraitMp4Decode=True,credentialBackend=backend)

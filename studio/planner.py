@@ -133,6 +133,12 @@ class DailyPlanner:
             entry.update(status='failed',error=message[:500]);self.put(entry)
 
     def tick(self,current=None):
+        from . import operations
+        with operations.LOCK:
+            if operations.installing:return
+            return self._tick(current)
+
+    def _tick(self,current=None):
         config=self.config()
         if not config['enabled']:return
         current=current or datetime.now(timezone.utc)

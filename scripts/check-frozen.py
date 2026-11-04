@@ -1,5 +1,6 @@
 """Run offline and native-window checks on the executable that will ship."""
 import json
+import argparse
 import os
 import subprocess
 import sys
@@ -7,8 +8,9 @@ import tempfile
 import time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
+parser=argparse.ArgumentParser();parser.add_argument('--distpath',type=Path,default=ROOT/'desktop-dist');args=parser.parse_args()
 mac=sys.platform=='darwin'
-app=ROOT/'desktop-dist'/('StarPower Content Studio.app' if mac else 'StarPower Content Studio')
+app=args.distpath.resolve()/('StarPower Content Studio.app' if mac else 'StarPower Content Studio')
 exe=app/('Contents/MacOS/StarPower Content Studio' if mac else 'StarPower Content Studio.exe')
 with tempfile.TemporaryDirectory(prefix='starpower-frozen-') as temporary:
     folder=Path(temporary);env={**os.environ,'STUDIO_DATA_DIR':str(folder/'data'),'STUDIO_EXPORT_DIR':str(folder/'exports'),

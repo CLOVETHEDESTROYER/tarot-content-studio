@@ -301,6 +301,12 @@ class AgentJobs:
         self.event('publication-reported',data['assetId'],report);return report
 
     def poll(self):
+        from . import operations
+        with operations.LOCK:
+            if operations.installing:return
+            return self._poll()
+
+    def _poll(self):
         root=Path(self.config()['folder'])
         if not root.is_dir():return
         for folder in ('Requests','Reports'):
