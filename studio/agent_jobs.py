@@ -61,7 +61,7 @@ def atomic_json(root,path,value):
 
 
 def validate_request(data):
-    allowed={'schemaVersion','kind','requestId','brief','startDate','days','editions','timezone','morningType','eveningType','style','deck','voice','writer','components','duration','includeNews','campaign','requestedBy'}
+    allowed={'schemaVersion','kind','requestId','brief','startDate','days','editions','timezone','morningType','eveningType','style','deck','voice','writer','components','duration','includeNews','campaign','requestedBy','readingTypes'}
     if not isinstance(data,dict) or set(data)-allowed:raise ValueError('Use only the documented reading-week request fields.')
     if type(data.get('schemaVersion')) is not int or data['schemaVersion']!=1 or data.get('kind') not in ('reading-week','connection-test') or not valid_id(data.get('requestId')):
         raise ValueError('Use schemaVersion 1, reading-week or connection-test, and a safe requestId.')
@@ -85,6 +85,11 @@ def validate_request(data):
         result[key]=value
     if result['kind']=='connection-test':
         result.update(days=1,editions=['morning'],morningType='numerology',voice='silent',writer='local',duration=30,includeNews=False)
+    if 'readingTypes' in data:
+        kinds=data['readingTypes']
+        if not isinstance(kinds,list) or not kinds or len(kinds)>5 or len(kinds)!=len(set(kinds)) or any(k not in TYPES for k in kinds):raise ValueError('Choose one to five unique reading types.')
+        result['readingTypes']=kinds
+    if result['kind']=='connection-test':result.pop('readingTypes',None)
     request_items(result)  # validate every resolved day/type before accepting
     return result
 
@@ -94,10 +99,10 @@ def request_items(request):
     for offset in range(request['days']):
         day=(start+timedelta(days=offset)).isoformat()
         for edition in request['editions']:
-            kind=request[edition+'Type']
-            settings=validate_daily_settings({**request,'date':day,'edition':edition,'reading_type':kind,
-                'include_news':request['includeNews'],'duration':request.get('duration',90 if kind=='combined' else 45 if kind=='numerology' else 60)})
-            items.append(dict(date=day,edition=edition,settings=settings,target=edition_instant(day,edition,request['timezone']).isoformat(),status='pending'))
+            for kind in request.get('readingTypes',[request[edition+'Type']]):
+                settings=validate_daily_settings({**request,'date':day,'edition':edition,'reading_type':kind,
+                    'include_news':request['includeNews'],'duration':request.get('duration',90 if kind=='combined' else 45 if kind=='numerology' else 60)})
+                items.append(dict(date=day,edition=edition,readingType=kind,settings=settings,target=edition_instant(day,edition,request['timezone']).isoformat(),status='pending'))
     return items
 
 
@@ -145,7 +150,7 @@ class AgentJobs:
     def catalog(self):
         return dict(schemaVersion=1,application='starpower-content-studio',version=VERSION,requestKinds=['reading-week','connection-test'],
             readingTypes=TYPES,components=list(COMPONENTS),styles=STYLES,durations=list(DURATIONS),voices=list(VOICES),defaultVoice=default_voice(),
-            timezone='America/Denver',slots=dict(morning='06:00',evening='18:00'),maxDays=7,maxAssets=14,
+            timezone='America/Denver',slots=dict(morning='06:00',evening='18:00'),maxDays=7,maxAssets=70,supportsReadingTypes=True,
             newsPolicy='Advance weekly batches omit news. Use a single-day request near publication for current headlines.',
             publishing='Muse schedules/posts through separately authorized platform access; Reports record its acknowledgements only.')
 
@@ -260,7 +265,7 @@ class AgentJobs:
             record.update(status='failed',error=message[:700]);self.put(record);self.event('request-failed',key,dict(error=record['error']))
 
     def copy_asset(self,root,record,item,job):
-        folder=inside(root,root/'Ready'/record['id']/(item['date']+'-'+item['edition']));folder.mkdir(parents=True,exist_ok=True)
+        folder=inside(root,root/'Ready'/record['id']/(item['date']+'-'+item['edition']+('-'+item['settings']['reading_type'] if record['request'].get('readingTypes') else '')));folder.mkdir(parents=True,exist_ok=True)
         files={};source=EXPORTS/job['id']
         for name in MEDIA:
             if name not in job.get('files',[]):continue
@@ -268,7 +273,7 @@ class AgentJobs:
             shutil.copyfile(source/name,temporary);temporary.replace(target)
             files[name]=dict(path=target.relative_to(root).as_posix(),sha256=checksum(target),bytes=target.stat().st_size)
         if 'reading.mp4' not in files:raise ValueError('The saved export has no ready MP4. Review the original export before retrying.')
-        return dict(id=job['id'],readingId=job['draft_id'],revision=job['revision'],date=item['date'],edition=item['edition'],timezone=record['request']['timezone'],
+        return dict(id=job['id'],readingId=job['draft_id'],revision=job['revision'],date=item['date'],edition=item['edition'],readingType=item['settings']['reading_type'],timezone=record['request']['timezone'],
                     proposedPublishAt=item['target'] if record['request']['kind']!='connection-test' else None,
                     publicationAllowed=record['request']['kind']!='connection-test',files=files)
 

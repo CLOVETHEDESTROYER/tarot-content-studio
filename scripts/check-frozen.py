@@ -8,13 +8,13 @@ import tempfile
 import time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
-parser=argparse.ArgumentParser();parser.add_argument('--distpath',type=Path,default=ROOT/'desktop-dist');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--distpath',type=Path,default=ROOT/'desktop-dist');parser.add_argument('--port',type=int,default=5059);args=parser.parse_args()
 mac=sys.platform=='darwin'
 app=args.distpath.resolve()/('StarPower Content Studio.app' if mac else 'StarPower Content Studio')
 exe=app/('Contents/MacOS/StarPower Content Studio' if mac else 'StarPower Content Studio.exe')
 with tempfile.TemporaryDirectory(prefix='starpower-frozen-') as temporary:
     folder=Path(temporary);env={**os.environ,'STUDIO_DATA_DIR':str(folder/'data'),'STUDIO_EXPORT_DIR':str(folder/'exports'),
-        'STUDIO_PORT':'5059','PYINSTALLER_RESET_ENVIRONMENT':'1'}
+        'STUDIO_PORT':str(args.port),'PYINSTALLER_RESET_ENVIRONMENT':'1'}
     offline=folder/'offline.json'
     subprocess.run([str(exe),'--self-test','--report',str(offline)],env=env,check=True,timeout=240)
     result=json.loads(offline.read_text());assert result['passed'];print(json.dumps(result))

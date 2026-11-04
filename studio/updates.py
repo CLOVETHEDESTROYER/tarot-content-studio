@@ -211,6 +211,8 @@ class DesktopUpdates:
     def _busy(self):
         if not self.app:raise ValueError('Close the separate browser/server studio and relaunch this desktop app before installing updates.')
         store=self.app.extensions['studio_store']
+        live=self.app.extensions.get('live_instances',{}).get('studio')
+        if live and (live.snapshot()['running'] or live.snapshot()['processing']):return True
         return (any(j['status'] in ('queued','running') for j in store.jobs())
             or any(e['status'] in ('preparing','rendering') for e in self.app.extensions['studio_planner'].entries())
             or any(r['status'] in ('queued','running') for r in self.app.extensions['studio_agent'].snapshot()['requests']))

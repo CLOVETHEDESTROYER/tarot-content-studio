@@ -1,5 +1,9 @@
 # StarPower Tarot local content exchange — schema 1
 
+## Separate reading series (studio v3)
+
+For one Western, one Chinese and one numerology reading each day, include `readingTypes: ["western", "chinese", "numerology"]` and `editions: ["morning"]` in a normal reading-week request. Seven days return 21 videos; both editions return 42. The list applies to each selected edition. Omit readingTypes to retain morningType/eveningType behavior. Each date/edition/timezone/type is reserved independently. Use the returned file paths and checksums; multi-series folders include the type and assets include readingType. Never submit separate changed-settings requests to overwrite a reserved type. Refresh catalog.json and verify its checksum before relying on this capability.
+
 Use this dedicated Tarot exchange separately from ZenWave. Do not change ZenWave's folder, requests, schedules, permissions, or database. A storage connector must actually be able to write request JSON and retrieve finished videos. Browser access alone does not establish access to local files.
 
 The operator uses Content Studio → History & Agent Jobs → Prepare exchange. Watch inbox enables local processing while the studio and computer stay awake. It resumes when the studio restarts if left enabled. You may use separately authorized local-folder access or a verified Drive-synced folder; the studio does not create a Drive connection, public endpoint, Muse login, or Facebook connection.

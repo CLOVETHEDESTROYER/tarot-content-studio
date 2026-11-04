@@ -79,18 +79,20 @@ class DailyPlanner:
             day=(current.date()+timedelta(days=offset)).isoformat()
             for edition in ('morning','evening'):
                 target=edition_instant(day,edition,config['timezone'])
-                key=self.key(day,edition,config['timezone'])
+                kind=config[edition+'_type'];key=self.key(day,edition,config['timezone'],kind)
+                old=existing.get(self.key(day,edition,config['timezone']))
+                if old and old['reading_type']==kind:key=old['id']
                 base=dict(id=key,date=day,edition=edition,timezone=config['timezone'],target=target.isoformat(),
                           reading_type=config[edition+'_type'],status='past' if target<current else 'planned',error='')
                 result.append(existing.get(key,base))
         return result
 
     @staticmethod
-    def key(day,edition,zone):return hashlib.sha256(f'{day}|{edition}|{zone}'.encode()).hexdigest()[:24]
+    def key(day,edition,zone,kind=None):return hashlib.sha256((f'{day}|{edition}|{zone}'+(f'|{kind}' if kind else '')).encode()).hexdigest()[:24]
 
     @generation_action
     def prepare(self,day,edition,retry=False,settings_override=None):
-        config=self.config();target=edition_instant(day,edition,config['timezone']);key=self.key(day,edition,config['timezone'])
+        config=self.config();target=edition_instant(day,edition,config['timezone']);legacy_key=self.key(day,edition,config['timezone'])
         kind=config[edition+'_type']
         settings=validate_daily_settings({**config,'date':day,'edition':edition,'reading_type':kind,
                                          'duration':90 if kind=='combined' else 45 if kind=='numerology' else 60})
@@ -98,6 +100,14 @@ class DailyPlanner:
             settings=validate_daily_settings({**settings_override,'date':day,'edition':edition})
             if settings['timezone']!=config['timezone']:raise ValueError('Use the planner timezone for weekly editions.')
             kind=settings['reading_type']
+        key=self.key(day,edition,config['timezone'],kind)
+        if retry and settings_override is None:
+            previous=next((e for e in self.entries() if e['date']==day and e['edition']==edition and e['status']=='failed' and e.get('draft_id')),None)
+            if previous:key=previous['id']
+        with self.store.connect() as db:
+            old=db.execute('SELECT body FROM editions WHERE id=?',(legacy_key,)).fetchone()
+        if old and json.loads(old['body'])['reading_type']==kind:key=legacy_key
+        elif settings_override is None and old:key=legacy_key  # A manual retry preserves its original draft.
         try:self.get_entry(key)  # reconcile a finished/failed render before deciding whether to retry
         except KeyError:pass
         with self.store.connect() as db:

@@ -97,6 +97,19 @@ class AgentHistoryTests(unittest.TestCase):
         self.assertEqual(self.jobs_count,2)
         self.assertEqual([a['id'] for a in first['assets']],[a['id'] for a in second['assets']])
 
+    def test_three_daily_series_keep_separate_media_and_replay_without_regenerating(self):
+        value=request('three-series',readingTypes=['western','chinese','numerology'])
+        value.update(days=7,editions=['morning'])
+        record=self.complete(value)
+        self.assertEqual(record['status'],'complete',record.get('error'))
+        self.assertEqual(len(record['assets']),21);self.assertEqual(self.jobs_count,21)
+        paths=[a['files']['reading.mp4']['path'] for a in record['assets']]
+        self.assertEqual(len(set(paths)),21)
+        self.assertEqual({a['readingType'] for a in record['assets']},{'western','chinese','numerology'})
+        self.assertTrue(all((Path(record['exchangeRoot'])/p).is_file() for p in paths))
+        replay={**value,'requestId':'three-series-again'}
+        self.complete(replay);self.assertEqual(self.jobs_count,21)
+
     def test_same_slot_with_changed_settings_is_not_overwritten(self):
         self.complete();changed=request('new-style');changed['style']='storybook-cartoon'
         with self.assertLogs(level='ERROR'):second=self.complete(changed)

@@ -1,5 +1,7 @@
 # Desktop installation and updates
 
+Version 3 includes Live Studio and the full card library in the same desktop app. End any live session before installing an update; active live sessions join batches and exports in the installation wait checks.
+
 Download the latest `desktop-v…` release while signed in to the private repository:
 https://github.com/CLOVETHEDESTROYER/tarot-content-studio/releases/latest
 

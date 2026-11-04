@@ -17,7 +17,7 @@ def main():
     command=[sys.executable,'-m','PyInstaller','--noconfirm','--clean','--onedir','--windowed','--name','StarPower Content Studio',
         '--distpath',str(args.distpath),'--workpath',str(build/'work'),'--specpath',str(build),'--icon',str(build/'studio.ico'),
         '--manifest',str(ROOT/'resources/windows.manifest'),
-        '--collect-all','webview','--collect-all','imageio_ffmpeg','--collect-all','clr_loader','--collect-all','keyring','--hidden-import','studio.speech_worker',
+        '--collect-all','TikTokLive','--collect-all','TikTokLiveProto','--collect-all','EulerApiSdk','--collect-all','webview','--collect-all','imageio_ffmpeg','--collect-all','clr_loader','--collect-all','keyring','--hidden-import','studio.speech_worker',
         '--hidden-import','studio.desktop_smoke','--hidden-import','webview.platforms.edgechromium','--hidden-import','webview.platforms.winforms',
         '--exclude-module','PyQt5','--exclude-module','PyQt6','--exclude-module','PySide2','--exclude-module','PySide6']
     for source,target in [('assets','assets'),('frontend/dist','frontend/dist'),('resources','resources'),('scripts/speak.ps1','scripts')]:command+=['--add-data',str(ROOT/source)+';'+target]

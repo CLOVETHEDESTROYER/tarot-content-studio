@@ -1,5 +1,7 @@
 # Meta Muse and the Tarot content studio
 
+**Studio v3:** choose Separate reading series for independent Western astrology, Chinese astrology and numerology videos on each day. The default is 21 videos per week (morning); both editions produce 42. Requests use `readingTypes: ["western", "chinese", "numerology"]` with `editions: ["morning"]` or both editions. Existing morningType/eveningType requests still work. Prepare the exchange again to refresh its catalog and agent instructions. See [UNIFIED-STUDIO.md](UNIFIED-STUDIO.md).
+
 Open http://127.0.0.1:5057 and choose **History & Agent Jobs**. This implements the same local-file handoff used by ZenWave's History & Agent Jobs section, with a separate Tarot exchange and date-based production history.
 
 ## Responsibilities

@@ -1,9 +1,11 @@
-Native desktop packages for Intel Macs running macOS Sequoia 15 or newer and Windows x64.
+Unified StarPower Content Studio 3.0
 
-- The complete studio, artwork, local narration and video renderer are included. Python and Node installation are unnecessary.
-- App Updates checks this private repository, verifies the downloaded package, and offers Install & Relaunch.
-- Updates wait for active work, retain the previous app, and check the new native window before completing. Failed startup automatically restores the previous app.
-- Readings, exports, Google Drive exchange settings, Muse requests, and publication history stay outside the application and remain in place.
+- Live Studio, the complete card library and longer spreads, daily content, exports, Muse jobs and updates are now in one desktop app.
+- Live requests support Tarot, Western astrology, Chinese astrology, Numerology and Combined, using the shared date calculations and illustrated cards. Original approvals, queue, cooldown, cadence, narration, captions, animated overlay and saved starter remain available.
+- Completed live readings are saved in the shared Library.
+- Muse can generate three separate daily series: 21 videos per week, or 42 with both daily editions. Multi-series files and history remain separate and replay-safe.
+- Read-only broadcast access remains isolated from the editor and host controls. Existing tunnels need the new read-only service address and a fresh broadcast link.
+- Updates wait for running live sessions as well as batches/exports. Your data and exchange stay outside the application.
 
 Mac: download the Mac-Intel ZIP, extract it, and move StarPower Content Studio.app to your user Applications folder. This personal build is ad-hoc signed, not Apple notarized; on first launch use macOS System Settings → Privacy & Security → Open Anyway if macOS blocks it.
 

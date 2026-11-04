@@ -23,7 +23,7 @@ def main():
         '--name','StarPower Content Studio','--distpath',str(ROOT/'desktop-dist'),
         '--workpath',str(build/'work'),'--specpath',str(build),'--icon',str(build/'studio.icns'),
         '--osx-bundle-identifier',metadata['bundleIdentifier'],'--target-architecture','x86_64',
-        '--collect-all','webview','--collect-all','imageio_ffmpeg','--collect-all','keyring',
+        '--collect-all','TikTokLive','--collect-all','TikTokLiveProto','--collect-all','EulerApiSdk','--collect-all','webview','--collect-all','imageio_ffmpeg','--collect-all','keyring',
         '--hidden-import','webview.platforms.cocoa','--hidden-import','studio.desktop_smoke',
         '--hidden-import','studio.speech_worker','--exclude-module','PyQt5','--exclude-module','PyQt6',
         '--exclude-module','PySide2','--exclude-module','PySide6']

@@ -1,0 +1,150 @@
+/* ZenWave's signal lines and cyan accents belong only to the LIVE collaboration. */
+:root { --signal-cyan: #72e7f4; --signal-lilac: #b28af5; }
+.studio-header {
+  background: #08090b url('/static/img/live-collab-banner.jpg') center / cover;
+  color: #fff6e8;
+  border-bottom: 1px solid #a18c69;
+  min-height: 112px;
+}
+.studio-identity { display: flex; align-items: center; gap: 26px; min-width: 0; }
+.studio-header .studio-brand { color: #fff6e8; }
+.studio-header .studio-brand small { color: #d8ba83; }
+.collab-divider { font: 300 28px/1 'Segoe UI', sans-serif; color: #aab6c8; }
+.zenwave-partner { display: flex; align-items: center; gap: 12px; }
+.zenwave-partner > img, .zenwave-mark { object-fit: contain; mix-blend-mode: screen; }
+.zenwave-partner > span { font: 400 25px/1.2 Impact, 'Arial Narrow', sans-serif; text-transform: uppercase; }
+.zenwave-partner small { display: block; margin-top: 6px; color: #c7cbd4; font: 12px/1.5 'Segoe UI', sans-serif; text-transform: none; }
+.studio button, .broadcast-body button, .broadcast-link {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid #a68c60;
+  border-radius: 6px;
+  background: #15151b url('/static/img/live-button-signal.jpg') center / 100% 100% no-repeat;
+  color: #fff7ea;
+  box-shadow: 0 2px 5px #11101814;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 1px 2px #000;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.studio button::after, .broadcast-body button::after, .broadcast-link::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid #d8ba835c;
+  border-radius: 3px;
+  pointer-events: none;
+}
+.studio button.secondary {
+  background: #f8edf1 url('/static/img/live-button-paper.jpg') center / 100% 100% no-repeat;
+  color: #61273f;
+  border-color: #ae8a9b;
+  text-shadow: none;
+  box-shadow: none;
+}
+.studio button:hover, .broadcast-body button:hover, .broadcast-link:hover {
+  filter: none;
+  border-color: #277d88;
+  box-shadow: 0 0 0 2px #72e7f433;
+}
+.studio button:active, .broadcast-body button:active { box-shadow: inset 0 2px 5px #0003; }
+.studio button:focus-visible, .broadcast-body button:focus-visible, .broadcast-link:focus-visible {
+  outline: 3px solid #257480;
+  outline-offset: 3px;
+}
+.studio button:disabled, .broadcast-body button:disabled {
+  opacity: 1;
+  background: #e2dce1;
+  color: #665e68;
+  border-color: #b7aeb9;
+  text-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+.studio button:disabled::after { border-color: #c7bec9; }
+.broadcast-link { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 12px 18px; font: 600 13px/1.5 Cinzel, Georgia, serif; text-decoration: none; }
+.studio input:focus-visible, .studio select:focus-visible { outline: 2px solid #257480; outline-offset: 2px; }
+.studio .status { color: #265f66; }
+.studio #countdown { border-bottom: 1px solid #7bced8; padding-bottom: 4px; }
+.broadcast-brand {
+  display: grid;
+  grid-template-rows: 30px 72px 68px 30px;
+  row-gap: 2px;
+  align-content: center;
+  background: #08090bf5 url('/static/img/live-collab-banner.jpg') center / cover;
+  border-top: 1px solid #d8ba83;
+  border-bottom: 1px solid #497780;
+  padding: 12px 18px;
+}
+.broadcast-brand > p { font-size: 24px; margin: 0; line-height: 1.25; }
+.broadcast-brand p:last-child { font-size: 22px; color: #e6d4bd; justify-self: center; padding: 0 12px; background: #08090be8; }
+.broadcast-brand h1 { font-size: 52px; line-height: 1.2; }
+.broadcast-marks { display: flex; align-items: center; justify-content: center; gap: 22px; height: 72px; margin: 0; }
+.broadcast-marks img { margin: 0; max-height: 68px; }
+.broadcast-marks > span { font: 300 30px 'Segoe UI',sans-serif; color: #aeb7c9; }
+.broadcast-viewer, .broadcast-footer {
+  position: relative;
+  isolation: isolate;
+  border: 2px solid #d8ba83;
+  background: #12372f;
+  box-shadow: inset 0 0 0 6px #12372f, inset 0 0 0 7px #d8ba8370;
+}
+.broadcast-viewer::before, .broadcast-footer::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(90deg, #12372f15, #12372ff5 24%, #12372ff5 76%, #12372f15),
+    url('/static/img/live-collab-banner.jpg') center / cover;
+  opacity: .65;
+}
+.broadcast-viewer::after {
+  content: '';
+  position: absolute;
+  inset: 32px auto 32px 24px;
+  width: 104px;
+  z-index: -1;
+  background: url('/static/brand/glyph-gold.png') center / contain no-repeat;
+  opacity: .22;
+  pointer-events: none;
+}
+.broadcast-viewer { padding: 24px 100px; }
+.broadcast-footer { padding: 20px 72px; overflow: hidden; }
+.broadcast-footer::before { transform: scaleX(-1); opacity: .5; }
+.broadcast-caption {
+  position: relative;
+  isolation: isolate;
+  border: 2px solid #d8ba83;
+  background: #f8edf1;
+  box-shadow: inset 0 0 0 6px #f8edf1, inset 0 0 0 7px #aa865a85;
+  padding: 32px 44px;
+}
+.broadcast-caption::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  z-index: -1;
+  pointer-events: none;
+  background: url('/static/img/live-button-paper.jpg') center / 100% 100% no-repeat;
+}
+@media(max-width: 900px) {
+  .studio-identity { gap: 16px; flex-wrap: wrap; }
+  .studio-header { gap: 18px; padding: 20px; }
+}
+@media(max-width: 500px) {
+  .studio-header { padding: 18px 16px; }
+  .studio-identity { display: grid; grid-template-columns: minmax(0, 1fr) 16px minmax(0, .8fr); gap: 8px; width: 100%; }
+  .studio-header .studio-brand { font-size: 18px; gap: 6px; }
+  .studio-header .studio-brand img { width: 32px; height: 32px; flex-shrink: 0; }
+  .studio-header .studio-brand span { min-width: 0; }
+  .zenwave-partner { gap: 6px; min-width: 0; }
+  .zenwave-partner > span { font-size: 18px; }
+  .zenwave-partner small { display: none; }
+  .zenwave-partner > img { width: 32px; height: 32px; flex-shrink: 0; }
+  .studio-identity .collab-divider { font-size: 18px; }
+  .broadcast-link { width: 100%; }
+}
+@media(prefers-reduced-motion: reduce) {
+  .studio button, .broadcast-body button, .broadcast-link { transition: none; }
+}

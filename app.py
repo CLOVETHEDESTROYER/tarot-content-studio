@@ -41,6 +41,7 @@ def create_app(store=None, run_jobs=True):
             abort(403, 'Content Studio runs only on this computer.')
         if request.host.split(':')[0] not in ('127.0.0.1', 'localhost', '[', ''):
             abort(403, 'Open the studio at http://127.0.0.1:5057.')
+        if request.path.startswith(('/api/live/','/live/')) or request.path=='/live':return
         if request.method not in ('GET', 'HEAD', 'OPTIONS'):
             origin = request.headers.get('Origin')
             if origin and (urlsplit(origin).hostname not in ('127.0.0.1', 'localhost') or urlsplit(origin).scheme != 'http'):
@@ -54,7 +55,7 @@ def create_app(store=None, run_jobs=True):
     def headers(response):
         response.headers['X-Content-Type-Options'] = 'nosniff'
         response.headers['Referrer-Policy'] = 'same-origin'
-        response.headers['X-Frame-Options'] = 'DENY'
+        response.headers['X-Frame-Options'] = 'SAMEORIGIN' if request.path.startswith(('/live','/card-library')) else 'DENY'
         if request.path.startswith('/api/') and not request.path.startswith('/api/artwork/'):
             response.headers['Cache-Control'] = 'no-store'
         return response
@@ -294,6 +295,8 @@ def create_app(store=None, run_jobs=True):
             abort(404)
         return send_from_directory(distribution, 'index.html')
 
+    from studio.live.integration import register
+    register(app,database,run_gateway=run_jobs)
     return app
 
 

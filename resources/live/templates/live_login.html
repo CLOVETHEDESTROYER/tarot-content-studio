@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sign In | StarPower Tarot</title><link rel="icon" href="/static/brand/favicon.png"><link rel="stylesheet" href="/static/live.css"><link rel="stylesheet" href="/static/live-collab.css"><link rel="stylesheet" href="/static/live-login.css"></head>
+<body class="studio login-page">
+<main class="login-panel">
+<header class="login-brand"><img src="/static/brand/glyph-gold.png" width="60" height="60" alt=""><h1>StarPower Tarot</h1><p>Live Studio</p></header>
+{% if configured %}
+<form method="post" action="/live/login">
+<input type="hidden" name="csrf" value="{{ csrf }}">
+<h2>Sign in</h2>
+{% if error %}<p class="notice" role="alert">{{ error }}</p>{% endif %}
+<label>Username<input name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required maxlength="128"></label>
+<label>Password<input name="password" type="password" autocomplete="current-password" required maxlength="1024"></label>
+<button type="submit">Sign in</button>
+</form>
+{% else %}<section class="login-unavailable"><h2>Setup required</h2><p>The host has not configured access to Live Studio yet.</p></section>{% endif %}
+<a class="login-home" href="/">StarPower Tarot</a>
+</main>
+</body></html>

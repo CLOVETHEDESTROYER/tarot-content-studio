@@ -56,7 +56,7 @@ def main():
     webview.settings['ALLOW_FILE_URLS']=False
     debug_port=os.getenv('STUDIO_DESKTOP_DEBUG_PORT')
     if debug_port:webview.settings['REMOTE_DEBUGGING_PORT']=int(debug_port)
-    window=webview.create_window('StarPower Content Studio',url,js_api=DesktopBridge(updates),width=1450,height=940,min_size=(900,650),background_color='#103b28',text_select=True,confirm_close=True)
+    window=webview.create_window('StarPower Content Studio — Test copy' if debug_port else 'StarPower Content Studio',url,js_api=DesktopBridge(updates),width=1450,height=940,min_size=(900,650),background_color='#103b28',text_select=True,confirm_close=True)
     updates.window=window
     def loaded():
         if not args.update_health:return
@@ -86,7 +86,9 @@ def main():
         if operations.installing:return True
         if app:
             store=app.extensions['studio_store']
-            active=any(j['status'] in ('queued','running') for j in store.jobs())
+            live=app.extensions.get('live_instances',{}).get('studio')
+            active=bool(live and (live.snapshot()['running'] or live.snapshot()['processing']))
+            active=active or any(j['status'] in ('queued','running') for j in store.jobs())
             active=active or any(r['status'] in ('queued','running') for r in app.extensions['studio_agent'].snapshot()['requests'])
             if active:
                 if sys.platform=='win32':
@@ -97,6 +99,11 @@ def main():
     try:webview.start(gui='edgechromium' if sys.platform=='win32' else None,private_mode=False,storage_path=str(DATA/'desktop-profile'))
     finally:
         if app:
+            instances=app.extensions.get('live_instances',{})
+            if instances.get('chat'):instances['chat'].disconnect()
+            if instances.get('studio'):instances['studio']._stop.set()
+            gateway=app.extensions.get('broadcast_gateway_server')
+            if gateway:gateway.close()
             app.extensions['studio_planner']._stop.set();app.extensions['studio_agent']._stop.set()
             for name in ('studio_agent','studio_planner','studio_jobs'):app.extensions[name].pool.shutdown(wait=False,cancel_futures=True)
         if server:server.close()

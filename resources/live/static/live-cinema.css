@@ -1,0 +1,61 @@
+/* Fixed portrait composition stays stable when captured at different window sizes. */
+.broadcast-scene {
+  padding: 32px 36px;
+  gap: 12px;
+  grid-template-rows: 150px 180px minmax(0, 1fr) 250px 140px;
+  transition: grid-template-rows 650ms ease;
+}
+.broadcast-brand { grid-template-rows: 22px 40px 45px 22px; padding: 8px 16px; }
+.broadcast-brand > p { font-size: 20px; }
+.broadcast-brand h1 { font-size: 36px; }
+.broadcast-brand p:last-child { font-size: 18px; }
+.broadcast-marks { height: 40px; gap: 14px; }
+.broadcast-marks img { width: 40px; height: 40px; }
+.broadcast-viewer { padding: 16px 40px; }
+.broadcast-viewer > p:first-child { font-size: 20px; margin-bottom: 4px; }
+.broadcast-viewer h2 { font-size: 34px; margin-bottom: 4px; }
+.broadcast-viewer > p:last-child { font-size: 25px; line-height: 1.3; }
+.broadcast-cards { position: relative; gap: 18px; padding: 24px 12px; overflow: hidden; }
+.broadcast-card { flex: 0 0 312px; min-width: 0; }
+.broadcast-card > p { font-size: 24px; }
+.broadcast-frame { width: 312px; height: 557px; }
+.broadcast-card h3 { font-size: 23px; line-height: 1.3; min-height: 66px; display: grid; place-items: center; }
+.broadcast-card small { font-size: 21px; }
+.broadcast-cards[data-count="3"] .broadcast-card:first-child { transform: translateY(-130px); }
+.broadcast-cards[data-count="3"] .broadcast-card:last-child { transform: translateY(130px); }
+.broadcast-cards[data-count="1"] .broadcast-card { flex-basis: 480px; }
+.broadcast-cards[data-count="1"] .broadcast-frame { width: 480px; height: 857px; }
+.broadcast-card.awaiting-placement { opacity: 0; }
+.broadcast-caption { padding: 24px 36px; overflow: hidden; transition: opacity 450ms ease, transform 650ms ease; }
+.broadcast-caption p { font-size: 36px; line-height: 1.4; }
+.broadcast-footer { padding: 8px 32px; }
+.broadcast-footer p { font-size: 21px; line-height: 1.3; margin: 2px 0; }
+.broadcast-footer small { font-size: 16px; }
+.broadcast-scene[data-phase="dealing"] { grid-template-rows: 120px 150px minmax(0, 1fr) 120px 100px; }
+.broadcast-scene[data-phase="dealing"] .broadcast-brand { overflow: hidden; }
+.broadcast-scene[data-phase="dealing"] .broadcast-brand p:last-child { display: none; }
+.broadcast-scene[data-phase="dealing"] .broadcast-footer small,
+.broadcast-scene[data-phase="dealing"] #broadcast-queue { display: none; }
+.broadcast-scene[data-phase="dealing"] .broadcast-caption { opacity: .65; transform: translateY(8px); }
+.broadcast-scene[data-phase="reading"] .broadcast-caption { transform: translateY(0); }
+.broadcast-caption.caption-enter p { animation: caption-arrive 350ms ease both; }
+@keyframes caption-arrive { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.card-showcase { position: absolute; inset: 0; z-index: 20; pointer-events: none; }
+.card-showcase::before { content: ''; position: absolute; inset: 0; background: #0a201cf5 url('/static/img/celestial-garden.jpg') center / cover; transition: opacity 600ms ease; }
+.card-showcase::after { content: ''; position: absolute; inset: 24px; border: 2px solid #d8ba83; pointer-events: none; }
+.showcase-heading, .showcase-caption { position: absolute; left: 48px; right: 48px; text-align: center; color: #fff4df; background: #12372ff2; border: 1px solid #d8ba83; padding: 18px; }
+.showcase-heading { top: 54px; font: 32px/1.4 Cinzel, Georgia, serif; margin: 0; }
+.showcase-caption { bottom: 72px; }
+.showcase-caption h2 { font-size: 44px; margin: 0 0 10px; }
+.showcase-caption p { font-size: 30px; margin: 0; }
+.card-showcase .broadcast-frame { position: absolute; left: 160px; top: 206px; width: 760px; height: 1357px; transform-origin: top left; }
+.card-showcase .broadcast-back img { width: 340px; height: 340px; }
+.card-showcase.landing::before, .card-showcase.landing::after, .card-showcase.landing > p, .card-showcase.landing > div.showcase-caption { opacity: 0; }
+.card-showcase .broadcast-face.image-missing { display: grid; place-items: center; padding: 50px; color: #fff4df; font: 42px/1.4 Cinzel, Georgia, serif; text-align: center; }
+@media (prefers-reduced-motion: reduce) {
+  .broadcast-scene, .broadcast-caption, .card-showcase::before { transition: none; }
+  .broadcast-caption.caption-enter p { animation: none; }
+  .broadcast-flip { transition-duration: 1ms; }
+}
+
+.broadcast-cards.many-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-content:center}.many-cards .broadcast-card{width:auto;min-width:0}.many-cards .broadcast-frame{height:230px;width:140px;margin:auto}.many-cards .broadcast-card h3{font-size:18px}.many-cards .broadcast-card p{font-size:14px}

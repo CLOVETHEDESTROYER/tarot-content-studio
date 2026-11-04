@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Meet StarPower Tarot: a 78-card celebrity tarot deck for daily readings and a little fresh perspective.">
+    <meta name="theme-color" content="#963f61">
+    <meta property="og:title" content="StarPower Tarot">
+    <meta property="og:description" content="A little star power. A little perspective.">
+    <title>StarPower Tarot</title>
+    <link rel="icon" type="image/png" href="/static/brand/favicon.png">
+    <link rel="apple-touch-icon" href="/static/brand/apple-touch-icon.png">
+    <link rel="preload" href="/static/fonts/Cinzel.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/ritual.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="control-rail" aria-label="Reading controls">
+        <div class="brand">
+          <img class="brand-mark" src="/static/brand/glyph-berry.png" alt="" width="48" height="48">
+          <div>
+            <h1 class="brand-wordmark" aria-label="StarPower Tarot">StarPower<span>Tarot</span></h1>
+            <p>{{ deck_count }} card celebrity deck</p>
+          </div>
+        </div>
+
+        <label class="field">
+          <span>Deck</span>
+          <select id="deck-select">
+            {% for deck in deck_options %}<option value="{{ deck.id }}" {% if not deck.ready %}disabled{% endif %}>{{ deck.label }} · {{ deck.count }} cards{% if not deck.ready %} (preparing){% endif %}</option>{% endfor %}
+          </select>
+        </label>
+        <label class="field">
+          <span>Focus</span>
+          <textarea id="question" rows="4" placeholder="Ask about love, money, career, timing, or the general vibe."></textarea>
+        </label>
+
+        <label class="field">
+          <span>Spread</span>
+          <select id="spread">
+            <option value="one">One Card</option>
+            <option value="three" selected>Past / Present / Future</option>
+            <option value="cross">Five Card Cross</option>
+            <option value="relationship">Relationship</option>
+            <option value="celtic">Celtic Cross</option>
+          </select>
+        </label>
+
+        <div class="toggles">
+          <label><input id="use-ai" type="checkbox" checked> AI Reading</label>
+          <label><input id="use-voice" type="checkbox"> Narration</label>
+        </div>
+
+        <button id="deal" class="deal-button" type="button">
+          <span>Deal</span>
+          <img class="button-glyph" src="/static/brand/glyph-white.png" alt="" width="24" height="24">
+        </button>
+
+        <button id="browse-deck" class="secondary-button" type="button">
+          <span>Open Deck</span>
+          <span>&#9776;</span>
+        </button>
+
+        <p class="ritual-note">A little star power.<br>A little perspective.</p>
+        {% if live_enabled %}<a class="studio-link" href="/live">Open Live Studio</a>{% endif %}
+      </aside>
+
+      <section class="table-stage" aria-label="Tarot spread">
+        <header class="ritual-heading">
+          <h2>Your daily ritual</h2>
+          <p>A little perspective for whatever comes next.</p>
+        </header>
+        <div class="table-top">
+          <div id="cards" class="cards empty">
+            <div class="deck-preview" aria-hidden="true">
+              <div class="preview-card card-back"><span><img src="/static/brand/glyph-gold.png" alt="" width="64" height="64"></span></div>
+              <div class="preview-card card-back"><span><img src="/static/brand/glyph-gold.png" alt="" width="64" height="64"></span></div>
+              <div class="preview-card card-back"><span><img src="/static/brand/glyph-gold.png" alt="" width="64" height="64"></span></div>
+            </div>
+          </div>
+        </div>
+        <section class="transcript-overlay">
+          <div class="overlay-head">
+            <span id="spread-label">Your reading</span>
+            <span id="source-label">Ready</span>
+          </div>
+          <p id="reading-text">Take a breath and bring a question to mind.</p>
+          <audio id="audio" controls hidden></audio>
+        </section>
+      </section>
+
+      <aside class="reading-panel" aria-label="Card meanings">
+        <div class="panel-head">
+          <h2 id="panel-title">Cards Pulled</h2>
+          <span id="seed">waiting</span>
+        </div>
+        <div class="panel-tabs" role="tablist" aria-label="Panel view">
+          <button id="reading-tab" class="panel-tab active" type="button">Reading</button>
+          <button id="deck-tab" class="panel-tab" type="button">Deck</button>
+        </div>
+        <div id="card-list" class="card-list"><p class="library-empty">Your cards will appear here.</p></div>
+        <section id="deck-library" class="deck-library" hidden>
+          <div class="deck-tools">
+            <label class="field">
+              <span>Group</span>
+              <select id="deck-group">
+                <option value="arcana">Arcana</option>
+                <option value="suit">Suit</option>
+                <option value="all">All Cards</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Search</span>
+              <input id="deck-search" type="search" placeholder="Card, suit, celebrity">
+            </label>
+          </div>
+          <div id="deck-grid" class="deck-grid"></div>
+        </section>
+      </aside>
+    </main>
+    <dialog id="card-dialog" class="card-dialog" aria-labelledby="detail-name">
+      <button id="close-card" class="icon-button" type="button" aria-label="Close card detail">&times;</button>
+      <div class="card-detail">
+        <img id="detail-image" alt="">
+        <div class="detail-copy">
+          <div class="detail-kicker" id="detail-kicker"></div>
+          <h2 id="detail-name"></h2>
+          <p id="detail-celebrity"></p>
+          <dl>
+            <div>
+              <dt>Upright</dt>
+              <dd id="detail-upright"></dd>
+            </div>
+            <div>
+              <dt>Reversed</dt>
+              <dd id="detail-reversed"></dd>
+            </div>
+            <div>
+              <dt>Domain</dt>
+              <dd id="detail-domain"></dd>
+            </div>
+          </dl>
+          <p id="detail-snippet" class="detail-snippet"></p>
+          <div class="detail-actions">
+            <button id="speak-card" class="deal-button compact-button" type="button">
+              <span>Card Reading</span>
+              <img class="button-glyph" src="/static/brand/glyph-white.png" alt="" width="24" height="24">
+            </button>
+            <label><input id="card-use-ai" type="checkbox" checked> AI</label>
+            <label><input id="card-use-voice" type="checkbox"> Voice</label>
+          </div>
+          <audio id="card-audio" controls hidden></audio>
+        </div>
+      </div>
+    </dialog>
+    <nav class="mobile-actions" aria-label="Mobile actions">
+      <button id="mobile-deal" class="mobile-action primary" type="button">
+        <span>Deal</span>
+        <img class="button-glyph" src="/static/brand/glyph-white.png" alt="" width="24" height="24">
+      </button>
+      <button id="mobile-deck" class="mobile-action" type="button">
+        <span>Deck</span>
+        <span>&#9776;</span>
+      </button>
+    </nav>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

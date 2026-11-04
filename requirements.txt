@@ -7,3 +7,4 @@ waitress>=3,<4
 astronomy-engine>=2.1,<3
 lunar-python>=1.4,<2
 tzdata>=2026.1
+TikTokLive>=7,<8

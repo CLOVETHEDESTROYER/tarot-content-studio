@@ -1,5 +1,7 @@
 # StarPower Content Studio
 
+**Unified studio (v3):** Live Studio, the original card library and longer spreads, daily readings, video exports, Muse jobs and updates now run in one desktop app. Live supports tarot, Western/Chinese astrology, numerology and combined readings. See [UNIFIED-STUDIO.md](UNIFIED-STUDIO.md).
+
 **Windows desktop:** use **StarPower Content Studio.lnk** or **Start Desktop Studio.cmd** to open a native app window. See [WINDOWS-DESKTOP.md](WINDOWS-DESKTOP.md) for packaging and storage details.
 
 A standalone Windows and macOS studio for making tarot, Western astrology, Chinese astrology, numerology, and combined daily reading videos. It has its own server, editor, database, bundled artwork, and exports. The live website does not need to be running.
