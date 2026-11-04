@@ -6,7 +6,7 @@ import zipfile
 from pathlib import Path
 from unittest.mock import patch
 from studio import operations
-from studio.updates import REPO,APP,DesktopUpdates,DesktopBridge,package_name,select_release,validate_archive
+from studio.updates import REPO,APP,DesktopUpdates,DesktopBridge,package_name,select_release,validate_archive,filesystem_path
 from studio.update_install import validate_plan
 
 
@@ -18,6 +18,19 @@ def release(v='2.4.0',host='darwin'):
 
 
 class UpdateTests(unittest.TestCase):
+    @unittest.skipUnless(__import__('sys').platform=='win32','Windows extended paths')
+    def test_update_extraction_supports_paths_over_260_characters(self):
+        import shutil
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)/('a'*100)/('b'*100)/('c'*40)
+            archive=Path(tmp)/'app.zip'
+            with zipfile.ZipFile(archive,'w') as z:z.writestr('package/deep/file.txt','verified')
+            self.assertGreater(len(str(root/'package/deep/file.txt')),260)
+            try:
+                with zipfile.ZipFile(archive) as z:z.extractall(filesystem_path(root))
+                self.assertEqual(Path(filesystem_path(root/'package/deep/file.txt')).read_text(),'verified')
+            finally:shutil.rmtree(filesystem_path(Path(tmp)/('a'*100)))
+
     def test_only_newer_matching_platform_release(self):
         self.assertEqual(select_release([release('2.4.0'),release('2.5.0')],'2.3.0','darwin')['version'],'2.5.0')
         for v in ('2.2.0','2.3.0'):

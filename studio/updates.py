@@ -1,6 +1,7 @@
 """Private GitHub release updater. Installs never replace data or the exchange."""
 import hashlib
 import json
+import logging
 import os
 import platform
 import plistlib
@@ -27,6 +28,13 @@ API='https://api.github.com/repos/'+REPO
 APP='StarPower Content Studio'
 MAX_ARCHIVE=1_500_000_000
 MAX_EXPANDED=3_000_000_000
+
+
+def filesystem_path(path):
+    """ZIP extraction must support Windows paths beyond the legacy 260 limit."""
+    path=str(Path(path).absolute())
+    if sys.platform!='win32' or path.startswith('\\\\?\\'):return path
+    return '\\\\?\\UNC\\'+path[2:] if path.startswith('\\\\') else '\\\\?\\'+path
 
 
 def version(value):
@@ -187,10 +195,12 @@ class DesktopUpdates:
             top=validate_archive(archive);unpacked=stage/'Unpacked';unpacked.mkdir()
             if sys.platform=='darwin':subprocess.run(['/usr/bin/ditto','-x','-k',str(archive),str(unpacked)],check=True,capture_output=True,timeout=180)
             else:
-                with zipfile.ZipFile(archive) as bundle:bundle.extractall(unpacked)
-            self.prepared=validate_app(unpacked/top,self.available['version'])
+                with zipfile.ZipFile(archive) as bundle:bundle.extractall(filesystem_path(unpacked))
+            self.prepared=validate_app(Path(filesystem_path(unpacked/top)),self.available['version'])
             self._state(status='prepared',progress=100,message='Package verified. Install when you are ready.')
-        except Exception as exc:self._state(status='error',message=str(exc) if isinstance(exc,ValueError) else 'Download or package verification failed. The installed app was not changed.')
+        except Exception as exc:
+            logging.exception('Desktop update download or package verification failed')
+            self._state(status='error',message=str(exc) if isinstance(exc,ValueError) else 'Download or package verification failed. The installed app was not changed. See desktop.log for details.')
         return self.update_state()
 
     def cancel_update(self):

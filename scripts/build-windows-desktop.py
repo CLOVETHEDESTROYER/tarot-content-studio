@@ -16,6 +16,7 @@ def main():
         icon=Image.new('RGBA',(256,256),'#103b28');image.thumbnail((180,180));icon.alpha_composite(image.convert('RGBA'),((256-image.width)//2,(256-image.height)//2));icon.save(build/'studio.ico')
     command=[sys.executable,'-m','PyInstaller','--noconfirm','--clean','--onedir','--windowed','--name','StarPower Content Studio',
         '--distpath',str(args.distpath),'--workpath',str(build/'work'),'--specpath',str(build),'--icon',str(build/'studio.ico'),
+        '--manifest',str(ROOT/'resources/windows.manifest'),
         '--collect-all','webview','--collect-all','imageio_ffmpeg','--collect-all','clr_loader','--collect-all','keyring','--hidden-import','studio.speech_worker',
         '--hidden-import','studio.desktop_smoke','--hidden-import','webview.platforms.edgechromium','--hidden-import','webview.platforms.winforms',
         '--exclude-module','PyQt5','--exclude-module','PyQt6','--exclude-module','PySide2','--exclude-module','PySide6']
