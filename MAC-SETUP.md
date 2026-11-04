@@ -1,5 +1,7 @@
 # Intel Mac setup — macOS Sequoia 15.7.7
 
+**For the standalone desktop app, use [DESKTOP-UPDATES.md](DESKTOP-UPDATES.md).** Download and extract the Mac-Intel release, move the app to your user Applications folder, then open it. Python, Node and the source setup steps below are only needed for development. Desktop releases include **App Updates → Check for Updates → Download → Install & Relaunch**.
+
 This is the standalone **StarPower Content Studio**, separate from the live tarot website. Its Python server, React editor, complete artwork, date calculations, database code, and video encoder all live in this repository. It runs locally at http://127.0.0.1:5057.
 
 ## One-time setup

@@ -4,7 +4,7 @@
 
 A standalone Windows and macOS studio for making tarot, Western astrology, Chinese astrology, numerology, and combined daily reading videos. It has its own server, editor, database, bundled artwork, and exports. The live website does not need to be running.
 
-**Intel Mac / macOS Sequoia:** follow [MAC-SETUP.md](MAC-SETUP.md). Clone this repository, run **Setup Content Studio.command** once, then **Start Content Studio.command**. A free native macOS voice is included; no OpenAI key is required for local production.
+**Intel Mac / macOS Sequoia:** download the Mac-Intel ZIP from the private repository's [desktop releases](https://github.com/CLOVETHEDESTROYER/tarot-content-studio/releases/latest), extract it, and move the app to your user Applications folder. No Python or Node setup is required. See [DESKTOP-UPDATES.md](DESKTOP-UPDATES.md) for first launch and in-app updates; [MAC-SETUP.md](MAC-SETUP.md) remains available for developers running from source.
 
 **Meta Muse / weekly automation:** open **History & Agent Jobs** and follow [MUSE-SETUP.md](MUSE-SETUP.md). A dedicated ZenWave-style file exchange accepts weekly jobs, preserves dated production slots, returns finished media and checksums, and records external publication acknowledgements. Muse handles the separately authorized platform scheduling/posting.
 

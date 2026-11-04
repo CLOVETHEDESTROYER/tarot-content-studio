@@ -1,5 +1,7 @@
 # Windows desktop app
 
+Version 2.3 adds **App Updates** for private release checks, verified downloads, and **Install & Relaunch**. See [DESKTOP-UPDATES.md](DESKTOP-UPDATES.md) for authentication and recovery. Earlier desktop builds need this version installed once before they gain in-app updates.
+
 Open **StarPower Content Studio.lnk** in this project folder, or **Start Desktop Studio.cmd**. The launcher uses the packaged executable when available. It opens a native Windows window using the installed Microsoft Edge WebView2 runtime; no browser tab or Terminal needs to stay open.
 
 The local executable is `desktop-dist/StarPower Content Studio/StarPower Content Studio.exe`. Keep the entire `StarPower Content Studio` directory together: `_internal` contains the embedded Python runtime, encoder, artwork, and interface. The packaged app does not require Python or Node to use it. The generated shortcut is local to this computer and is ignored by Git.
