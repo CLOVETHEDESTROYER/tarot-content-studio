@@ -2,6 +2,7 @@
 import base64
 import json
 import os
+import re
 import secrets
 import sqlite3
 from contextlib import closing
@@ -57,10 +58,19 @@ def generate_live(job,store=None):
     if store:
         if draft is None:
             import uuid
+            sentences=[s.strip() for s in re.split(r'(?<=[.!?])\s+|\n+',reading) if s.strip()]
+            count=len(cards)+2;sections=[]
+            for index in range(count):
+                chunk=' '.join(sentences[round(index*len(sentences)/count):round((index+1)*len(sentences)/count)]) or 'Take a breath.'
+                card=cards[index-1] if 0<index<count-1 else None
+                sections.append(dict(key='hook' if index==0 else 'closing' if index==count-1 else f'card-{index-1}',
+                    label=card['name'] if card else 'Opening' if index==0 else 'Closing',card_id=card['id'] if card else None,text=chunk))
             draft=dict(id=uuid.uuid4().hex,title=f"Live · {item['viewer']} · {day}",cards=cards,
-                sections=[dict(key='live',label='Live reading',card_id=None,text=reading)],
+                sections=sections,
                 settings=dict(topic=question[:300],deck=settings.get('deck','celebrity'),spread=settings['spread'],duration=90,
                               voice=voice if settings['use_voice'] else 'silent',writer='local'),writing_source=source)
+        draft['settings']['voice']=voice if settings['use_voice'] else 'silent'
+        draft['title']=f"Live {TYPES[kind]} · @{item['viewer']} · {day}"
         draft['live']=dict(viewer=item['viewer'],question=question,request_id=item['id'],date=day,reading_type=kind)
         saved=store.create(draft)
     return dict(cards=cards,reading=reading,reading_source=source,audio_data=audio,has_audio=bool(audio),warning=warning.strip(),

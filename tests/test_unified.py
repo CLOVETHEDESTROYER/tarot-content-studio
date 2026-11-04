@@ -52,8 +52,14 @@ class UnifiedTests(unittest.TestCase):
             self.assertEqual(result['reading_type'],kind);self.assertEqual(result['reading_date'],'2026-11-04')
             self.assertTrue(result['reading']);self.assertTrue(result['cards']);self.assertFalse(result['has_audio'])
             saved=self.store.get(result['reading_id']);self.assertEqual(saved['live']['reading_type'],kind)
+            self.assertEqual(saved['settings']['voice'],'silent')
+            self.assertEqual({s['card_id'] for s in saved['sections'] if s['card_id']},{c['id'] for c in result['cards']})
             for card in result['cards']:self.assertEqual(self.client.get(card['image_url']).status_code,200)
             if kind!='tarot':self.assertEqual(saved['context']['date'],'2026-11-04')
+            if kind=='western':
+                token=self.client.get('/api/config').json['token']
+                rewrite=self.client.post('/api/readings/'+saved['id']+'/rewrite',json={'revision':saved['revision']},headers={'X-Studio-Token':token})
+                self.assertEqual(rewrite.status_code,200);self.assertIn(job['request']['question'],rewrite.json['sections'][0]['text'])
 
     def test_read_only_gateway_keeps_editor_and_host_private(self):
         self.live_csrf();state=self.client.get('/api/live/state').json

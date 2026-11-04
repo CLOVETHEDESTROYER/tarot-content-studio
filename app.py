@@ -209,7 +209,7 @@ def create_app(store=None, run_jobs=True):
         check_revision(original, data)
         if original['settings'].get('daily'):
             from studio.daily import write_daily
-            original['sections'],original['writing_source']=write_daily(original['cards'],original['settings'],original['context'])
+            original['sections'],original['writing_source']=write_daily(original['cards'],original['settings'],original['context'],focus=original.get('live',{}).get('question'))
         else:
             original['sections'], original['writing_source'] = write_sections(original['cards'], original['settings'], secrets.token_hex(16))
         return jsonify(database.save(original, expected(data)))
