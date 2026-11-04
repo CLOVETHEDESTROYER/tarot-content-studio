@@ -1,0 +1,9 @@
+{
+  "version": "2.3.0",
+  "build": 1,
+  "application": "starpower-content-studio",
+  "bundleIdentifier": "com.starpower.contentstudio",
+  "exchangeSchema": 1,
+  "historySchema": 1,
+  "minimumMacOS": 15
+}

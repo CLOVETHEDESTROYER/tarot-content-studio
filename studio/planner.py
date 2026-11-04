@@ -12,6 +12,7 @@ from .daily import TYPES,COMPONENTS,validate_daily_settings
 from .daily_context import edition_instant
 from .store import now
 from .platform_support import default_voice
+from .operations import generation_action
 
 DEFAULTS=dict(enabled=False,timezone='America/Denver',morning_type='combined',evening_type='combined',
               style='esoteric-minimal',deck='esoteric-minimal',voice=default_voice(),writer='local',include_news=False,
@@ -87,6 +88,7 @@ class DailyPlanner:
     @staticmethod
     def key(day,edition,zone):return hashlib.sha256(f'{day}|{edition}|{zone}'.encode()).hexdigest()[:24]
 
+    @generation_action
     def prepare(self,day,edition,retry=False,settings_override=None):
         config=self.config();target=edition_instant(day,edition,config['timezone']);key=self.key(day,edition,config['timezone'])
         kind=config[edition+'_type']

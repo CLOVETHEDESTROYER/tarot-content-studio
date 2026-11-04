@@ -26,6 +26,8 @@ from .daily_visuals import STYLES
 from .engine import DURATIONS,VOICES
 from .platform_support import default_voice
 from .store import Conflict,now
+from .operations import generation_action
+from .version import VERSION
 
 MAX_JSON=100_000
 MEDIA=('reading.mp4','cover.jpg','caption.txt','subtitles.srt','reading.json','timeline.json','context.json','sources.txt')
@@ -141,7 +143,7 @@ class AgentJobs:
             publishing='Not scheduled or posted by this studio.',assets=record.get('assets',[]),archive=record.get('archive'),items=record['items'])
 
     def catalog(self):
-        return dict(schemaVersion=1,application='starpower-content-studio',version='2.2.0',requestKinds=['reading-week','connection-test'],
+        return dict(schemaVersion=1,application='starpower-content-studio',version=VERSION,requestKinds=['reading-week','connection-test'],
             readingTypes=TYPES,components=list(COMPONENTS),styles=STYLES,durations=list(DURATIONS),voices=list(VOICES),defaultVoice=default_voice(),
             timezone='America/Denver',slots=dict(morning='06:00',evening='18:00'),maxDays=7,maxAssets=14,
             newsPolicy='Advance weekly batches omit news. Use a single-day request near publication for current headlines.',
@@ -167,7 +169,7 @@ class AgentJobs:
         if not target.exists() or target.read_text(encoding='utf-8')!=instructions:target.write_text(instructions,encoding='utf-8')
         example=root/'Examples/first-test.json'
         if not example.exists():atomic_json(root,example,dict(schemaVersion=1,kind='connection-test',requestId='first-test',brief='Verify the Tarot exchange. Do not post this test.',startDate=datetime.now(ZoneInfo('America/Denver')).date().isoformat()))
-        atomic_json(root,root/'studio-info.json',dict(schemaVersion=1,application='starpower-content-studio',version='2.2.0',catalogSHA256=checksum(root/'catalog.json')))
+        atomic_json(root,root/'studio-info.json',dict(schemaVersion=1,application='starpower-content-studio',version=VERSION,catalogSHA256=checksum(root/'catalog.json')))
         return root
 
     def save(self,data):
@@ -185,6 +187,7 @@ class AgentJobs:
             with self.store.connect() as db:db.execute('UPDATE agent_settings SET body=? WHERE id=1',(canonical(config),))
         return config
 
+    @generation_action
     def submit(self,data,retry=False):
         request=validate_request(data);key=request['requestId'];payload=canonical(request)
         root=self.prepare_exchange()

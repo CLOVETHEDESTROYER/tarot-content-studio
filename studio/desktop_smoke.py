@@ -2,7 +2,8 @@
 import subprocess
 import tempfile
 from pathlib import Path
-from .audio import ffmpeg,windows_speech,wave_info
+from .audio import ffmpeg,windows_speech,macos_speech,wave_info
+from .platform_support import default_voice
 from .deck_catalog import deck_options
 from .daily_visuals import gallery
 from .config import ROOT
@@ -18,13 +19,13 @@ def verify():
     assert result.returncode==0
     with tempfile.TemporaryDirectory() as temporary:
         folder=Path(temporary)
-        raw,events,_=windows_speech('Take a breath. Begin again.',folder)
+        raw,events,_=(macos_speech({'sections':[{'text':'Take a breath. Begin again.'}]},folder) if default_voice()=='macos' else windows_speech('Take a breath. Begin again.',folder))
         assert wave_info(raw)>0 and events
-        draft=create({'voice':'windows','spread':'one'})
+        draft=create({'voice':default_voice(),'spread':'one'})
         duration=max(3,wave_info(raw))
         manifest=dict(duration=duration,sections=[dict(key='hook',start=0,end=duration,card_id=None)],captions=[dict(start=0,end=duration,text='Take a breath. Begin again.')])
         render_frame(draft,manifest,0).save(folder/'frame.jpg')
         encode_video(draft,manifest,raw,folder/'test.mp4',lambda *args:None)
         decoded=subprocess.run([ffmpeg(),'-hide_banner','-i',str(folder/'test.mp4'),'-f','null','-'],capture_output=True,text=True,timeout=30)
         assert decoded.returncode==0 and '1080x1920' in decoded.stderr and '30 fps' in decoded.stderr
-    return dict(passed=True,bundledDecks=3,dailyCards=72,frontend=True,nativeWindowsNarration=True,portraitMp4Decode=True)
+    return dict(passed=True,bundledDecks=3,dailyCards=72,frontend=True,nativeVoice=default_voice(),portraitMp4Decode=True)

@@ -12,6 +12,7 @@ from .audio import prepare_audio, timeline, srt
 from .config import DATA, EXPORTS
 from .render import render_frame, encode_video
 from .store import now
+from .operations import generation_action
 
 
 def fingerprint(draft):
@@ -34,6 +35,7 @@ class Jobs:
         self.guard = threading.Lock()
         self.store.recover()
 
+    @generation_action
     def submit(self, draft, kind):
         with self.guard:
             outstanding = [j for j in self.store.jobs() if j['status'] in ('queued', 'running')]

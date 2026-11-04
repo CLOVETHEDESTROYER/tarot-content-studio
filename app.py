@@ -17,6 +17,8 @@ from studio.jobs import Jobs
 from studio.render import render_frame
 from studio.store import Store, Conflict
 from studio.platform_support import voice_capabilities
+from studio.version import VERSION
+from studio import operations
 
 
 def create_app(store=None, run_jobs=True):
@@ -33,6 +35,8 @@ def create_app(store=None, run_jobs=True):
 
     @app.before_request
     def local_boundary():
+        if operations.installing and request.method not in ('GET','HEAD','OPTIONS'):
+            abort(503,'The studio is installing an update. Retry after relaunch.')
         if request.remote_addr not in ('127.0.0.1', '::1'):
             abort(403, 'Content Studio runs only on this computer.')
         if request.host.split(':')[0] not in ('127.0.0.1', 'localhost', '[', ''):
@@ -90,7 +94,7 @@ def create_app(store=None, run_jobs=True):
     @app.get('/api/config')
     def config():
         return jsonify(token=token, decks=deck_options(ROOT), openai=bool(os.getenv('OPENAI_API_KEY')),
-                       **voice_capabilities(), application='starpower-content-studio', export_folder=str(EXPORTS), version='2.2.0',
+                       **voice_capabilities(), application='starpower-content-studio', export_folder=str(EXPORTS), version=VERSION,
                        today=datetime.now(ZoneInfo('America/Denver')).date().isoformat())
 
     @app.post('/api/daily/context')

@@ -18,6 +18,8 @@ def main():
     parser.add_argument('--workspace',type=Path)
     parser.add_argument('--self-test',action='store_true')
     parser.add_argument('--report',type=Path)
+    parser.add_argument('--update-health',type=Path)
+    parser.add_argument('--gui-smoke',action='store_true')
     args=parser.parse_args()
     if args.workspace:
         workspace=args.workspace.resolve()
@@ -47,12 +49,41 @@ def main():
         app=create_app();server=create_server(app,host='127.0.0.1',port=port,threads=8)
         threading.Thread(target=server.run,name='desktop-local-engine',daemon=True).start()
     import webview
+    from studio.updates import DesktopUpdates,DesktopBridge
+    from studio import operations
+    updates=DesktopUpdates(app,args.workspace)
     webview.settings['ALLOW_DOWNLOADS']=True
     webview.settings['ALLOW_FILE_URLS']=False
     debug_port=os.getenv('STUDIO_DESKTOP_DEBUG_PORT')
     if debug_port:webview.settings['REMOTE_DEBUGGING_PORT']=int(debug_port)
-    window=webview.create_window('StarPower Content Studio',url,width=1450,height=940,min_size=(900,650),background_color='#103b28',text_select=True,confirm_close=True)
+    window=webview.create_window('StarPower Content Studio',url,js_api=DesktopBridge(updates),width=1450,height=940,min_size=(900,650),background_color='#103b28',text_select=True,confirm_close=True)
+    updates.window=window
+    def loaded():
+        if not args.update_health:return
+        try:
+            from studio.version import VERSION
+            from studio.updates import application_root
+            from studio.deck_catalog import deck_options
+            from studio.daily_visuals import gallery
+            from studio.audio import ffmpeg,HIDDEN
+            import sqlite3,subprocess,time
+            deadline=time.monotonic()+30
+            while not window.evaluate_js("Boolean(document.querySelector('h1'))"):
+                if time.monotonic()>deadline:raise ValueError('Desktop editor did not render.')
+                time.sleep(.2)
+            if not all(d['ready'] for d in deck_options(__import__('studio.config',fromlist=['ROOT']).ROOT)):raise ValueError('Missing bundled tarot artwork.')
+            if not all(c['ready'] for style in ('esoteric-minimal','storybook-cartoon') for c in gallery(style)):raise ValueError('Missing daily artwork.')
+            subprocess.run([ffmpeg(),'-version'],capture_output=True,check=True,timeout=15,**HIDDEN)
+            with sqlite3.connect(DATA/'studio.sqlite3') as database:
+                if database.execute('PRAGMA quick_check').fetchone()[0]!='ok':raise ValueError('History is not readable.')
+            receipt=dict(passed=True,version=VERSION,appPath=str(application_root()),nativeWindow=True)
+            args.update_health.parent.mkdir(parents=True,exist_ok=True)
+            temporary=args.update_health.with_suffix('.tmp');temporary.write_text(json.dumps(receipt),encoding='utf-8');temporary.replace(args.update_health)
+            if args.gui_smoke:window.confirm_close=False;window.destroy()
+        except Exception:logging.exception('Desktop update health check failed')
+    window.events.loaded+=loaded
     def closing():
+        if operations.installing:return True
         if app:
             store=app.extensions['studio_store']
             active=any(j['status'] in ('queued','running') for j in store.jobs())
