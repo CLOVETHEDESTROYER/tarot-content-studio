@@ -24,6 +24,8 @@ from studio import operations
 def create_app(store=None, run_jobs=True):
     app = Flask(__name__, static_folder=None)
     app.config['MAX_CONTENT_LENGTH'] = 100_000
+    from studio.backgrounds import register_routes,options as background_options,selected as background_choice
+    register_routes(app)
     token = secrets.token_urlsafe(32)
     database = store or Store()
     worker = Jobs(database) if run_jobs else None
@@ -96,7 +98,7 @@ def create_app(store=None, run_jobs=True):
 
     @app.get('/api/config')
     def config():
-        return jsonify(token=token,openai_voices=list(OPENAI_VOICES),voice_styles=VOICE_STYLES,voice_energies=ENERGIES, decks=deck_options(ROOT), openai=bool(os.getenv('OPENAI_API_KEY')),
+        return jsonify(backgrounds=background_options(),token=token,openai_voices=list(OPENAI_VOICES),voice_styles=VOICE_STYLES,voice_energies=ENERGIES, decks=deck_options(ROOT), openai=bool(os.getenv('OPENAI_API_KEY')),
                        **voice_capabilities(), application='starpower-content-studio', export_folder=str(EXPORTS), version=VERSION,
                        today=datetime.now(ZoneInfo('America/Denver')).date().isoformat())
 
@@ -281,6 +283,7 @@ def create_app(store=None, run_jobs=True):
     @app.get('/api/poster/<key>')
     def poster(key):
         draft = database.get(key)
+        if 'background' in request.args:draft['settings']={**draft['settings'],'background':background_choice(request.args)}
         simple = {'duration': 1, 'sections': [{'key': 'hook', 'card_id': None, 'start': 0, 'end': 1}],
                   'captions': [{'start':0, 'end':1, 'text': draft['sections'][0]['text'].split('.')[0] + '.'}]}
         output = io.BytesIO(); render_frame(draft, simple, 0, 360).save(output, format='JPEG', quality=90); output.seek(0)

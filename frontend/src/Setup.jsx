@@ -1,3 +1,4 @@
+import {BackgroundPicker} from './BackgroundPicker';
 import {VoiceDirection} from './VoiceDirection';
 import { Shuffle, RotateCw } from 'lucide-react';
 import {VoiceOptions} from './VoiceOptions';
@@ -15,7 +16,7 @@ export function Setup({settings, setSettings, config, draft, busy, onShuffle, on
         <VoiceOptions config={config}/>
       </select></label>
       <label>Writing<select aria-label="Writing" value={settings.writer} onChange={e => change('writer', e.target.value)}><option value="local">Built-in · free</option><option value="openai" disabled={!config.openai}>OpenAI · creative</option></select></label>
-      <VoiceDirection value={settings} change={change} config={config}/>
+      <BackgroundPicker value={settings} change={change} config={config}/><VoiceDirection value={settings} change={change} config={config}/>
     </fieldset>
     <button className="primary shuffle" onClick={onShuffle} disabled={busy || !settings.topic.trim()}><Shuffle size={19}/>{busy === 'shuffle' ? 'Writing your reading…' : 'Shuffle & write'}</button>
     {(settings.deck !== draft?.settings.deck || settings.spread !== draft?.settings.spread) && draft ? <p className="helper">Shuffle to apply a new deck or spread.</p> : null}

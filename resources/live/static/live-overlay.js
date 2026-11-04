@@ -395,6 +395,10 @@ async function poll() {
     if (wasRunning && !state.running) audio.pause();
 
     $('broadcast-presenter').textContent = state.settings.presenter + ' presents';
+    const background=state.settings.background||'solid';
+    const safeBackground=['celestial','garden','aurora','dawn'].includes(background);
+    scene.style.setProperty('--reading-background',safeBackground?`url('/api/backgrounds/${background}')`:'none');
+    scene.dataset.background=safeBackground?'illustrated':'solid';
 
     if (state.display && state.display.id !== displayId) {
 

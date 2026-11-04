@@ -100,7 +100,7 @@ async function refresh() {
     $('interval').value = String(s.interval); $('approval').checked = s.approval;
     $('live-ai').checked = s.use_ai; $('live-voice').checked = s.use_voice;
     $('live-spread').value = s.spread; $('presenter').value = s.presenter;
-    $('live-type').value=s.reading_type||'tarot';$('live-date').value=s.reading_date||'';$('live-style').value=s.style||'esoteric-minimal';$('live-narrator').value=s.voice||'openai-coral';$('live-delivery').value=s.voice_style||'engaging';$('live-energy').value=s.voice_energy||'expressive';
+    $('live-type').value=s.reading_type||'tarot';$('live-date').value=s.reading_date||'';$('live-background').value=s.background||'solid';$('live-background-preview').src='/api/backgrounds/'+(s.background||'solid')+'?thumbnail=1';$('live-style').value=s.style||'esoteric-minimal';$('live-narrator').value=s.voice||'openai-coral';$('live-delivery').value=s.voice_style||'engaging';$('live-energy').value=s.voice_energy||'expressive';
     $('live-deck').value = s.deck || 'celebrity';
     if (state.chat.handle) $('handle').value = state.chat.handle;
     initialized = true;
@@ -110,7 +110,7 @@ async function refresh() {
 function saveSettings() {
   return action('settings', {interval:Number($('interval').value), approval:$('approval').checked,
     use_ai:$('live-ai').checked, use_voice:$('live-voice').checked,
-    spread:$('live-spread').value, presenter:$('presenter').value, deck:$('live-deck').value,reading_type:$('live-type').value,reading_date:$('live-date').value,style:$('live-style').value,voice:$('live-narrator').value,voice_style:$('live-delivery').value,voice_energy:$('live-energy').value,timezone:'America/Denver'});
+    spread:$('live-spread').value, presenter:$('presenter').value, deck:$('live-deck').value,reading_type:$('live-type').value,reading_date:$('live-date').value,style:$('live-style').value,background:$('live-background').value,voice:$('live-narrator').value,voice_style:$('live-delivery').value,voice_energy:$('live-energy').value,timezone:'America/Denver'});
 }
 bind('start', async () => { await saveSettings(); await action('start'); });
 bind('pause', () => action('pause'));
@@ -149,3 +149,5 @@ bind('voice-sample',async()=>{
  const config=await(await fetch('/api/config')).json();const response=await fetch('/api/voice/sample',{method:'POST',headers:{'Content-Type':'application/json','X-Studio-Token':config.token},body:JSON.stringify({voice:$('live-narrator').value,voice_style:$('live-delivery').value,voice_energy:$('live-energy').value})});
  const result=await response.json();if(!response.ok)throw Error(result.error);const audio=$('voice-sample-audio');audio.hidden=false;audio.src=result.url;audio.play().catch(()=>notice('Sample ready. Press Play to listen.'));
 });
+
+$('live-background').addEventListener('change',()=>{$('live-background-preview').src='/api/backgrounds/'+$('live-background').value+'?thumbnail=1';});

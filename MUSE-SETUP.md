@@ -37,6 +37,10 @@ Tarot Exchange/
   Reports/                  actual external scheduling/publication acknowledgements
 ```
 
+## Illustrated backgrounds (3.2)
+
+New requests can include `"background": "celestial"`, `"garden"`, `"aurora"`, `"dawn"` or `"solid"`. The chosen artwork appears behind cards and captions in every video. Use the refreshed catalog's backgrounds list to see labels and previews. Omitted background keeps the original evergreen appearance for compatibility. Never add the field to an already accepted request ID; use explicit settings for a new production window. Changing an existing manual draft's background preserves its cards and script; rebuild the preview/export to apply it.
+
 ## Voice and writing direction (3.1)
 
 For new production requests, use `"writer": "openai"`, `"voice": "openai-marin"`, `"voice_style": "engaging"`, and `"voice_energy": "expressive"`. For livelier delivery try `"uplifting"` and `"high"`; for evenings try `"reflective"`. Cedar and Coral are useful alternatives. All thirteen available voices are listed in the refreshed catalog. Preview voices in the studio before requesting a week. OpenAI writing and narration use the studio computer's configured key and API credits.

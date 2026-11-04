@@ -8,6 +8,10 @@ Use this dedicated Tarot exchange separately from ZenWave. Do not change ZenWave
 
 The operator uses Content Studio → History & Agent Jobs → Prepare exchange. Watch inbox enables local processing while the studio and computer stay awake. It resumes when the studio restarts if left enabled. You may use separately authorized local-folder access or a verified Drive-synced folder; the studio does not create a Drive connection, public endpoint, Muse login, or Facebook connection.
 
+## Reading backgrounds (studio 3.2)
+
+New reading-week requests may include `"background": "celestial"`, `"garden"`, `"aurora"`, `"dawn"` or `"solid"`. Choose from catalog.backgrounds. Omission retains the original classic evergreen background. This setting applies to the whole request and is saved with each reading/export. Existing accepted request IDs and generated slots are immutable; do not change their backgrounds by replaying a modified request. Refresh the exchange catalog after updating the desktop app.
+
 ## First connection test
 
 1. Read studio-info.json, catalog.json, and these instructions. Verify catalogSHA256 before using catalog choices.

@@ -8,6 +8,7 @@ from .config import ROOT, api_client
 from .deck_catalog import DECKS, get_deck
 from .meanings import MINORS
 from .platform_support import default_voice
+from .backgrounds import selected as background_choice
 
 DURATIONS = (30, 45, 60, 90)
 from .voice_direction import OPENAI_VOICES,presentation
@@ -32,7 +33,7 @@ def settings(data):
         'duration': data.get('duration', 45),
         'voice': data.get('voice', default_voice()),
         'writer': data.get('writer', 'local'),
-        **presentation(data),
+        **presentation(data), 'background':background_choice(data),
     }
     if not result['topic'] or len(result['topic']) > 300:
         raise ValueError('Write a topic between 1 and 300 characters.')

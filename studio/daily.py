@@ -10,6 +10,7 @@ from .daily_context import build_context,saved_context,edition_instant
 from .daily_visuals import STYLES,SIGN_THEMES,ANIMAL_THEMES,NUMBER_THEMES,visual_card
 from .platform_support import default_voice
 from .voice_direction import presentation
+from .backgrounds import selected as background_choice
 
 TYPES={'tarot':'Tarot','western':'Western astrology','chinese':'Chinese astrology','numerology':'Numerology','combined':'Combined'}
 COMPONENTS=('tarot','western','chinese','numerology')
@@ -44,7 +45,7 @@ def validate_daily_settings(data):
     selected=data.get('news_selection',[0])
     if not isinstance(selected,list) or len(selected)>3 or any(type(n) is not int or not 0<=n<6 for n in selected):
         raise ValueError('Choose up to three source headlines.')
-    return dict(**presentation(data),daily=True,reading_type=kind,date=day,edition=edition,timezone=zone,style=style,
+    return dict(background=background_choice(data),**presentation(data),daily=True,reading_type=kind,date=day,edition=edition,timezone=zone,style=style,
                 components=[c for c in COMPONENTS if c in components],duration=duration,voice=voice,writer=writer,
                 deck=deck,spread=spread,include_news=include_news,news_selection=sorted(set(selected)),
                 topic=f"{TYPES[kind]} · {instant.strftime('%B %d, %Y')} · {'Morning perspective' if edition=='morning' else 'Evening reflection'}")

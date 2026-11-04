@@ -57,8 +57,9 @@ def star(draw, x, y, size, color=GOLD):
 
 
 @lru_cache(maxsize=20)
-def backdrop(title, has_audio=True, label='T A R O T', date_line=''):
-    image = Image.new('RGB', (WIDTH, HEIGHT), BG)
+def backdrop(title, has_audio=True, label='T A R O T', date_line='', background='solid'):
+    from .backgrounds import canvas
+    image = canvas(background).copy()
     draw = ImageDraw.Draw(image)
     draw.rectangle((32,32,1047,1887), outline='#365039', width=2)
     star(draw, 540, 100, 23)
@@ -93,7 +94,7 @@ def render_frame(draft, manifest, t, width=WIDTH):
         from .daily_context import edition_instant
         moment=edition_instant(config['date'],config['edition'],config['timezone'])
         date_line=moment.strftime('%B %d, %Y · %I %p %Z').replace(' 0',' ')
-    image = backdrop(draft['title'],config['voice']!='silent',draft.get('reading_label','Daily reading').upper() if daily else 'T A R O T',date_line).copy()
+    image = backdrop(draft['title'],config['voice']!='silent',draft.get('reading_label','Daily reading').upper() if daily else 'T A R O T',date_line,config.get('background','solid')).copy()
     draw = ImageDraw.Draw(image)
     section = next((s for s in manifest['sections'] if s['start'] <= t < s['end']), manifest['sections'][-1])
     card = next((c for c in draft['cards'] if c['id'] == section.get('card_id')), draft['cards'][0] if section['key'] == 'hook' else draft['cards'][-1])

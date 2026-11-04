@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Play, Pause, Volume2, VolumeX, Maximize, LoaderCircle } from 'lucide-react';
 import { clock } from './api';
 
-export function Preview({draft, manifest, previewKey, output, busy, dirty, onPrepare, job}) {
+export function Preview({background,draft, manifest, previewKey, output, busy, dirty, onPrepare, job}) {
   const audio = useRef(null), video = useRef(null), frame = useRef(null);
   const [playing, setPlaying] = useState(false), [time, setTime] = useState(0), [guides, setGuides] = useState(false), [muted, setMuted] = useState(false), [playError, setPlayError] = useState('');
   const duration = manifest?.duration || draft?.settings.duration || 45;
@@ -28,7 +28,7 @@ export function Preview({draft, manifest, previewKey, output, busy, dirty, onPre
   };
   const seek = value => { if (audio.current && manifest) audio.current.currentTime = value; setTime(Number(value)); };
   const full = () => { const element = output ? video.current : frame.current; element?.requestFullscreen?.().catch(() => setPlayError('Fullscreen is unavailable in this browser.')); };
-  let source = draft ? `/api/poster/${draft.id}?r=${draft.revision}` : null;
+  let source = draft ? `/api/poster/${draft.id}?r=${draft.revision}&background=${encodeURIComponent(background||'solid')}` : null;
   if (manifest && !dirty) source = `/api/previews/${previewKey}/frame?t=${(Math.min(time, duration - .01)).toFixed(2)}`;
   return <section className="preview-area" aria-label="Video preview">
     <div className="preview-label">Video preview <span>(9:16)</span>{dirty ? <span className="unsaved">Unsaved changes</span> : null}</div>

@@ -59,3 +59,8 @@
 }
 
 .broadcast-cards.many-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-content:center}.many-cards .broadcast-card{width:auto;min-width:0}.many-cards .broadcast-frame{height:230px;width:140px;margin:auto}.many-cards .broadcast-card h3{font-size:18px}.many-cards .broadcast-card p{font-size:14px}
+
+/* Background choice is shared with the daily export renderer. */
+.broadcast-scene[data-background="illustrated"]{background-image:linear-gradient(#03130b66,#03130b66),var(--reading-background);background-size:cover;background-position:center}
+.broadcast-scene[data-background="illustrated"] .card-showcase::before{background-image:linear-gradient(#03130b55,#03130b55),var(--reading-background);background-size:cover;background-position:center}
+.broadcast-scene[data-background="solid"]{background:#0b1d15}

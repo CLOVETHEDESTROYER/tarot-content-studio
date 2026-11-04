@@ -1,3 +1,11 @@
+StarPower Content Studio 3.2.0
+
+- Four new generated portrait backgrounds: Celestial Atlas, Moonlit Garden, Aurora Mountains and Storybook Dawn, plus Classic evergreen.
+- Thumbnail selection in Tarot, Daily Readings, the planner and weekly jobs; background selection and thumbnail preview in Live Studio.
+- Background changes appear immediately in the editor poster. Saved selections carry through previews, cover images, exported video, posting bundles and live broadcasts.
+- Backgrounds are bundled locally and have shaded text zones for readable captions. New manual reading forms start with Celestial Atlas; old drafts and accepted Muse requests retain their appearance.
+- Muse requests can specify background: celestial, garden, aurora, dawn or solid. Prepare the exchange again after updating to refresh its catalog. Existing accepted request IDs remain unchanged.
+
 StarPower Content Studio 3.1.0
 
 - Choose from 13 OpenAI voices, including Marin and Cedar, with five delivery styles and three energy levels in Tarot, Daily Studio, weekly/Muse jobs and Live Studio.

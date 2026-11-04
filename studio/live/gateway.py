@@ -17,11 +17,13 @@ def create_gateway(folder=None):
     app=Flask(__name__,static_folder=None,template_folder=str(resources/'templates'))
     app.config.update(SECRET_KEY=os.getenv('LIVE_SESSION_SECRET') or (folder/'live-session.key').read_text().strip(),LIVE_PUBLIC=True,LIVE_GATEWAY_MODE=True,
                       LIVE_AUTH_DB=str(folder/'live-auth.sqlite3'))
+    from ..backgrounds import register_routes
+    register_routes(app)
     app.wsgi_app=ProxyFix(app.wsgi_app,x_proto=1)
     @app.before_request
     def boundary():
         allowed=request.method=='GET' and request.path in ('/live/overlay','/health','/api/live/state')
-        allowed|=request.method=='GET' and request.path.startswith(('/static/','/cards/','/api/artwork/','/api/daily/artwork/','/api/live/audio/'))
+        allowed|=request.method=='GET' and request.path.startswith(('/api/backgrounds/','/static/','/cards/','/api/artwork/','/api/daily/artwork/','/api/live/audio/'))
         allowed|=request.method=='POST' and request.path=='/api/live/overlay-access'
         if not allowed or (request.path=='/api/live/state' and request.args.get('public')!='1'):abort(404)
     auth=register_live_auth(app);storage=LiveStudio(folder/'live-studio.sqlite3',None)

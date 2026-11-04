@@ -29,6 +29,9 @@ def verify():
         application=create_app(Store(folder/'history.sqlite3'),run_jobs=False)
         with application.test_client() as client:
             config=client.get('/api/config').json
+            assert len(config['backgrounds'])==5
+            from .backgrounds import image_path
+            assert all(image_path(bg['id'],True).is_file() for bg in config['backgrounds'])
             assert len(config['openai_voices'])==13 and 'marin' in config['openai_voices']
             assert len(config['voice_styles'])==5 and len(config['voice_energies'])==3
             from .voice_direction import speech_options
@@ -43,7 +46,7 @@ def verify():
                     response=client.get(card['image_url']);assert response.status_code==200;response.close()
         raw,events,_=(macos_speech({'sections':[{'text':'Take a breath. Begin again.'}]},folder) if default_voice()=='macos' else windows_speech('Take a breath. Begin again.',folder))
         assert wave_info(raw)>0 and events
-        draft=create({'voice':default_voice(),'spread':'one'})
+        draft=create({'voice':default_voice(),'spread':'one','background':'garden'})
         duration=max(3,wave_info(raw))
         manifest=dict(duration=duration,sections=[dict(key='hook',start=0,end=duration,card_id=None)],captions=[dict(start=0,end=duration,text='Take a breath. Begin again.')])
         render_frame(draft,manifest,0).save(folder/'frame.jpg')

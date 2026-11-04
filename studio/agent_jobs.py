@@ -61,7 +61,7 @@ def atomic_json(root,path,value):
 
 
 def validate_request(data):
-    allowed={'schemaVersion','kind','requestId','brief','startDate','days','editions','timezone','morningType','eveningType','style','deck','voice','writer','components','duration','includeNews','campaign','requestedBy','readingTypes','voice_style','voice_energy'}
+    allowed={'schemaVersion','kind','requestId','brief','startDate','days','editions','timezone','morningType','eveningType','style','deck','voice','writer','components','duration','includeNews','campaign','requestedBy','readingTypes','voice_style','voice_energy','background'}
     if not isinstance(data,dict) or set(data)-allowed:raise ValueError('Use only the documented reading-week request fields.')
     if type(data.get('schemaVersion')) is not int or data['schemaVersion']!=1 or data.get('kind') not in ('reading-week','connection-test') or not valid_id(data.get('requestId')):
         raise ValueError('Use schemaVersion 1, reading-week or connection-test, and a safe requestId.')
@@ -74,7 +74,7 @@ def validate_request(data):
     edition_instant(start,'morning',zone)
     include_news=data.get('includeNews',False)
     if include_news and days>1:raise ValueError('Generate news editions one day at a time near publication; future headlines are not available for a weekly batch.')
-    output={key:data[key] for key in ('duration','voice_style','voice_energy') if key in data}
+    output={key:data[key] for key in ('duration','voice_style','voice_energy','background') if key in data}
     for key,default in [('style','esoteric-minimal'),('deck','esoteric-minimal'),('voice',default_voice()),('writer','local'),('components',list(COMPONENTS))]:output[key]=data.get(key,default)
     result=dict(schemaVersion=1,kind=data['kind'],requestId=data['requestId'],brief=brief.strip(),startDate=start,days=days,
                 editions=[e for e in ('morning','evening') if e in editions],timezone=zone,
@@ -149,7 +149,8 @@ class AgentJobs:
 
     def catalog(self):
         from .voice_direction import STYLES as VOICE_STYLES,ENERGIES
-        return dict(schemaVersion=1,application='starpower-content-studio',version=VERSION,requestKinds=['reading-week','connection-test'],
+        from .backgrounds import options as background_options
+        return dict(schemaVersion=1,application='starpower-content-studio',version=VERSION,backgrounds=background_options(),requestKinds=['reading-week','connection-test'],
             readingTypes=TYPES,components=list(COMPONENTS),styles=STYLES,durations=list(DURATIONS),voices=list(VOICES),defaultVoice=default_voice(),voiceStyles=VOICE_STYLES,voiceEnergies=ENERGIES,recommendedWriter='openai',recommendedVoice='openai-marin',
             timezone='America/Denver',slots=dict(morning='06:00',evening='18:00'),maxDays=7,maxAssets=70,supportsReadingTypes=True,
             newsPolicy='Advance weekly batches omit news. Use a single-day request near publication for current headlines.',

@@ -17,6 +17,7 @@ from ..daily import create_daily,TYPES
 from ..store import now
 from .. import operations
 from ..voice_direction import presentation
+from ..backgrounds import selected as background_choice
 
 
 def generate_live(job,store=None):
@@ -36,7 +37,7 @@ def generate_live(job,store=None):
         else:reading=local_interpretation(question,spread,cards)
     else:
         edition='evening' if datetime.now(ZoneInfo(settings.get('timezone','America/Denver'))).hour>=12 else 'morning'
-        config=dict(**presentation(settings),reading_type=kind,date=day,edition=edition,timezone=settings.get('timezone','America/Denver'),
+        config=dict(background=background_choice(settings),**presentation(settings),reading_type=kind,date=day,edition=edition,timezone=settings.get('timezone','America/Denver'),
             style=settings.get('style','esoteric-minimal'),deck=settings.get('deck','celebrity'),duration=90,
             spread=settings['spread'],voice='silent',writer='openai' if settings['use_ai'] else 'local',include_news=False)
         try:draft=create_daily(config,focus=question)
@@ -71,6 +72,7 @@ def generate_live(job,store=None):
                 settings=dict(topic=question[:300],deck=settings.get('deck','celebrity'),spread=settings['spread'],duration=90,
                               voice=voice if settings['use_voice'] else 'silent',writer='local'),writing_source=source)
         draft['settings'].update(presentation(settings))
+        draft['settings']['background']=background_choice(settings)
         draft['settings']['voice']=voice if settings['use_voice'] else 'silent'
         draft['title']=f"Live {TYPES[kind]} · @{item['viewer']} · {day}"
         draft['live']=dict(viewer=item['viewer'],question=question,request_id=item['id'],date=day,reading_type=kind)
