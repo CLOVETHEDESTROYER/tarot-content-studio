@@ -21,7 +21,9 @@ def fingerprint(draft):
     if draft['settings']['voice'] == 'windows':
         content['windows_speech_version'] = 2
     if draft['settings']['voice'].startswith('openai-'):
-        content['cloud_alignment_version'] = 2
+        content['cloud_alignment_version'] = 4
+        from .voice_direction import PROMPT_VERSION
+        content['voice_direction_version']=PROMPT_VERSION
     if draft['settings']['voice'] == 'macos':
         content['macos_speech_version'] = 1
     return hashlib.sha256(json.dumps(content, sort_keys=True, ensure_ascii=False).encode()).hexdigest()

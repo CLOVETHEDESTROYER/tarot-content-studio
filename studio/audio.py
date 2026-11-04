@@ -95,10 +95,11 @@ def macos_speech(draft, folder):
     return raw,events,'macOS speech · measured section timing, estimated word timing'
 
 
-def openai_speech(text, voice, folder):
+def openai_speech(text, voice, folder,voice_style='engaging',voice_energy='expressive'):
     # A network stream can keep a read timeout alive indefinitely. Bound the
     # whole optional cloud operation so it cannot stall the local render queue.
     (folder / 'speech.txt').write_text(text, encoding='utf-8')
+    (folder/'speech-direction.json').write_text(json.dumps(dict(voice_style=voice_style,voice_energy=voice_energy)),encoding='utf-8')
     try:
         command=[sys.executable,'--speech-worker'] if getattr(sys,'frozen',False) else [sys.executable,'-m','studio.speech_worker']
         result = subprocess.run([*command, str(folder), voice],
@@ -111,15 +112,13 @@ def openai_speech(text, voice, folder):
     return folder / 'raw.wav', saved['events'], saved['alignment']
 
 
-def openai_speech_request(text, voice, folder):
+def openai_speech_request(text, voice, folder,voice_style='engaging',voice_energy='expressive'):
     client = api_client().with_options(max_retries=0)
     output = folder / 'raw.wav'
     if not output.is_file():
         temporary = folder / 'raw.tmp'
-        response = client.audio.speech.create(
-            model=os.getenv('OPENAI_TTS_MODEL', 'gpt-4o-mini-tts'),
-            voice=voice, input=text, response_format='wav',
-        )
+        from .voice_direction import speech_options
+        response = client.audio.speech.create(input=text,**speech_options(os.getenv('OPENAI_TTS_MODEL','gpt-4o-mini-tts'),voice,voice_style,voice_energy))
         temporary.write_bytes(response.content)
         temporary.replace(output)
     wave_info(output)
@@ -184,14 +183,16 @@ def prepare_audio(draft, folder):
     else:
         if voice == 'windows':raw, events, alignment = windows_speech(text, folder)
         elif voice == 'macos':raw, events, alignment = macos_speech(draft, folder)
-        else:raw, events, alignment = openai_speech(text, voice.split('-', 1)[1], folder)
+        else:raw, events, alignment = openai_speech(text, voice.split('-', 1)[1], folder, draft['settings'].get('voice_style','engaging'), draft['settings'].get('voice_energy','expressive'))
         marks.write_text(json.dumps(dict(events=events,alignment=alignment)), encoding='utf-8')
     duration = wave_info(raw)
     rate = duration / (target - 1)
-    # Keep a natural speaking rate; extend the video rather than truncating words.
-    actual_rate = max(.75, min(1.45, rate))
-    actual = max(target, math.ceil(duration / actual_rate + .5))
-    if rate > 1.45:
+    # Preserve cloud prosody and finish near the last line instead of padding a
+    # fast delivery with a long silent ending. Length is a writing target.
+    cloud=voice.startswith('openai-')
+    actual_rate = max(.95,min(1.12,rate)) if cloud else max(.75,min(1.45,rate))
+    actual = max(3 if cloud else target, math.ceil(duration / actual_rate + .5))
+    if rate > (1.12 if cloud else 1.45):
         warning = f'This script needs {actual} seconds at a clear speaking pace. Shorten it to reach {target} seconds.'
     output = folder / 'narration.wav'
     run_ffmpeg(['-i', raw, '-af', f'atempo={actual_rate:.8f},apad', '-t', actual,

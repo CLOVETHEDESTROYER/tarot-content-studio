@@ -37,6 +37,12 @@ Tarot Exchange/
   Reports/                  actual external scheduling/publication acknowledgements
 ```
 
+## Voice and writing direction (3.1)
+
+For new production requests, use `"writer": "openai"`, `"voice": "openai-marin"`, `"voice_style": "engaging"`, and `"voice_energy": "expressive"`. For livelier delivery try `"uplifting"` and `"high"`; for evenings try `"reflective"`. Cedar and Coral are useful alternatives. All thirteen available voices are listed in the refreshed catalog. Preview voices in the studio before requesting a week. OpenAI writing and narration use the studio computer's configured key and API credits.
+
+Daily scripts use the selected posting date, not the day Muse happens to request them. Saved facts and cards stay attached to the edition. New AI scripts enforce section word limits and check the opening date; an invalid script gets one editorial revision and otherwise fails for review. Existing drafts need Rewrite and a new preview/export to adopt the new content and voice direction. Replays reuse accepted output; never modify the payload under an accepted request ID.
+
 ## Generate the week
 
 The weekly form defaults to seven days and both editions: **14 readings**, at **06:00 and 18:00 America/Denver**. Choose an explicit first day, morning/evening reading type, visual style, tarot artwork, voice, and writer. The request ID defaults to `tarot-week-YYYY-MM-DD`. Use a stable ID for one exact request; change it for a genuinely different brief/window. Existing production slots are reused when settings match; conflicting settings fail rather than overwrite an edition.

@@ -23,17 +23,18 @@ def validate_narration(data, text):
     return duration
 
 
-def synthesize_live_narration(client, text, model='gpt-4o-mini-tts', voice='coral'):
+def synthesize_live_narration(client, text, model='gpt-4o-mini-tts', voice='coral',voice_style='engaging',voice_energy='expressive'):
     if client is None:
         return None
     text = text.strip()[:3500]
     if not text:
         raise ValueError('A reading is required for narration.')
     error = None
-    for attempt_model, attempt_voice in ((model, voice), ('tts-1', 'nova')):
+    from ..voice_direction import speech_options
+    for attempt_model, attempt_voice in ((model, voice), (model, 'coral' if voice!='coral' else 'nova')):
         try:
             response = client.with_options(timeout=60, max_retries=0).audio.speech.create(
-                model=attempt_model, voice=attempt_voice, input=text, response_format='wav',
+                input=text, **speech_options(attempt_model,attempt_voice,voice_style,voice_energy),
             )
             data = response.read()
             validate_narration(data, text)

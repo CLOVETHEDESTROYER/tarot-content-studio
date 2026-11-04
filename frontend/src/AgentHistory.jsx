@@ -16,7 +16,7 @@ export function AgentHistory({config,open}) {
 
  const [data,setData]=useState(null),[folder,setFolder]=useState(''),[busy,setBusy]=useState(''),[error,setError]=useState(''),[notice,setNotice]=useState(''),[prompt,setPrompt]=useState('');
 
- const [form,setForm]=useState({requestId:'tarot-week-'+tomorrow.toISOString().slice(0,10),startDate:tomorrow.toISOString().slice(0,10),days:7,morningType:'combined',eveningType:'tarot',style:'esoteric-minimal',deck:'esoteric-minimal',voice:config.default_voice||'silent',writer:'local',components:['tarot','western','chinese','numerology']});
+ const [form,setForm]=useState({requestId:'tarot-week-'+tomorrow.toISOString().slice(0,10),startDate:tomorrow.toISOString().slice(0,10),days:7,morningType:'combined',eveningType:'tarot',style:'esoteric-minimal',deck:'esoteric-minimal',voice:config.default_voice||'silent',writer:config.openai?'openai':'local',voice_style:'engaging',voice_energy:'expressive',components:['tarot','western','chinese','numerology']});
 
  const [batchMode,setBatchMode]=useState('series'),[readingTypes,setReadingTypes]=useState(['western','chinese','numerology']),[editions,setEditions]=useState(['morning']);
 

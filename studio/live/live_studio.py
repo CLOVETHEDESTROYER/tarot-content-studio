@@ -18,7 +18,7 @@ def initial_state():
         'queue': [], 'carry': None, 'processing': None, 'display': None,
         'last_error': '', 'recent': {},
         'settings': {'interval': 270, 'approval': True, 'use_ai': True,
-                     'use_voice': True, 'spread': 'three', 'presenter': 'Zenwave', 'deck': 'celebrity', 'reading_type':'tarot','reading_date':'','style':'esoteric-minimal','timezone':'America/Denver','voice':'openai-coral'},
+                     'use_voice': True, 'spread': 'three', 'presenter': 'Zenwave', 'deck': 'celebrity', 'reading_type':'tarot','reading_date':'','style':'esoteric-minimal','timezone':'America/Denver','voice':'openai-coral','voice_style':'engaging','voice_energy':'expressive'},
     }
 
 
@@ -77,6 +77,8 @@ class LiveStudio:
         from ..daily import TYPES
         from ..daily_visuals import STYLES
         from ..engine import VOICES
+        from ..voice_direction import presentation
+        delivery=presentation(values)
         from zoneinfo import ZoneInfo
         from datetime import date
         if values.get('reading_type','tarot') not in TYPES:raise ValueError('Choose an available reading type.')
@@ -86,7 +88,7 @@ class LiveStudio:
         if values.get('reading_date'):date.fromisoformat(values['reading_date'])
         with self.transaction() as state:
             state['settings'] = {
-                'interval': interval, 'approval': bool(values.get('approval', True)),
+                **delivery,'interval': interval, 'approval': bool(values.get('approval', True)),
                 'use_ai': bool(values.get('use_ai', True)), 'use_voice': bool(values.get('use_voice', True)),
                 'spread': values.get('spread', 'three'),
                 'deck': deck,

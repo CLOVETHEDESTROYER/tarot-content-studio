@@ -38,7 +38,7 @@ export default function App() {
         const conf=await api('/config');setToken(conf.token);setConfig(conf);setSettings(defaultSettings(conf));
         const data=await refresh();
         if(data.readings.length)await open(data.readings[0],data.jobs);
-        else {const starter=await api('/readings','POST',defaultSettings(conf));await open(starter,[]);await refresh();}
+        else {const starter=await api('/readings','POST',{...defaultSettings(conf),writer:'local'});await open(starter,[]);await refresh();}
       } catch(e){setError(e.message);}
     })();
     return ()=>clearTimeout(toastTimer.current);

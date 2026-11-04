@@ -61,7 +61,7 @@ def openai_client():
     return api_client()
 
 
-def ai_reading(question: str, spread_label: str, cards: list[dict]) -> str | None:
+def ai_reading(question: str, spread_label: str, cards: list[dict],publication_date=None) -> str | None:
     client = openai_client()
     if client is None:
         return None
@@ -72,7 +72,10 @@ def ai_reading(question: str, spread_label: str, cards: list[dict]) -> str | Non
         f"celebrity={c.get('celebrity') or 'none'}"
         for c in cards
     )
+    from ..editorial import VOICE_WRITING
     prompt = f"""
+{VOICE_WRITING}
+Target publication date: {publication_date or 'not specified; do not invent a date or sky facts'}. Use the selected date, not the generation date.
 You are an atmospheric but grounded tarot reader for an internal celebrity tarot deck.
 Give an entertaining symbolic reading and a cautious prediction based only on the cards.
 Do not claim certainty. Do not give medical, legal, financial, or safety advice.
@@ -87,8 +90,8 @@ Cards:
 Structure:
 1. Opening vibe
 2. Card-by-card interpretation
-3. Prediction
-4. Practical next move
+3. A concrete choice connected to the question
+4. A useful payoff and one natural closing question
 """
     response = client.responses.create(
         model=os.getenv("OPENAI_READING_MODEL", "gpt-4.1-mini"),
@@ -130,11 +133,9 @@ def synthesize_audio(text: str) -> str | None:
     if client is None:
         return None
     out_path = Path(tempfile.gettempdir()) / f"tarot-reading-{int(time.time() * 1000)}.mp3"
-    with client.audio.speech.with_streaming_response.create(
-        model=os.getenv("OPENAI_TTS_MODEL", "gpt-4o-mini-tts"),
-        voice=os.getenv("OPENAI_TTS_VOICE", "coral"),
-        input=text[:3500],
-    ) as response:
+    from ..voice_direction import speech_options
+    options={**speech_options(os.getenv('OPENAI_TTS_MODEL','gpt-4o-mini-tts'),os.getenv('OPENAI_TTS_VOICE','coral')),'response_format':'mp3'}
+    with client.audio.speech.with_streaming_response.create(input=text[:3500],**options) as response:
         response.stream_to_file(out_path)
     try:
         audio_b64 = base64.b64encode(out_path.read_bytes()).decode("ascii")

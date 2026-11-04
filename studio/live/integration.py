@@ -16,6 +16,7 @@ from ..config import ROOT,DATA,api_client
 from ..daily import create_daily,TYPES
 from ..store import now
 from .. import operations
+from ..voice_direction import presentation
 
 
 def generate_live(job,store=None):
@@ -29,13 +30,13 @@ def generate_live(job,store=None):
         spread='One Card' if settings['spread']=='one' else 'Past / Present / Future'
         reading=None
         if settings['use_ai']:
-            try:reading=ai_reading(question,spread,cards)
+            try:reading=ai_reading(question,spread,cards,publication_date=day)
             except Exception:warning='AI unavailable. Built-in interpretation used.'
         if reading:source='OpenAI live reading'
         else:reading=local_interpretation(question,spread,cards)
     else:
         edition='evening' if datetime.now(ZoneInfo(settings.get('timezone','America/Denver'))).hour>=12 else 'morning'
-        config=dict(reading_type=kind,date=day,edition=edition,timezone=settings.get('timezone','America/Denver'),
+        config=dict(**presentation(settings),reading_type=kind,date=day,edition=edition,timezone=settings.get('timezone','America/Denver'),
             style=settings.get('style','esoteric-minimal'),deck=settings.get('deck','celebrity'),duration=90,
             spread=settings['spread'],voice='silent',writer='openai' if settings['use_ai'] else 'local',include_news=False)
         try:draft=create_daily(config,focus=question)
@@ -47,7 +48,7 @@ def generate_live(job,store=None):
     if settings['use_voice'] and voice!='silent':
         try:
             if voice.startswith('openai-'):
-                audio=synthesize_live_narration(api_client(),reading,model=os.getenv('OPENAI_TTS_MODEL','gpt-4o-mini-tts'),voice=voice.removeprefix('openai-'))
+                audio=synthesize_live_narration(api_client(),reading,model=os.getenv('OPENAI_TTS_MODEL','gpt-4o-mini-tts'),voice=voice.removeprefix('openai-'),**presentation(settings))
             else:
                 from ..audio import windows_speech,macos_speech
                 with tempfile.TemporaryDirectory() as tmp:
@@ -69,6 +70,7 @@ def generate_live(job,store=None):
                 sections=sections,
                 settings=dict(topic=question[:300],deck=settings.get('deck','celebrity'),spread=settings['spread'],duration=90,
                               voice=voice if settings['use_voice'] else 'silent',writer='local'),writing_source=source)
+        draft['settings'].update(presentation(settings))
         draft['settings']['voice']=voice if settings['use_voice'] else 'silent'
         draft['title']=f"Live {TYPES[kind]} · @{item['viewer']} · {day}"
         draft['live']=dict(viewer=item['viewer'],question=question,request_id=item['id'],date=day,reading_type=kind)

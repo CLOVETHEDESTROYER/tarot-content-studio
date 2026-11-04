@@ -10,5 +10,5 @@ export async function api(path, method = 'GET', data) {
   return result;
 }
 export const defaults = {topic: 'What is opening up for me?', deck: 'esoteric-minimal', spread: 'three', duration: 45, voice: 'windows', writer: 'local'};
-export const defaultSettings = config => ({...defaults,voice:config.default_voice||'silent'});
+export const defaultSettings = config => ({...defaults,voice:config.default_voice||'silent',writer:config.openai?'openai':'local',voice_style:'engaging',voice_energy:'expressive'});
 export const clock = seconds => `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${Math.floor(seconds % 60).toString().padStart(2, '0')}`;

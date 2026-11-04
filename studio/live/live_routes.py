@@ -48,7 +48,8 @@ def register_live_routes(app, generate):
         denied = auth['require_host']()
         if denied:
             return denied
-        return render_template('live.html', gateway_url=app.config.get('BROADCAST_GATEWAY_URL',''),desktop_mode=app.config.get('LIVE_DESKTOP',False),live_csrf=auth['csrf_token'](), overlay_url=auth['overlay_url'](),
+        from ..voice_direction import OPENAI_VOICES,STYLES as VOICE_STYLES,ENERGIES
+        return render_template('live.html',openai_voices=OPENAI_VOICES,voice_styles=VOICE_STYLES,voice_energies=ENERGIES, gateway_url=app.config.get('BROADCAST_GATEWAY_URL',''),desktop_mode=app.config.get('LIVE_DESKTOP',False),live_csrf=auth['csrf_token'](), overlay_url=auth['overlay_url'](),
                                deck_options=deck_options(__import__('studio.config',fromlist=['ROOT']).ROOT))
 
     @app.get('/live/overlay')

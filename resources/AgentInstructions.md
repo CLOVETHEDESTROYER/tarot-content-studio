@@ -44,7 +44,7 @@ Write Requests/requestId.json with schemaVersion 1, kind reading-week, a stable 
 }
 ```
 
-Use catalog.defaultVoice for the rendering computer: macos on a Mac, windows on Windows. Captions-only uses silent. OpenAI writing and Coral/Nova are optional and require the operator's local configuration; never put API keys into requests.
+Use catalog.defaultVoice for the rendering computer: macos on a Mac, windows on Windows. Captions-only uses silent. For richer scripts and directed narration, use writer "openai", voice "openai-marin" (or any catalog OpenAI voice), voice_style "engaging", and voice_energy "expressive". "uplifting" with "high" gives a more enthusiastic delivery; "reflective" suits evening editions. These require the operator's existing local OpenAI configuration and use API credits. Never put API keys into requests. Voice styles/energies are optional; omitted values default to engaging/expressive. Do not add new fields to an already accepted request ID.
 
 Supported types: tarot, western, chinese, numerology, combined. Combined uses any two or more of the catalog components. Choose one to seven days, morning/evening/both, and the planner's timezone (America/Denver by default). Maximum 14 assets. The proposed morning slot is 06:00, evening is 18:00, with the correct offset for each calendar day. Duration may be a catalog preset; omitted durations are 90 seconds for combined, 45 for numerology, and 60 otherwise. style, deck, writer, voice, campaign, requestedBy are optional; defaults are recorded when the request is accepted. Keep the same explicit parameters when replaying an ID.
 

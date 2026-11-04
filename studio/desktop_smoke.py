@@ -28,6 +28,11 @@ def verify():
         from TikTokLive.events import CommentEvent,ConnectEvent,DisconnectEvent,LiveEndEvent
         application=create_app(Store(folder/'history.sqlite3'),run_jobs=False)
         with application.test_client() as client:
+            config=client.get('/api/config').json
+            assert len(config['openai_voices'])==13 and 'marin' in config['openai_voices']
+            assert len(config['voice_styles'])==5 and len(config['voice_energies'])==3
+            from .voice_direction import speech_options
+            assert 'instructions' in speech_options('gpt-4o-mini-tts','marin','uplifting','high')
             assert client.get('/live').status_code==200
             assert client.get('/card-library').status_code==200
             for kind in ('western','chinese','numerology'):
@@ -45,4 +50,4 @@ def verify():
         encode_video(draft,manifest,raw,folder/'test.mp4',lambda *args:None)
         decoded=subprocess.run([ffmpeg(),'-hide_banner','-i',str(folder/'test.mp4'),'-f','null','-'],capture_output=True,text=True,timeout=30)
         assert decoded.returncode==0 and '1080x1920' in decoded.stderr and '30 fps' in decoded.stderr
-    return dict(passed=True,bundledDecks=3,dailyCards=72,frontend=True,nativeVoice=default_voice(),portraitMp4Decode=True,credentialBackend=backend,liveStudio=True,liveAstrologyAndNumerology=True,tikTokConnectorBundled=True)
+    return dict(passed=True,bundledDecks=3,dailyCards=72,frontend=True,nativeVoice=default_voice(),portraitMp4Decode=True,credentialBackend=backend,liveStudio=True,liveAstrologyAndNumerology=True,tikTokConnectorBundled=True,directedOpenAIVoices=13)

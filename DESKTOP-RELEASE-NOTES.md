@@ -1,3 +1,12 @@
+StarPower Content Studio 3.1.0
+
+- Choose from 13 OpenAI voices, including Marin and Cedar, with five delivery styles and three energy levels in Tarot, Daily Studio, weekly/Muse jobs and Live Studio.
+- Preview a short voice sample before rendering. Repeated identical samples use the local cache; new samples use OpenAI credits.
+- Instruction-capable OpenAI narration receives explicit direction for emphasis, pitch, rhythm and enthusiasm. Gentle timing adjustments preserve delivery; videos finish near the last line instead of adding a long silent ending. The chosen length is a writing target.
+- Daily writing starts with a concrete hook and the posting date, uses the saved daily sky/calendar/number facts, and develops a practical audience takeaway. AI scripts have individual section limits and a bounded revision when date or length checks fail.
+- New creation forms prefer OpenAI writing when a key is already configured. Saved readings and previously accepted jobs retain their settings. Rewrite an existing draft to use the new writing approach, then rebuild its preview/export.
+- Existing Muse requests remain replay-compatible. Prepare the exchange again to refresh voice choices and instructions; set writer, voice, voice_style and voice_energy explicitly for new batches.
+
 StarPower Content Studio 3.0.1
 
 - Adds Browse folders in History & Agent Jobs to select a real local or Google Drive Desktop folder.

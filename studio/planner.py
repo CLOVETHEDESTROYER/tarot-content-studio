@@ -16,7 +16,7 @@ from .operations import generation_action
 
 DEFAULTS=dict(enabled=False,timezone='America/Denver',morning_type='combined',evening_type='combined',
               style='esoteric-minimal',deck='esoteric-minimal',voice=default_voice(),writer='local',include_news=False,
-              components=list(COMPONENTS),lead_minutes=30)
+              components=list(COMPONENTS),lead_minutes=30,voice_style='engaging',voice_energy='expressive')
 
 
 class DailyPlanner:
@@ -114,7 +114,7 @@ class DailyPlanner:
             db.execute('BEGIN IMMEDIATE')
             previous=db.execute('SELECT body FROM editions WHERE id=?',(key,)).fetchone()
             entry=json.loads(previous['body']) if previous else None
-            if entry and settings_override is not None and entry['settings']!=settings:
+            if entry and settings_override is not None and {**{'voice_style':'engaging','voice_energy':'expressive'},**entry['settings']}!=settings:
                 raise ValueError(f'{day} {edition} already has a different saved edition. Reuse it or choose another date; it will not be replaced.')
             if entry and (entry['status']!='failed' or not retry):return entry
             if entry and entry.get('draft_id'):

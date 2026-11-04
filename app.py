@@ -92,9 +92,11 @@ def create_app(store=None, run_jobs=True):
         if expected(data) != draft['revision']:
             raise Conflict('This reading changed in another window. Reopen it from the library.')
 
+    from studio.voice_direction import OPENAI_VOICES,STYLES as VOICE_STYLES,ENERGIES
+
     @app.get('/api/config')
     def config():
-        return jsonify(token=token, decks=deck_options(ROOT), openai=bool(os.getenv('OPENAI_API_KEY')),
+        return jsonify(token=token,openai_voices=list(OPENAI_VOICES),voice_styles=VOICE_STYLES,voice_energies=ENERGIES, decks=deck_options(ROOT), openai=bool(os.getenv('OPENAI_API_KEY')),
                        **voice_capabilities(), application='starpower-content-studio', export_folder=str(EXPORTS), version=VERSION,
                        today=datetime.now(ZoneInfo('America/Denver')).date().isoformat())
 
@@ -103,6 +105,18 @@ def create_app(store=None, run_jobs=True):
         from studio.daily import validate_daily_settings
         from studio.daily_context import build_context
         return jsonify(build_context(validate_daily_settings(body())))
+
+    @app.post('/api/voice/sample')
+    def voice_sample():
+        from studio.voice_samples import create_sample
+        return jsonify(create_sample(body()))
+
+    @app.get('/api/voice/samples/<key>.wav')
+    def voice_sample_audio(key):
+        from studio.voice_samples import sample_path
+        path=sample_path(key)
+        if not path.is_file():abort(404,'Prepare this voice sample first.')
+        return send_file(path,mimetype='audio/wav',conditional=True)
 
     @app.get('/api/daily/cards')
     def daily_cards():

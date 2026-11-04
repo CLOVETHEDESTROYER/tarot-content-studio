@@ -38,7 +38,8 @@ class NarrationTests(unittest.TestCase):
         self.assertTrue(result.startswith('data:audio/wav;base64,'))
         self.assertEqual(base64.b64decode(result.split(',')[1]), wav())
         self.assertEqual(create.call_count, 2)
-        self.assertEqual(create.call_args.kwargs['model'], 'tts-1')
+        self.assertEqual(create.call_args.kwargs['model'], 'gpt-4o-mini-tts')
+        self.assertIn('instructions',create.call_args.kwargs)
 
     def test_failed_retry_is_not_published(self):
         client = MagicMock()

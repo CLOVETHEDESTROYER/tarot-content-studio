@@ -1,3 +1,4 @@
+import {VoiceDirection} from './VoiceDirection';
 import {VoiceOptions} from './VoiceOptions';
 import {useEffect,useState} from 'react';
 import {Sun,Moon,Sparkles,Compass,Hash,Layers,RefreshCw,ArrowRight,ExternalLink} from 'lucide-react';
@@ -11,11 +12,12 @@ export function OutputControls({value,change,config,duration=true}) {
   {duration?<label>Length<select aria-label="Daily video length" value={value.duration} onChange={e=>change('duration',Number(e.target.value))}>{[30,45,60,90].map(n=><option key={n} value={n}>{n} seconds</option>)}</select></label>:null}
   <label>Voice<select aria-label="Daily voice" value={value.voice} onChange={e=>change('voice',e.target.value)}><VoiceOptions config={config}/></select></label>
   <label>Writing<select aria-label="Daily writing" value={value.writer} onChange={e=>change('writer',e.target.value)}><option value="local">Built-in · free</option><option value="openai" disabled={!config.openai}>OpenAI · creative</option></select></label>
+  <VoiceDirection value={value} change={change} config={config}/>
  </div>;
 }
 
 export function DailyStudio({config,onCreate,busy}) {
- const [form,setForm]=useState({daily:true,reading_type:'combined',date:config.today,edition:'morning',timezone:'America/Denver',style:'esoteric-minimal',deck:'esoteric-minimal',spread:'one',components:['tarot','western','chinese','numerology'],duration:90,voice:config.default_voice||'silent',writer:'local',include_news:false,news_selection:[0]});
+ const [form,setForm]=useState({daily:true,reading_type:'combined',date:config.today,edition:'morning',timezone:'America/Denver',style:'esoteric-minimal',deck:'esoteric-minimal',spread:'one',components:['tarot','western','chinese','numerology'],duration:90,voice:config.default_voice||'silent',writer:config.openai?'openai':'local',voice_style:'engaging',voice_energy:'expressive',include_news:false,news_selection:[0]});
  const [context,setContext]=useState(null),[loading,setLoading]=useState(false),[error,setError]=useState('');
  const [cards,setCards]=useState([]),[family,setFamily]=useState('western');
  const change=(key,value)=>{setForm(f=>({...f,[key]:value}));if(['date','edition','timezone','include_news'].includes(key))setContext(null);};

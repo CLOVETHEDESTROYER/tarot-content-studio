@@ -121,7 +121,7 @@ class DailyFlowTests(unittest.TestCase):
   config={**reading['settings'],'include_news':True,'news_selection':[0],'writer':'openai'}
   from studio.daily import cards_for
   cards=cards_for(config,context,reading['seed'])
-  client=MagicMock();client.responses.create.return_value.output_text=json.dumps({'sections':['A reflective sentence.']*(len(cards)+2)})
+  client=MagicMock();client.responses.create.return_value.output_text=json.dumps({**{'hook':'What needs attention on October 23?','closing':'A reflective sentence.'},**{f'card_{i}':'A reflective sentence.' for i in range(len(cards))}})
   with patch('studio.daily.api_client',return_value=client):sections,_=write_daily(cards,config,context)
   supplied=json.loads(client.responses.create.call_args.kwargs['input'])['context']
   self.assertNotIn('western',supplied);self.assertNotIn('chinese',supplied)
