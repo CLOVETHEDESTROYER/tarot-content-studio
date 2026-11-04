@@ -50,15 +50,21 @@ class DailyPlanner:
 
     def entries(self):
         with self.store.connect() as db:rows=db.execute('SELECT body FROM editions ORDER BY target DESC LIMIT 120').fetchall()
-        entries=[json.loads(r['body']) for r in rows]
-        for entry in entries:
-            if entry.get('job_id') and entry['status']=='rendering':
-                job=self.store.get_job(entry['job_id'])
-                if job['status']=='done':entry.update(status='ready',error='',finished=job.get('finished'))
-                elif job['status']=='failed':entry.update(status='failed',error=job['error'])
-                entry['progress']=job['progress']
-                if entry['status']!='rendering':self.put(entry)
-        return entries
+        return [self.refresh_entry(json.loads(r['body'])) for r in rows]
+
+    def refresh_entry(self,entry):
+        if entry.get('job_id') and entry['status']=='rendering':
+            job=self.store.get_job(entry['job_id'])
+            if job['status']=='done':entry.update(status='ready',error='',finished=job.get('finished'))
+            elif job['status']=='failed':entry.update(status='failed',error=job['error'])
+            entry['progress']=job['progress']
+            if entry['status']!='rendering':self.put(entry)
+        return entry
+
+    def get_entry(self,key):
+        with self.store.connect() as db:row=db.execute('SELECT body FROM editions WHERE id=?',(key,)).fetchone()
+        if not row:raise KeyError('Edition not found.')
+        return self.refresh_entry(json.loads(row['body']))
 
     def put(self,entry):
         with self.store.connect() as db:db.execute('INSERT OR REPLACE INTO editions VALUES (?,?,?)',(entry['id'],entry['target'],json.dumps(entry)))
@@ -81,15 +87,23 @@ class DailyPlanner:
     @staticmethod
     def key(day,edition,zone):return hashlib.sha256(f'{day}|{edition}|{zone}'.encode()).hexdigest()[:24]
 
-    def prepare(self,day,edition,retry=False):
+    def prepare(self,day,edition,retry=False,settings_override=None):
         config=self.config();target=edition_instant(day,edition,config['timezone']);key=self.key(day,edition,config['timezone'])
         kind=config[edition+'_type']
         settings=validate_daily_settings({**config,'date':day,'edition':edition,'reading_type':kind,
                                          'duration':90 if kind=='combined' else 45 if kind=='numerology' else 60})
+        if settings_override is not None:
+            settings=validate_daily_settings({**settings_override,'date':day,'edition':edition})
+            if settings['timezone']!=config['timezone']:raise ValueError('Use the planner timezone for weekly editions.')
+            kind=settings['reading_type']
+        try:self.get_entry(key)  # reconcile a finished/failed render before deciding whether to retry
+        except KeyError:pass
         with self.store.connect() as db:
             db.execute('BEGIN IMMEDIATE')
             previous=db.execute('SELECT body FROM editions WHERE id=?',(key,)).fetchone()
             entry=json.loads(previous['body']) if previous else None
+            if entry and settings_override is not None and entry['settings']!=settings:
+                raise ValueError(f'{day} {edition} already has a different saved edition. Reuse it or choose another date; it will not be replaced.')
             if entry and (entry['status']!='failed' or not retry):return entry
             if entry and entry.get('draft_id'):
                 settings=entry['settings'];kind=entry['reading_type']

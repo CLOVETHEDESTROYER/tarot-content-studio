@@ -27,7 +27,9 @@ def create_app(store=None, run_jobs=True):
     worker = Jobs(database) if run_jobs else None
     from studio.planner import DailyPlanner
     planner=DailyPlanner(database,worker,start=run_jobs) if worker else None
-    app.extensions.update(studio_store=database, studio_jobs=worker, studio_planner=planner)
+    from studio.agent_jobs import AgentJobs
+    agent=AgentJobs(database,planner,worker,start=run_jobs) if worker else None
+    app.extensions.update(studio_store=database, studio_jobs=worker, studio_planner=planner,studio_agent=agent)
 
     @app.before_request
     def local_boundary():
@@ -88,7 +90,7 @@ def create_app(store=None, run_jobs=True):
     @app.get('/api/config')
     def config():
         return jsonify(token=token, decks=deck_options(ROOT), openai=bool(os.getenv('OPENAI_API_KEY')),
-                       **voice_capabilities(), application='starpower-content-studio', export_folder=str(EXPORTS), version='2.1.0',
+                       **voice_capabilities(), application='starpower-content-studio', export_folder=str(EXPORTS), version='2.2.0',
                        today=datetime.now(ZoneInfo('America/Denver')).date().isoformat())
 
     @app.post('/api/daily/context')
@@ -125,6 +127,49 @@ def create_app(store=None, run_jobs=True):
         data=body()
         if type(data.get('retry',False)) is not bool:raise ValueError('Retry must be true or false.')
         return jsonify(planner.prepare(data.get('date'),data.get('edition'),data.get('retry',False))),202
+
+    def agent_worker():
+        if not agent:abort(503,'Agent worker unavailable.')
+        return agent
+
+    @app.get('/api/agent')
+    def agent_state():return jsonify(agent_worker().snapshot())
+
+    @app.put('/api/agent')
+    def agent_settings():
+        agent_worker().save(body());return jsonify(agent.snapshot())
+
+    @app.post('/api/agent/poll')
+    def agent_poll():
+        body();agent_worker().poll();return jsonify(agent.snapshot())
+
+    @app.post('/api/agent/first-test')
+    def agent_first_test():
+        body();root=agent_worker().prepare_exchange()
+        example=json.loads((root/'Examples/first-test.json').read_text(encoding='utf-8'))
+        return jsonify(agent.submit(example)),202
+
+    @app.post('/api/agent/requests')
+    def agent_request():return jsonify(agent_worker().submit(body())),202
+
+    @app.post('/api/agent/requests/<key>/resume')
+    def agent_resume(key):
+        body();worker=agent_worker();return jsonify(worker.submit(worker.get(key)['request'],retry=True)),202
+
+    @app.get('/api/agent/requests/<key>')
+    def agent_request_status(key):return jsonify(agent_worker().get(key))
+
+    @app.get('/api/agent/requests/<key>/bundle')
+    def agent_bundle(key):
+        record=agent_worker().get(key)
+        if record['status']!='complete':abort(409,'Wait for the whole request to complete before retrieving media.')
+        from studio.agent_jobs import inside
+        root=Path(record['exchangeRoot']);path=inside(root,root/record['archive'])
+        if not path.is_file():abort(404,'The completed handoff was moved or removed. Restore it; replays do not regenerate media.')
+        return send_file(path,as_attachment=True,download_name=record['id']+'.zip')
+
+    @app.post('/api/agent/reports')
+    def agent_report():return jsonify(agent_worker().report(body()))
 
     @app.get('/api/readings')
     def readings():

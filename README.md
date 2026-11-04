@@ -4,6 +4,8 @@ A standalone Windows and macOS studio for making tarot, Western astrology, Chine
 
 **Intel Mac / macOS Sequoia:** follow [MAC-SETUP.md](MAC-SETUP.md). Clone this repository, run **Setup Content Studio.command** once, then **Start Content Studio.command**. A free native macOS voice is included; no OpenAI key is required for local production.
 
+**Meta Muse / weekly automation:** open **History & Agent Jobs** and follow [MUSE-SETUP.md](MUSE-SETUP.md). A dedicated ZenWave-style file exchange accepts weekly jobs, preserves dated production slots, returns finished media and checksums, and records external publication acknowledgements. Muse handles the separately authorized platform scheduling/posting.
+
 ## Open the studio
 
 Double-click **Start Content Studio.cmd**, then use **http://127.0.0.1:5057**. Keep the launcher window open while working. Close it or press Ctrl+C to stop the server.
