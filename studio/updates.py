@@ -279,3 +279,8 @@ class DesktopBridge:
     def install_update(self):return self._updates.install_update()
     def restore_previous(self):return self._updates.restore_previous()
     def save_update_token(self,token):return self._updates.save_update_token(token)
+    def choose_exchange_folder(self):
+        import webview
+        if not self._updates.window:raise ValueError('Open the desktop app to choose a folder.')
+        selected=self._updates.window.create_file_dialog(webview.FileDialog.FOLDER,allow_multiple=False)
+        return str(selected[0]) if selected else None

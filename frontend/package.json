@@ -1,7 +1,7 @@
 {
   "name": "starpower-content-studio",
   "private": true,
-  "version": "3.0.0",
+  "version": "3.0.1",
   "type": "module",
   "scripts": {"dev": "vite --host 127.0.0.1", "build": "vite build"},
   "dependencies": {"react": "^19.2.0", "react-dom": "^19.2.0", "lucide-react": "^0.468.0"},

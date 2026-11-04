@@ -155,9 +155,14 @@ class AgentJobs:
             publishing='Muse schedules/posts through separately authorized platform access; Reports record its acknowledgements only.')
 
     def prepare_exchange(self,folder=None):
-        config=self.config();root=Path(folder or config['folder']).expanduser()
-        if not root.is_absolute():raise ValueError('Choose an absolute path to a dedicated Tarot Exchange folder.')
-        root=root.resolve()
+        from .exchange_folder import folder_error
+        try:return self._prepare_exchange(folder)
+        except OSError as exc:raise ValueError(folder_error(exc)) from exc
+        except (json.JSONDecodeError,UnicodeError) as exc:raise ValueError('Existing exchange metadata is unreadable. Choose an empty dedicated Tarot folder, or restore its metadata from your backup. The current exchange setting was not changed.') from exc
+
+    def _prepare_exchange(self,folder=None):
+        from .exchange_folder import exchange_path
+        config=self.config();root=exchange_path(config['folder'] if folder is None else folder)
         for name in ('studio-info.json','catalog.json'):
             existing=inside(root,root/name)
             if existing.is_file():

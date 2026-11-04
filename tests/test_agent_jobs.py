@@ -76,6 +76,32 @@ class AgentHistoryTests(unittest.TestCase):
         self.assertEqual((root/'catalog.json').read_text(),sentinel)
         self.assertFalse((root/'AGENT-INSTRUCTIONS.md').exists())
 
+    def test_drive_website_link_and_empty_path_do_not_change_settings(self):
+        before=self.agent.config()
+        for folder in ('https://drive.google.com/drive/folders/example','drive.google.com/example','','   '):
+            with self.assertRaises(ValueError):self.agent.save({'folder':folder})
+            self.assertEqual(self.agent.config(),before)
+
+    def test_filesystem_errors_explain_how_to_fix_folder_and_preserve_settings(self):
+        before=self.agent.config()
+        for failure,words in ((PermissionError('denied'),'cannot write'),(FileNotFoundError('missing drive'),'unavailable'),(NotADirectoryError('file'),'file')):
+            with patch.object(Path,'mkdir',side_effect=failure):
+                with self.assertRaisesRegex(ValueError,words):self.agent.save({'folder':str(self.folder/'unavailable')})
+            self.assertEqual(self.agent.config(),before)
+
+    def test_quoted_local_folder_is_prepared_and_writable(self):
+        selected=self.folder/'My Drive'/'StarPower Tarot'
+        self.agent.save({'folder':'"'+str(selected)+'"'})
+        self.assertEqual(self.agent.config()['folder'],str(selected.resolve()))
+        self.assertTrue((selected/'Requests').is_dir());self.assertTrue((selected/'catalog.json').is_file())
+
+    @unittest.skipUnless(__import__('sys').platform=='win32','Windows drive letters')
+    def test_unmounted_drive_is_reported_before_any_exchange_write(self):
+        before=self.agent.config()
+        with patch('studio.exchange_folder.Path.is_dir',return_value=False):
+            with self.assertRaisesRegex(ValueError,'drive .*not available'):self.agent.save({'folder':'G:\\My Drive\\StarPower Tarot'})
+        self.assertEqual(self.agent.config(),before)
+
     def test_request_replay_is_idempotent_and_changed_payload_is_rejected(self):
         self.agent.submit(request());self.agent.submit(request())
         self.assertEqual(self.queued.call_count,1)

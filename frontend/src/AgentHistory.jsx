@@ -20,6 +20,9 @@ export function AgentHistory({config,open}) {
 
  const [batchMode,setBatchMode]=useState('series'),[readingTypes,setReadingTypes]=useState(['western','chinese','numerology']),[editions,setEditions]=useState(['morning']);
 
+ const [canBrowse,setCanBrowse]=useState(false);
+ useEffect(()=>{const ready=()=>setCanBrowse(typeof window.pywebview?.api?.choose_exchange_folder==='function');ready();window.addEventListener('pywebviewready',ready);return()=>window.removeEventListener('pywebviewready',ready);},[]);
+
  const count=form.days*(batchMode==='series'?readingTypes.length*editions.length:2);
 
  const refresh=async initial=>{const value=await api('/agent');setData(value);if(initial)setFolder(value.settings.folder);};
@@ -29,6 +32,8 @@ export function AgentHistory({config,open}) {
  const act=async(name,work)=>{if(busy)return;setBusy(name);setError('');setNotice('');try{await work();await refresh(false);}catch(e){setError(e.message);}finally{setBusy('');}};
 
  const prepare=()=>act('prepare',async()=>{await api('/agent','PUT',{folder,enabled:data.settings.enabled});setNotice('Tarot exchange prepared. ZenWave folders are unchanged.');});
+
+ const browse=()=>act('browse',async()=>{const selected=await window.pywebview.api.choose_exchange_folder();if(selected){setFolder(selected);setNotice('Folder selected. Click Prepare exchange to save it.');}});
 
  const watch=()=>act('watch',async()=>{await api('/agent','PUT',{folder,enabled:!data.settings.enabled});setNotice(data.settings.enabled?'Inbox watching paused. Active batches finish.':'Inbox watching enabled while this studio is running.');});
 
@@ -56,9 +61,9 @@ export function AgentHistory({config,open}) {
 
    <label>Tarot exchange folder<input aria-label="Tarot exchange folder" disabled={data.settings.enabled} value={folder} onChange={e=>setFolder(e.target.value)}/></label>
 
-   <div className="agent-buttons"><button className="secondary" disabled={!!busy} onClick={prepare}><FolderOpen size={16}/>Prepare exchange</button><button className="primary" disabled={!!busy} onClick={watch}>{data.settings.enabled?'Pause inbox':'Watch inbox'}</button></div>
+   <div className="agent-buttons"><button className="secondary" disabled={!!busy||data.settings.enabled||!canBrowse} onClick={browse} title={canBrowse?'Choose a local or Google Drive Desktop folder':'Folder browsing is available in the desktop app'}><FolderOpen size={16}/>Browse folders</button><button className="secondary" disabled={!!busy} onClick={prepare}>Prepare exchange</button><button className="primary" disabled={!!busy} onClick={watch}>{data.settings.enabled?'Pause inbox':'Watch inbox'}</button></div>
 
-   <p className="small-note">Choose a local folder or a dedicated Drive-synced folder that Muse can access. The studio and computer must stay running. Active batches finish when inbox watching is paused.</p>
+   <p className="small-note">For Google Drive, open Google Drive for desktop and wait for its folder to appear in File Explorer or Finder. Choose a dedicated Tarot folder there, not a drive.google.com link. The drive letter can differ on each computer. The studio and computer must stay running; preparing a folder does not verify that Muse can access it.</p>
 
    <div className="agent-buttons"><button className="secondary" disabled={!!busy} onClick={firstTest}><Play size={16}/>Run connection test</button><button className="secondary" disabled={!!busy} onClick={copyPrompt}><Copy size={16}/>Copy Muse connection prompt</button></div>
 

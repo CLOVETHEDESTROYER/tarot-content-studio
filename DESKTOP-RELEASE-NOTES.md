@@ -1,3 +1,10 @@
+StarPower Content Studio 3.0.1
+
+- Adds Browse folders in History & Agent Jobs to select a real local or Google Drive Desktop folder.
+- Explains missing drives, unavailable folders, website links and write-permission problems clearly. Failed preparation preserves the previous exchange setting.
+- Accepts local paths copied with surrounding quotes.
+- Google Drive for desktop must be running and signed in; its drive letter can vary between computers.
+
 Unified StarPower Content Studio 3.0
 
 - Live Studio, the complete card library and longer spreads, daily content, exports, Muse jobs and updates are now in one desktop app.

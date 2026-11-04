@@ -91,7 +91,17 @@ class UpdateTests(unittest.TestCase):
     def test_bridge_exposes_no_history_or_secrets(self):
         bridge=DesktopBridge(object())
         public={n for n in dir(bridge) if not n.startswith('_')}
-        self.assertEqual(public,{'update_state','check_update','download_update','cancel_update','install_update','restore_previous','save_update_token'})
+        self.assertEqual(public,{'update_state','check_update','download_update','cancel_update','install_update','restore_previous','save_update_token','choose_exchange_folder'})
+
+    def test_folder_picker_returns_only_selection_and_supports_cancel(self):
+        from types import SimpleNamespace
+        from unittest.mock import Mock
+        window=Mock();bridge=DesktopBridge(SimpleNamespace(window=window))
+        with patch.dict('sys.modules',{'webview':SimpleNamespace(FileDialog=SimpleNamespace(FOLDER=20))}):
+            window.create_file_dialog.return_value=('C:/My Drive/Tarot',)
+            self.assertEqual(bridge.choose_exchange_folder(),'C:/My Drive/Tarot')
+            window.create_file_dialog.return_value=None
+            self.assertIsNone(bridge.choose_exchange_folder())
 
     def test_download_checksum_failure_never_extracts(self):
         import httpx

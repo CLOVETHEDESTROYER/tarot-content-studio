@@ -1,5 +1,7 @@
 # Desktop installation and updates
 
+On Windows, the desktop shortcut points to the installed app folder and survives in-app updates. History & Agent Jobs → Browse folders opens the native folder chooser. Google Drive for desktop must be running and signed in before its drive can be selected; a Drive website URL is not a local folder path.
+
 Version 3 includes Live Studio and the full card library in the same desktop app. End any live session before installing an update; active live sessions join batches and exports in the installation wait checks.
 
 Download the latest `desktop-v…` release while signed in to the private repository:
