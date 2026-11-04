@@ -31,11 +31,11 @@ export function AgentHistory({config,open}) {
 
  const act=async(name,work)=>{if(busy)return;setBusy(name);setError('');setNotice('');try{await work();await refresh(false);}catch(e){setError(e.message);}finally{setBusy('');}};
 
- const prepare=()=>act('prepare',async()=>{await api('/agent','PUT',{folder,enabled:data.settings.enabled});setNotice('Tarot exchange prepared. ZenWave folders are unchanged.');});
+ const prepare=()=>act('prepare',async()=>{const saved=await api('/agent','PUT',{folder,enabled:data.settings.enabled});setFolder(saved.settings.folder);setNotice('Tarot exchange prepared. ZenWave folders are unchanged.');});
 
  const browse=()=>act('browse',async()=>{const selected=await window.pywebview.api.choose_exchange_folder();if(selected){setFolder(selected);setNotice('Folder selected. Click Prepare exchange to save it.');}});
 
- const watch=()=>act('watch',async()=>{await api('/agent','PUT',{folder,enabled:!data.settings.enabled});setNotice(data.settings.enabled?'Inbox watching paused. Active batches finish.':'Inbox watching enabled while this studio is running.');});
+ const watch=()=>act('watch',async()=>{const saved=await api('/agent','PUT',{folder:data.settings.enabled?data.settings.folder:folder,enabled:!data.settings.enabled});setFolder(saved.settings.folder);setNotice(data.settings.enabled?'Inbox watching paused. Active batches finish.':'Inbox watching enabled while this studio is running.');});
 
  const firstTest=()=>act('test',async()=>{await api('/agent/first-test','POST',{});setNotice('Connection test requested. Its existing result is reused if already generated.');});
 
