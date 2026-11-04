@@ -90,5 +90,21 @@ class UnifiedTests(unittest.TestCase):
                 self.assertEqual(submit.call_count,21)
         finally:planner.pool.shutdown(wait=True)
 
+    def test_previous_live_queue_imports_once_without_starting_or_modifying_source(self):
+        import hashlib
+        old=self.root/'workspace/tarot-reading-generator/data/live-studio.sqlite3'
+        engine=LiveStudio(old,None);engine.settings(dict(approval=False,use_ai=False,use_voice=False))
+        engine.add('first','First question');engine.add('second','Second question')
+        with patch.object(engine,'ensure_worker'):engine.start()
+        engine.claim(1000)
+        before=hashlib.sha256(old.read_bytes()).hexdigest()
+        target=self.root/'workspace/tarot-content-studio/data/studio.sqlite3'
+        app=create_app(Store(target),run_jobs=False)
+        imported=app.extensions['live_bootstrap']().snapshot()
+        self.assertFalse(imported['running']);self.assertIsNone(imported['processing'])
+        self.assertEqual([r['viewer'] for r in imported['queue']],['first','second'])
+        self.assertEqual(hashlib.sha256(old.read_bytes()).hexdigest(),before)
+        self.assertTrue((target.parent/'live-import.json').exists())
+
 
 if __name__=='__main__':unittest.main()
