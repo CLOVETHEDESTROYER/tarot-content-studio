@@ -17,6 +17,10 @@ __pycache__/
 *.bundle
 *.zip
 smoke-output/
+build/
+desktop-dist/
+*.spec
+*.lnk
 data/*
 exports/*
 !data/.gitkeep

@@ -100,7 +100,8 @@ def openai_speech(text, voice, folder):
     # whole optional cloud operation so it cannot stall the local render queue.
     (folder / 'speech.txt').write_text(text, encoding='utf-8')
     try:
-        result = subprocess.run([sys.executable, '-m', 'studio.speech_worker', str(folder), voice],
+        command=[sys.executable,'--speech-worker'] if getattr(sys,'frozen',False) else [sys.executable,'-m','studio.speech_worker']
+        result = subprocess.run([*command, str(folder), voice],
                                 cwd=ROOT, capture_output=True, timeout=180, **HIDDEN)
     except subprocess.TimeoutExpired:
         raise ValueError('OpenAI narration did not finish within three minutes. Retry or choose the local system voice.')

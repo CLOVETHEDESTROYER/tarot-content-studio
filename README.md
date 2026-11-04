@@ -1,5 +1,7 @@
 # StarPower Content Studio
 
+**Windows desktop:** use **StarPower Content Studio.lnk** or **Start Desktop Studio.cmd** to open a native app window. See [WINDOWS-DESKTOP.md](WINDOWS-DESKTOP.md) for packaging and storage details.
+
 A standalone Windows and macOS studio for making tarot, Western astrology, Chinese astrology, numerology, and combined daily reading videos. It has its own server, editor, database, bundled artwork, and exports. The live website does not need to be running.
 
 **Intel Mac / macOS Sequoia:** follow [MAC-SETUP.md](MAC-SETUP.md). Clone this repository, run **Setup Content Studio.command** once, then **Start Content Studio.command**. A free native macOS voice is included; no OpenAI key is required for local production.
