@@ -123,6 +123,26 @@ class AgentHistoryTests(unittest.TestCase):
         self.assertEqual(self.jobs_count,2)
         self.assertEqual([a['id'] for a in first['assets']],[a['id'] for a in second['assets']])
 
+    def test_completed_job_is_retrievable_from_a_new_exchange_without_regeneration(self):
+        record=self.complete();original=Path(record['exchangeRoot']);new=self.folder/'New Drive'/'Tarot'
+        self.agent.save({'folder':str(new)})
+        reused=self.agent.submit(request())
+        self.assertEqual(reused['id'],record['id']);self.assertEqual(self.jobs_count,2)
+        self.assertEqual(reused['exchangeRoot'],str(original))
+        for asset in record['assets']:
+            for item in asset['files'].values():
+                self.assertEqual(checksum(new/item['path']),item['sha256'])
+                self.assertTrue((original/item['path']).is_file())
+        self.assertEqual(json.loads((new/'Status/week-one.json').read_text())['status'],'complete')
+        self.assertTrue((new/'Ready/week-one.zip').is_file())
+        self.agent.submit(request());self.assertEqual(self.jobs_count,2)
+
+    def test_exchange_replay_never_overwrites_conflicting_media(self):
+        record=self.complete();new=self.folder/'New Drive'/'Tarot';self.agent.save({'folder':str(new)})
+        item=record['assets'][0]['files']['reading.mp4'];target=new/item['path'];target.parent.mkdir(parents=True);target.write_bytes(b'keep this different file')
+        with self.assertRaisesRegex(ValueError,'not overwritten'):self.agent.submit(request())
+        self.assertEqual(target.read_bytes(),b'keep this different file')
+
     def test_three_daily_series_keep_separate_media_and_replay_without_regenerating(self):
         value=request('three-series',readingTypes=['western','chinese','numerology'])
         value.update(days=7,editions=['morning'])

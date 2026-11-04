@@ -202,6 +202,10 @@ class AgentJobs:
         request=validate_request(data);key=request['requestId'];payload=canonical(request)
         root=self.prepare_exchange()
         if request['timezone']!=self.planner.config()['timezone']:raise ValueError('Use the daily planner timezone for weekly agent requests.')
+        try:previous=self.get(key)
+        except KeyError:previous=None
+        if previous and previous['status']=='complete' and canonical(previous['request'])==payload and Path(previous['exchangeRoot']).resolve()!=root:
+            self.republish_complete(previous,root)
         with self.guard,self.store.connect() as db:
             db.execute('BEGIN IMMEDIATE');row=db.execute('SELECT payload,body FROM agent_requests WHERE id=?',(key,)).fetchone()
             if row:
@@ -215,6 +219,44 @@ class AgentJobs:
                 db.execute('INSERT INTO agent_requests VALUES (?,?,?)',(key,payload,canonical(record)))
         self.put(record);self.event('request-accepted',key,dict(retry=retry));self.pool.submit(self.work,key)
         return record
+
+    def republish_complete(self,record,root):
+        """A new exchange gets verified copies of completed media, with stable IDs."""
+        from .exchange_folder import folder_error
+        try:return self._republish_complete(record,root)
+        except OSError as exc:raise ValueError(folder_error(exc)) from exc
+        except (json.JSONDecodeError,UnicodeError) as exc:raise ValueError('Completed-job metadata in the selected exchange is unreadable. Choose a clean Tarot folder or restore its metadata.') from exc
+
+    def _republish_complete(self,record,root):
+        source=Path(record['exchangeRoot']);folder=inside(root,root/'Ready'/record['id'])
+        manifest=inside(root,folder/'ready.json');archive=inside(root,root/'Ready'/(record['id']+'.zip'))
+        ready=dict(schemaVersion=1,requestId=record['id'],publicationAllowed=record['request']['kind']!='connection-test',assets=record['assets'],
+                   publishing='Proposed times only. No platform schedules or posts have been created.')
+        if manifest.is_file() and archive.is_file():
+            if json.loads(manifest.read_text(encoding='utf-8'))==ready and all(inside(root,root/f['path']).is_file() for a in record['assets'] for f in a['files'].values()):
+                atomic_json(root,root/'Status'/(record['id']+'.json'),self.status(record));return
+        for asset in record['assets']:
+            for name,item in asset['files'].items():
+                if name not in MEDIA:raise ValueError('Saved exchange has an unsupported media filename.')
+                original=inside(source,source/item['path']);target=inside(root,root/item['path'])
+                if not original.is_file() or checksum(original)!=item['sha256']:raise ValueError('A saved export is missing or changed. Restore its original files before copying this completed job to the new exchange.')
+                if target.exists():
+                    if not target.is_file() or checksum(target)!=item['sha256']:raise ValueError('The selected exchange contains a different file for this completed job. It was not overwritten.')
+                    continue
+                target.parent.mkdir(parents=True,exist_ok=True)
+                temporary=inside(root,target.with_name(target.name+'.'+uuid.uuid4().hex+'.tmp'))
+                shutil.copyfile(original,temporary)
+                if checksum(temporary)!=item['sha256']:raise ValueError('The exchange copy did not match the saved export. The completed job was not published.')
+                temporary.replace(target)
+        atomic_json(root,folder/'request.json',record['request'])
+        temporary=inside(root,archive.with_name(archive.name+'.'+uuid.uuid4().hex+'.tmp'))
+        with zipfile.ZipFile(temporary,'w',zipfile.ZIP_STORED) as bundle:
+            for path in sorted(folder.rglob('*')):
+                if path.is_file() and path.name!='ready.json':inside(root,path);bundle.write(path,path.relative_to(folder))
+            bundle.writestr('ready.json',json.dumps(ready,ensure_ascii=False,indent=2))
+        temporary.replace(archive)
+        atomic_json(root,manifest,ready)
+        atomic_json(root,root/'Status'/(record['id']+'.json'),self.status(record))
 
     def wait_job(self,key,record):
         deadline=time.monotonic()+900
